@@ -6,14 +6,13 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-    <title> Trang Chủ</title>
+    <title>Trang Chủ</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   	<link rel="preconnect" href="https://fonts.googleapis.com">
   	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- <h1>Chào mừng đến với đến website khoa tin UED!</h1> -->
     
   <header class="header" data-header>
     <div class="container">
@@ -21,7 +20,6 @@
 	<a href="#" class="logo">
     	<img src="images/logo.jpeg" alt="Logo">
 	</a>
-
 
       <nav class="navbar">
         <ul class="navbar-list">
