@@ -26,7 +26,7 @@
       <nav class="navbar">
         <ul class="navbar-list">
 
-          <li><a href="#home" class="navbar-link">Trang chủ</a></li>
+          <li><a href="index.jsp" class="navbar-link">Trang chủ</a></li>
           <li><a href="#about" class="navbar-link">Giới thiệu</a></li>
           <li><a href="#programs" class="navbar-link">Chương trình đào tạo</a></li>
           <li><a href="contact.jsp" class="navbar-link">Liên hệ</a></li>
