@@ -6,6 +6,10 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Khoa Tin học, Trường Đại học Sư phạm – Đại học Đà Nẵng: Đào tạo Công nghệ thông tin và Sư phạm Tin học chất lượng cao.">
+	<meta name="keywords" content="Tin học, Đại học Sư phạm, Công nghệ thông tin, Sư phạm Tin học, Hệ thống thông tin">
+	<meta name="author" content="Khoa Tin học">
+	
 	
     <title>it.ued</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -28,7 +32,7 @@
       <nav class="navbar">
         <ul class="navbar-list">
 
-          <li><a href="index.jsp" class="navbar-link">Trang chủ</a></li>
+          <li><a href="#" class="navbar-link">Trang chủ</a></li>
           
 			<!-- Dropdown Menu với <details> và <summary> -->
 			<li class="dropdown">
@@ -39,12 +43,11 @@
 			        </summary>
 			        <ul class="dropdown-menu">
 			            <li><a href="#about" class="dropdown-item">Giới thiệu chung</a></li>
-			            <li><a href="#" class="dropdown-item">Cơ cấu tổ chức</a></li>
+			            <li><a href="#faculty" class="dropdown-item">Cơ cấu tổ chức</a></li>
 			        </ul>
 			    </details>
 			</li>
           
-          <!-- <li><a href="#programs" class="navbar-link">Chương trình đào tạo</a></li> -->
           <li class="dropdown">
 			    <details class="dropdown-toggle">
 			        <summary class="navbar-link dropdown-link">
@@ -63,8 +66,6 @@
         
         <div class="header-actions">
           <a href="login.jsp" class="header-action-link">Đăng nhập</a>
-
-         <!--  <a href="register.jsp" class="header-action-link">Đăng ký</a> -->
         </div>
       </nav>
 
@@ -73,15 +74,9 @@
   
   	<!-- HOME SECTION -->
       <section class="home" id="home">
-        <div class="container">
-          	<div class="home-content">
-            	<h1 class="home-title">WEBSITE KHOA TIN</h1> <br>
-				<h1 class="home-text"> Trường đại học sư phạm - Đại học Đà nẵng</h1>
           		<div class="home-cover">
             		<img src="images/cover.jpg" alt="Cover">
           		</div>
-        	</div>
-        </div>
       </section>
 
     <!-- ABOUT SECTION -->
@@ -108,13 +103,123 @@
          		
          		<div class="about-image">
       				<img src="images/Picture1.jpg" alt="About Image">
-      				<p class="image-name">Trưởng khoa</p>
-      				<p class="image-name">Ts. Nguyễn Trần Quốc Vinh</p>
+      				<p class="image-name"><em>Trưởng khoa</p></em>
+      				<p class="image-name"><em>Ts. Nguyễn Trần Quốc Vinh</p></em>
     			</div>
          </div>
-
       </section>
-  	
+ 
+ 	<!-- FACULTY SECTION -->
+	<section class="faculty" id="faculty">
+	  <div class="container">
+	    <h2 class="h2 faculty-title">Cơ cấu tổ chức</h2>
+	
+	    <div class="faculty-group">
+	      <!-- Ban Chủ Nhiệm Khoa -->
+	      <h3 class="faculty-group-title">Ban Chủ Nhiệm Khoa</h3>
+	      <div class="faculty-list">
+	        <div class="faculty-item">
+	          <img src="images/member1.jpg" alt="Member 1">
+	          <p class="faculty-name"><strong>TS. NGUYỄN TRẦN QUỐC VINH</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Trưởng khoa</p></em>
+	        </div>
+	        <div class="faculty-item">
+	          <img src="images/member2.jpg" alt="Member 2">
+	          <p class="faculty-name"><strong>TS. PHẠM DƯƠNG THU HẰNG</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Phó trưởng khoa</p></em>
+	        </div>
+	        <div class="faculty-item">
+	          <img src="images/member3.jpg" alt="Member 3">
+	          <p class="faculty-name"><strong>TS. PHẠM ANH PHƯƠNG</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Phó trưởng khoa</p></em>
+	        </div>
+	      </div>
+	    </div>
+	
+	    <div class="faculty-group">
+	      <!-- Tổ Bộ Môn Hệ Thống Thông Tin -->
+	      <h3 class="faculty-group-title">Tổ Bộ Môn Hệ Thống Thông Tin</h3>
+	      <div class="faculty-list">
+	        <div class="faculty-item">
+	          <img src="images/member4.jpg" alt="Member 4">
+	          <p class="faculty-name"><strong>TS. NGUYỄN ĐÌNH LẦU</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Trưởng bộ môn</p></em>
+	        </div>
+	        <div class="faculty-item">
+	          <img src="images/member5.png" alt="Member 5">
+	          <p class="faculty-name"><strong>TS. NGUYỄN THỊ NGỌC ANH</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Giảng viên</p></em>
+	        </div>
+	        <div class="faculty-item">
+	          <img src="images/member6.jpg" alt="Member 6">
+	          <p class="faculty-name"><strong>TS. NGUYỄN HOÀNG HẢI</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Giảng viên</p></em>
+	        </div>
+	        <div class="faculty-item">
+	          <img src="images/member7.jpg" alt="Member 7">
+	          <p class="faculty-name"><strong>TS. ĐOÀN DUY BÌNH</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Giảng viên</p></em>
+	        </div>
+	        <div class="faculty-item">
+	          <img src="images/member8.jpg" alt="Member 8">
+	          <p class="faculty-name"><strong>TS. VŨ THỊ TRÀ</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Giảng viên</p></em>
+	        </div>
+	        <div class="faculty-item">
+	          <img src="images/member9.png" alt="Member 9">
+	          <p class="faculty-name"><strong>Ths. LÊ VĂN MỸ</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Giảng viên</p></em>
+	        </div>
+	        <div class="faculty-item">
+	          <img src="images/member10.png" alt="Member 10">
+	          <p class="faculty-name"><strong>Ths. LÊ THỊ THANH BÌNH</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Giảng viên</p></em>
+	        </div>
+	        <div class="faculty-item">
+	          <img src="images/member11.jpg" alt="Member 11">
+	          <p class="faculty-name"><strong>Ths. MAI HÀ THI</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Giảng viên</p></em>
+	        </div>
+	      </div>
+	    </div>
+	
+	    <div class="faculty-group">
+	      <!-- Tổ Bộ Môn Phương Pháp Dạy -->
+	      <h3 class="faculty-group-title">Tổ Bộ Môn Phương Pháp Dạy</h3>
+	      <div class="faculty-list">
+	        <div class="faculty-item">
+	          <img src="images/member12.jpg" alt="Member 12">
+	          <p class="faculty-name"><strong>TS. TRẦN VĂN HƯNG</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Trưởng bộ môn</p></em>
+	        </div>
+	        <div class="faculty-item">
+	          <img src="images/member13.jpg" alt="Member 13">
+	          <p class="faculty-name"><strong>Ths. LÊ VIẾT CHUNG</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Giảng viên</p></em>
+	        </div>
+	        <div class="faculty-item">
+	          <img src="images/member14.jpg" alt="Member 14">
+	          <p class="faculty-name"><strong>Ths. HỒ NGỌC TÚ</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Giảng viên</p></em>
+	        </div>
+	      </div>
+	    </div>
+	
+	    <div class="faculty-group">
+	      <!-- Thư Ký Khoa -->
+	      <h3 class="faculty-group-title">Thư Ký Khoa</h3>
+	      <div class="faculty-list">
+	        <div class="faculty-item">
+	          <img src="images/member15.jpg" alt="Member 15">
+	          <p class="faculty-name"><strong>CN. TRẦN THUỲ TRANG</p></strong>
+	          <p class="faculty-name"><em>Chức vụ: Thư ký khoa</p></em>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+
+ 
   	<!-- FOOTER -->
   	<footer>
     	<!-- <div class="footer-top">

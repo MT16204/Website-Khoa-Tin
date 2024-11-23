@@ -6,6 +6,10 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Khoa Tin học, Trường Đại học Sư phạm – Đại học Đà Nẵng: Đào tạo Công nghệ thông tin và Sư phạm Tin học chất lượng cao.">
+	<meta name="keywords" content="Tin học, Đại học Sư phạm, Công nghệ thông tin, Sư phạm Tin học, Hệ thống thông tin">
+	<meta name="author" content="Khoa Tin học">
+	
 	
     <title>it.ued</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -28,7 +32,7 @@
       <nav class="navbar">
         <ul class="navbar-list">
 
-          <li><a href="index.jsp" class="navbar-link">Trang chủ</a></li>
+          <li><a href="index.jsp#" class="navbar-link">Trang chủ</a></li>
           
 			<!-- Dropdown Menu với <details> và <summary> -->
 			<li class="dropdown">
@@ -63,8 +67,6 @@
         
         <div class="header-actions">
           <a href="login.jsp" class="header-action-link">Đăng nhập</a>
-
-         <!--  <a href="register.jsp" class="header-action-link">Đăng ký</a> -->
         </div>
       </nav>
 
