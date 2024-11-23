@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Đăng Nhập</title>
+    <title>it.ued</title>
     <link rel="stylesheet" href="css/login.css">
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
     <div class="container-login">
     <img src="images/cover.jpg" alt="Background" class="background-img">
         <div class="wrap-login">
+			<a href="index.jsp" class="back-to-home"><i class='bx bx-arrow-back' style="color:#f1c94e; font-size: 25px; font-weight: 100"></i></a>
             <h2 class="login-title">Đăng Ký</h2>
             <form action="LoginServlet" method="post">
                 <div class="input-container">

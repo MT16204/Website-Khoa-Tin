@@ -156,6 +156,19 @@ body { background: var(--white); }
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* .back-to-home {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 20px; 
+}
+
+.back-to-home i {
+    font-size: 20px; 
+    margin-right: 8px;
+	color: var(--main-color); 
+} */
+
 .login-title {
   font-size: 24px;
   text-align: center;
@@ -179,10 +192,6 @@ body { background: var(--white); }
   border: 1px solid #ddd;
   border-radius: 5px;
   transition: border-color 0.3s;
-}
-
-.input-field:focus {
-  border-color: #9152f8;
 }
 
 .input-field::placeholder {

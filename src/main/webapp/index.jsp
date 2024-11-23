@@ -1,13 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.List" %>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-    <title>Trang Chủ</title>
+    <title>it.ued</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	
   	<link rel="preconnect" href="https://fonts.googleapis.com">
   	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -25,15 +29,42 @@
         <ul class="navbar-list">
 
           <li><a href="index.jsp" class="navbar-link">Trang chủ</a></li>
-          <li><a href="#about" class="navbar-link">Giới thiệu</a></li>
-          <li><a href="#programs" class="navbar-link">Chương trình đào tạo</a></li>
-          <li><a href="contact.jsp" class="navbar-link">Liên hệ</a></li>
+          
+			<!-- Dropdown Menu với <details> và <summary> -->
+			<li class="dropdown">
+			    <details class="dropdown-toggle">
+			        <summary class="navbar-link dropdown-link">
+			            Giới thiệu
+			            <i class='bx bx-chevron-down'></i>
+			        </summary>
+			        <ul class="dropdown-menu">
+			            <li><a href="#about" class="dropdown-item">Giới thiệu chung</a></li>
+			            <li><a href="#" class="dropdown-item">Cơ cấu tổ chức</a></li>
+			        </ul>
+			    </details>
+			</li>
+          
+          <!-- <li><a href="#programs" class="navbar-link">Chương trình đào tạo</a></li> -->
+          <li class="dropdown">
+			    <details class="dropdown-toggle">
+			        <summary class="navbar-link dropdown-link">
+			            Chương trình đào tạo
+			            <i class='bx bx-chevron-down'></i>
+			        </summary>
+			        <ul class="dropdown-menu">
+			            <li><a href="#" class="dropdown-item">Chuyên ngành</a></li>
+			            <li><a href="#" class="dropdown-item">Cấp bậc đào tạo</a></li>
+			        </ul>
+			    </details>
+			</li>
+			
+          <li><a href="contact.jsp#contact" class="navbar-link">Liên hệ</a></li>
         </ul>
         
         <div class="header-actions">
           <a href="login.jsp" class="header-action-link">Đăng nhập</a>
 
-          <a href="register.jsp" class="header-action-link">Đăng ký</a>
+         <!--  <a href="register.jsp" class="header-action-link">Đăng ký</a> -->
         </div>
       </nav>
 
@@ -53,7 +84,7 @@
         </div>
       </section>
 
-      <!-- ABOUT SECTION -->
+    <!-- ABOUT SECTION -->
       <section class="about" id="about">
         <div class="container">
         	<div class="about-content">
@@ -84,8 +115,7 @@
 
       </section>
   	
-  	
-  		<!-- FOOTER -->
+  	<!-- FOOTER -->
   	<footer>
     	<!-- <div class="footer-top">
       		<div class="container">
