@@ -3,155 +3,241 @@
 <%@ page import="java.util.List" %>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Khoa Tin học, Trường Đại học Sư phạm – Đại học Đà Nẵng: Đào tạo Công nghệ thông tin và Sư phạm Tin học chất lượng cao.">
-	<meta name="keywords" content="Tin học, Đại học Sư phạm, Công nghệ thông tin, Sư phạm Tin học, Hệ thống thông tin">
-	<meta name="author" content="Khoa Tin học">
-	
-	
-    <title>it.ued</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-	
-  	<link rel="preconnect" href="https://fonts.googleapis.com">
-  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Khoa tin học Trường Đại học Sư phạm</title>
+    <link rel="shortcut icon" type="image" href="images/logo.png">
+
+    <!-- Links of CSS files -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
     
-  <header class="header" data-header>
-    <div class="container">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 968px)">
 
-	<a href="#" class="logo">
-    	<img src="images/logo.jpeg" alt="Logo">
-	</a>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
-      <nav class="navbar">
-        <ul class="navbar-list">
 
-          <li><a href="index.jsp#" class="navbar-link">Trang chủ</a></li>
-          
-			<!-- Dropdown Menu với <details> và <summary> -->
-			<li class="dropdown">
-			    <details class="dropdown-toggle">
-			        <summary class="navbar-link dropdown-link">
-			            Giới thiệu
-			            <i class='bx bx-chevron-down'></i>
-			        </summary>
-			        <ul class="dropdown-menu">
-			            <li><a href="#about" class="dropdown-item">Giới thiệu chung</a></li>
-			            <li><a href="#" class="dropdown-item">Cơ cấu tổ chức</a></li>
-			        </ul>
-			    </details>
-			</li>
-          
-          <!-- <li><a href="#programs" class="navbar-link">Chương trình đào tạo</a></li> -->
-          <li class="dropdown">
-			    <details class="dropdown-toggle">
-			        <summary class="navbar-link dropdown-link">
-			            Chương trình đào tạo
-			            <i class='bx bx-chevron-down'></i>
-			        </summary>
-			        <ul class="dropdown-menu">
-			            <li><a href="#" class="dropdown-item">Chuyên ngành</a></li>
-			            <li><a href="#" class="dropdown-item">Cấp bậc đào tạo</a></li>
-			        </ul>
-			    </details>
-			</li>
-			
-          <li><a href="contact.jsp#contact" class="navbar-link">Liên hệ</a></li>
-        </ul>
-        
-        <div class="header-actions">
-          <a href="login.jsp" class="header-action-link">Đăng nhập</a>
-        </div>
-      </nav>
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 
-    </div>
-  </header>
-  
-  	<!-- HOME SECTION -->
-      <section class="home" id="home">
-        <div class="container">
-          	<div class="home-content">
-            	<h1 class="home-title">WEBSITE KHOA TIN</h1> <br>
-				<h1 class="home-text"> Trường đại học sư phạm - Đại học Đà nẵng</h1>
-          		<div class="home-cover">
-            		<img src="images/cover.jpg" alt="Cover">
-          		</div>
-        	</div>
-        </div>
-      </section>
 
-	<!-- CONTACT SECTION -->
-      <section class="contact" id="contact">
-        <div class="container">
-          <h2 class="contact section-title">Liên hệ</h2>
-          <div class="contact-wrapper">
-            <form action="" class="contact-form">
-              <div class="wrapper-flex">
-                <div class="input-wrapper">
-                  <label for="name">Tên:</label>
-                  <input type="text" name="name" id="name" required placeholder="Enter Your Name" class="input-field"> 
-                </div>
-                <div class="input-wrapper">
-                  <label for="email">Email:</label>
-                  <input type="email" name="email" id="email" required placeholder="Enter Your Email" class="input-field">
-                </div>
-              </div>
-              <label for="message">Tin nhắn:</label>
-              <textarea name="message" id="message" required placeholder="Type Your Message" class="input-field"></textarea>
-              <button type="submit" class="send">Gửi</button> 
-            </form>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-            <ul class="contact-list">
-              <li>
-                <a href="https://tuyensinh.ued.udn.vn/" target="blank" class="contact-link">Liên hệ qua mail: <span>tuyensinh@ued.udn.vn</span>
-                </a>
-              </li>
-              <li>
-                <a href="http://it.ued.udn.vn" target="blank" class="contact-link">Truy cập vào website: <span>http://it.ued.udn.vn</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="contact-link">Số điện thoại: <span>0236 3841323</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.google.com/search?q=Tr%C6%B0%E1%BB%9Dng+%C4%91%E1%BA%A1i+h%E1%BB%8Dc+s%C6%B0+ph%E1%BA%A1m+459+T%C3%B4n+%C4%90%E1%BB%A9c+Th%C3%A1ng%2C+%C4%90%C3%A0+N%E1%BA%B5ng&sca_esv=98e98a53a3894882&sxsrf=ADLYWIJvDIVqnzBu3MMVZNNFE1OjRysMCg%3A1731860177252&ei=0RY6Z4yID77m2roPqv_L8Qg&ved=0ahUKEwjMtKn14eOJAxU-s1YBHar_Mo4Q4dUDCA8&uact=5&oq=Tr%C6%B0%E1%BB%9Dng+%C4%91%E1%BA%A1i+h%E1%BB%8Dc+s%C6%B0+ph%E1%BA%A1m+459+T%C3%B4n+%C4%90%E1%BB%A9c+Th%C3%A1ng%2C+%C4%90%C3%A0+N%E1%BA%B5ng&gs_lp=Egxnd3Mtd2l6LXNlcnAiRVRyxrDhu51uZyDEkeG6oWkgaOG7jWMgc8awIHBo4bqhbSA0NTkgVMO0biDEkOG7qWMgVGjDoW5nLCDEkMOgIE7hurVuZzICECYyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRIm4oBUPNzWJCGAXACeAGQAQCYAY4BoAGgB6oBAzAuOLgBA8gBAPgBAZgCCqACxgfCAgoQABiwAxjWBBhHwgIIECEYoAEYwwSYAwCIBgGQBgiSBwMyLjigB4Qb&sclient=gws-wiz-serp" target="_blank" class="contact-link">Địa chỉ:<span>459 Tôn Đức Thắng, Đà Nẵng.</span>
-                </a>
-              </li>
+    <!-- OwlCarousel2 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section Started -->
+
+    <section class="sub-header contactHeader">
+
+        <!-- Navigation Section Started -->
+
+        <nav>
+            <div class="logo" id="top">
+                <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
+            </div>
+
+            <label for="btn" class="icon">
+                <span class="fas fa-bars"></span>
+            </label>
+            <input type="checkbox" name="" id="btn">
+
+            <ul>
+                <li> <a href="index.jsp">Trang chủ</a></li>
+                <li> <a href="about.jsp">Giới thiệu</a></li>
+                <li>
+                    <label for="btn-1" class="show">Chương trình đào tạo <i class="fas fa-caret-down"></i></label>
+
+                    <a href="#course">Chương trình đào tạo  <i class="fas fa-caret-down"></i></a>
+                    <input type="checkbox" id="btn-1">
+                    <ul>
+                        <li>
+                            <label for="btn-2" class="show">Công nghệ thông tin <i class="fas fa-caret-down"></i></label>
+                            <a href="#"> Chuyên ngành <i class="fas fa-caret-right"></i> </a>
+                            <input type="checkbox" id="btn-2">
+                            <ul>
+                                <li><a href="Diff_Int_calc.jsp"> Cử nhân Công nghệ thông tin </a></li>
+                                <li><a href="English-1.jsp"> Cử nhân Sư phạm Tin học </a></li>
+                                <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-3" class="show">Đào tạo</label>
+                            <a href="daotao.jsp"> Đào tạo <i class="fas fa-caret-right"></i> </a>
+                            <input type="checkbox" id="btn-3">
+
+                            <ul>
+                                <li><a href="bacdaihoc.jsp"> Đào tạo bậc đại học </a></li>
+                                <li><a href="bacthacsi.jsp"> Đào tạo bậc thạc sĩ </a></li>
+                                <li><a href="bactiensi.jsp"> Đào tạo bậc tiến sĩ </a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li> <a href="faculty.jsp">Đội ngũ giảng viên</a></li>
+                <li> <a href="blog.jsp">Bài viết</a></li>
+                <li> <a href="contact.jsp">Liên hệ</a></li>
+                <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>
             </ul>
-          </div>
+        </nav>
+
+        <!-- Navigation Section Ended -->
+
+
+        <h1> Liên hệ </h1>
+
+    </section>
+
+    <!-- Header Section Ended -->
+
+
+    <!-- Script for form started -->
+
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <iframe name="msgForm" id="hidden_iframe" style="display: none" onload="contFormLoad()"></iframe>
+
+    <!-- Script for form Ended -->
+
+
+    <section class="location">
+
+        <iframe loading="lazy" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.0626524252784!2d108.15732981475502!3d16.06223828888517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219246b64ae89%3A0xc9270347fa1b00cd!2zNDU5IFTDtG4gxJDhu6ljIFRo4bqvbmcsIEhvw6AgS2jDoW5oIE5hbSwgTGnDqm4gQ2hp4buDdSwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1629732635560!5m2!1svi!2s" width="100%" height="450" allowfullscreen="allowfullscreen"></iframe>
+
+    </section>
+
+    <section class="contactUs">
+
+        <div class="row">
+
+            <div class="contactCol">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Metropoliton University Bangladesh</h5>
+                        <p>Tamabil Hwy, Bateshwar, Sylhet, Bangladesh.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5><a href="tel:+8801765700825"> +880 1765 700 825 </a></h5>
+                        <p> Sunday to Thrushday, 9AM to 5PM </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <span>
+                        <h5><a href="mailto:metrouni.cse.50@gmail.com" target="blank"> metrouni.cse.50@gmail.com </a></h5>
+                        <p> Email us your query </p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contactCol msg">
+
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse" method="post" target="msgForm" onsubmit="submitted=true" class="myform" id="contform">
+
+                    <input type="email" name="emailAddress" placeholder="Email" required>
+                    <input type="text" name="entry.805276147" placeholder="Name" required>
+                    <input type="text" name="entry.605097215" placeholder="Subject" required>
+                    <textarea rows="5" name="entry.740878952" placeholder="Message" required></textarea>
+                    <button type="submit" class="heroBtn widthBtn">Gửi tin nhắn  <i class="fas fa-paper-plane"></i> </button>
+                </form>
+            </div>
+
         </div>
-      </section>
-  	
-  	<!-- FOOTER -->
-  	<footer>
-    	<!-- <div class="footer-top">
-      		<div class="container">
-        		<div class="footer-brand">
-          			<p class="footer-text">Thông tin liên hệ:</p>
-          			<ul class="social-list">
-            			<li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            			<li><a href="#" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
-            			<li><a href="#" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-          			</ul>
-        	    </div>
-      		</div>
-    	</div> -->
-    <div class="footer-bottom">
-      <div class="container">
-        <p class="copyright">
-          &copy; 2024 G2 - All Right Reserved
-        </p>
-      </div>
-    </div>
-  </footer>
-  
+    </section>
+
+
+    <!-- Script for form started -->
+
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="formLoad()"></iframe>
+
+    <!-- Script for form Ended -->
+
+    <!-- Footer -->
+    <section class="footer">
+
+        <div class="fcol col-3 ftrTopEle">
+            <h4> Lời nhắn </h4>
+            <div class="contactCol">
+
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform" id="myform">
+
+                    <input type="text" name="entry.805276147" placeholder="Name" required>
+                    <input type="email" name="emailAddress" placeholder="Email" required>
+                    <textarea rows="3" name="entry.1586819207" placeholder="Feedback" required></textarea>
+                    <button type="submit" class="heroBtn"> Gửi <i class="fas fa-paper-plane"></i> </button>
+                </form>
+            </div>
+        </div>
+        <div class="fcol col-3 ftrTopEle">
+
+            <h4>Liên hệ</h4>
+
+            <ol>
+                <li><a href="https://metrouni.edu.bd" target="blank"> Trang chủ | UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://web.facebook.com/groups/Dept.of.CSE.MU/" target="blank"> Trang chủ khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://web.facebook.com/metropolitanuniversity" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://web.facebook.com/groups/metrouni/" target="blank">Facebook khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
+                <!-- <li><a href="https://web.facebook.com/groups/734057760032501/" target="blank">FB/ Computer Programming <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC5HPvlTXV3rqOgit4Vp0IhA" target="blank"> MU YouTube Channel <i class="fas fa-external-link-alt"></i></a></li> -->
+            </ol>
+        </div>
+        <div class="fcol col-3 ftrTopEle">
+
+            <h4>Giới thiệu</h4>
+
+            <p>This website is designed and developed by the students of CSE 50th batch of Metropolitan University and it is not an official website. Our main purpose is to help our batch and our junior batches through this website.</p><br>
+        </div>
+        <!-- <div class="fcol col-3 flink ftrTopEle">
+
+            <h4>Theo dõi</h4>
+            <div class="icons">
+                <a href="#"> <i class="fab fa-facebook-f"> </i></a>
+                <a href="#"> <i class="fab fa-linkedin-in"> </i></a>
+            </div>
+        </div> -->
+        <div class="fcol col-6">
+            <hr>
+            <p> &copy; 2021 MU_CSE-50(Metropolitan University)</p>
+        </div>
+
+        <div class="fcol col-6 ftop">
+
+            <a href="#top">
+                <div class="gotop">
+                    Back to Top <i class="fas fa-angle-double-up"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <!-- Linked to javascript file -->
+    <script src="js/index.js"></script>
+
 </body>
+
 </html>
 

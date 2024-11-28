@@ -1,6 +1,5 @@
 :root {
-    --main-color: #f1c94e;
- 
+    --main-color:#fa6055;
     /* Text colors */
     --main-text-color: #2B2B2B;
     --secondary-text-color: #4D4D4D;
@@ -213,7 +212,7 @@ body { background: var(--white); }
 .login-btn {
   font-size: 16px;
   color: #fff;
-  background: var(--main-color);
+  background: #fa6055;
   border: none;
   border-radius: 5px;
   width: 100%;
@@ -230,8 +229,9 @@ body { background: var(--white); }
 }
 
 .text-small a {
-  color: var(--main-color);
+  color: #fa6055;
 }
+
 
 @media (max-width: 576px) {
   .wrap-login {
@@ -242,4 +242,8 @@ body { background: var(--white); }
     font-size: 20px;
   }
 }
+
+
+
+
 
