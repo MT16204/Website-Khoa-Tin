@@ -78,7 +78,7 @@
 
                             <ul>
                                 <li><a href="bacdaihoc.jsp"> Đào tạo bậc đại học </a></li>
-                                <li><a href="bacdthacsi.jsp"> Đào tạo bậc thạc sĩ </a></li>
+                                <li><a href="bacthacsi.jsp"> Đào tạo bậc thạc sĩ </a></li>
                                 <li><a href="bactiensi.jsp"> Đào tạo bậc tiến sĩ </a></li>
                             </ul>
                         </li>
@@ -152,64 +152,41 @@
         <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
     </section>
 
-<!-- Footer -->
-<section class="footer">
+	<!-- Footer -->	
+    <section class="footer">
 
-    <div class="fcol col-3 ftrTopEle">
-        <h4> Lời nhắn </h4>
-        <div class="contactCol">
+        <div class="fcol col-3 ftrTopEle">
+            <h4> Lời nhắn </h4>
+            <div class="contactCol">
 
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform" id="myform">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform" id="myform">
 
-                <input type="text" name="entry.805276147" placeholder="Name" required>
-                <input type="email" name="emailAddress" placeholder="Email" required>
-                <textarea rows="3" name="entry.1586819207" placeholder="Feedback" required></textarea>
-                <button type="submit" class="heroBtn"> Gửi <i class="fas fa-paper-plane"></i> </button>
-            </form>
-        </div>
-    </div>
-    <div class="fcol col-3 ftrTopEle">
-
-        <h4>Liên hệ</h4>
-
-        <ol>
-            <li><a href="https://metrouni.edu.bd" target="blank"> Trang chủ | UED <i class="fas fa-external-link-alt"></i></a></li>
-            <li><a href="https://web.facebook.com/groups/Dept.of.CSE.MU/" target="blank"> Trang chủ khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
-            <li><a href="https://web.facebook.com/metropolitanuniversity" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
-            <li><a href="https://web.facebook.com/groups/metrouni/" target="blank">Facebook khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
-            <!-- <li><a href="https://web.facebook.com/groups/734057760032501/" target="blank">FB/ Computer Programming <i class="fas fa-external-link-alt"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UC5HPvlTXV3rqOgit4Vp0IhA" target="blank"> MU YouTube Channel <i class="fas fa-external-link-alt"></i></a></li> -->
-        </ol>
-    </div>
-    <div class="fcol col-3 ftrTopEle">
-
-        <h4>Giới thiệu</h4>
-
-        <p>This website is designed and developed by the students of CSE 50th batch of Metropolitan University and it is not an official website. Our main purpose is to help our batch and our junior batches through this website.</p><br>
-    </div>
-    <!-- <div class="fcol col-3 flink ftrTopEle">
-
-        <h4>Theo dõi</h4>
-        <div class="icons">
-            <a href="#"> <i class="fab fa-facebook-f"> </i></a>
-            <a href="#"> <i class="fab fa-linkedin-in"> </i></a>
-        </div>
-    </div> -->
-    <div class="fcol col-6">
-        <hr>
-        <p> &copy; 2021 MU_CSE-50(Metropolitan University)</p>
-    </div>
-
-    <div class="fcol col-6 ftop">
-
-        <a href="#top">
-            <div class="gotop">
-                Back to Top <i class="fas fa-angle-double-up"></i>
+                    <input type="text" name="entry.805276147" placeholder="Name" required>
+                    <input type="email" name="emailAddress" placeholder="Email" required>
+                    <textarea rows="3" name="entry.1586819207" placeholder="Feedback" required></textarea>
+                    <button type="submit" class="heroBtn"> Gửi <i class="fas fa-paper-plane"></i> </button>
+                </form>
             </div>
-        </a>
-    </div>
-</section>
-<!-- Footer -->
+        </div>
+        <div class="fcol col-3 ftrTopEle">
+            <h4>Liên hệ</h4>
+            <ol>
+                <li><a href="https://metrouni.edu.bd" target="blank"> Trang chủ | UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://web.facebook.com/groups/Dept.of.CSE.MU/" target="blank"> Trang chủ khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://web.facebook.com/metropolitanuniversity" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://web.facebook.com/groups/metrouni/" target="blank">Facebook khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
+            </ol>
+        </div>
+        <div class="fcol col-3 ftrTopEle">
+            <h4>Giới thiệu</h4>
+            <p>This website is designed and developed by the students of CSE 50th batch of Metropolitan University and it is not an official website. Our main purpose is to help our batch and our junior batches through this website.</p><br>
+        </div>
+        <div class="fcol col-6">
+            <hr>
+            <p> &copy; 2024 - Khoa tin Trường Đại học Sư phạm</p>
+        </div>
+    </section>
+    <!-- Footer -->
  <script src="js/blog.js"></script>
 
 </body>

@@ -66,7 +66,7 @@
 
                             <ul>
                                 <li><a href="bacdaihoc.jsp"> Đào tạo bậc đại học </a></li>
-                                <li><a href="bacdthacsi.jsp"> Đào tạo bậc thạc sĩ </a></li>
+                                <li><a href="bacthacsi.jsp"> Đào tạo bậc thạc sĩ </a></li>
                                 <li><a href="bactiensi.jsp"> Đào tạo bậc tiến sĩ </a></li>
                             </ul>
                         </li>

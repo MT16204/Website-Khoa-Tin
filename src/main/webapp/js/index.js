@@ -72,39 +72,8 @@ function contFormLoad() {
         msgErr.classList.remove("msgErr");
     }, 5000);
 }
-
-
-// OneStop form
-
-function oneStopFormLoad() {
-
-    var myOneForm = document.getElementById("myOneForm");
-    var msgSccs = document.getElementById("oneSubMsg");
-    var msgErr = document.getElementById("oneErrMsg");
-
-    if (submitted == true) {
-        myOneForm.reset();
-        msgSccs.innerHTML = "🗸 Your mail has been successfully sent to 1-Stop service";
-        msgSccs.classList.add("msgSccs");
-    } else {
-        myOneForm.reset();
-        msgErr.innerHTML = "✖ Error! Please Try Again";
-        msgErr.classList.add("msgErr");
-    }
-
-    setTimeout(function() {
-
-        document.getElementById("oneSubMsg", "oneErrMsg").innerHTML = "";
-        msgSccs.classList.remove("msgSccs");
-        msgErr.classList.remove("msgErr");
-    }, 5000);
-}
-
 // ---------------------Form handler ended----------------------
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const nav = document.querySelector("nav");
-        document.body.style.paddingTop = `${nav.offsetHeight}px`;
-    });
+
 
 

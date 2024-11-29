@@ -41,9 +41,6 @@
     <!-- Header Section Started -->
 
     <section class="header">
-
-        <!-- Navigation Section Started -->
-
         <nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
@@ -485,9 +482,7 @@
             </div>
         </div>
         <div class="fcol col-3 ftrTopEle">
-
             <h4>Liên hệ</h4>
-
             <ol>
                 <li><a href="https://metrouni.edu.bd" target="blank"> Trang chủ | UED <i class="fas fa-external-link-alt"></i></a></li>
                 <li><a href="https://web.facebook.com/groups/Dept.of.CSE.MU/" target="blank"> Trang chủ khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
@@ -496,29 +491,15 @@
             </ol>
         </div>
         <div class="fcol col-3 ftrTopEle">
-
             <h4>Giới thiệu</h4>
-
             <p>This website is designed and developed by the students of CSE 50th batch of Metropolitan University and it is not an official website. Our main purpose is to help our batch and our junior batches through this website.</p><br>
         </div>
         <div class="fcol col-6">
             <hr>
             <p> &copy; 2024 - Khoa tin Trường Đại học Sư phạm</p>
         </div>
-
-        <div class="fcol col-6 ftop">
-
-            <a href="#top">
-                <div class="gotop">
-                    Back to Top <i class="fas fa-angle-double-up"></i>
-                </div>
-            </a>
-        </div>
     </section>
-
     <!-- Footer -->
-
-
 
     <script>
         $(".slider").owlCarousel({

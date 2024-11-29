@@ -33,6 +33,8 @@
     <!-- OwlCarousel2 CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
 
 </head>
 
@@ -80,7 +82,7 @@
 
                             <ul>
                                 <li><a href="bacdaihoc.jsp"> Đào tạo bậc đại học </a></li>
-                                <li><a href="bacdthacsi.jsp"> Đào tạo bậc thạc sĩ </a></li>
+                                <li><a href="bacthacsi.jsp"> Đào tạo bậc thạc sĩ </a></li>
                                 <li><a href="bactiensi.jsp"> Đào tạo bậc tiến sĩ </a></li>
                             </ul>
                         </li>
@@ -127,24 +129,25 @@
 
             <div class="contactCol">
                 <div>
-                    <i class="fa fa-home"></i>
+                    <i class="fa fa-map"></i>
                     <span>
-                        <h5>Metropoliton University Bangladesh</h5>
-                        <p>Tamabil Hwy, Bateshwar, Sylhet, Bangladesh.</p>
+                        <h5>Trường Đại học Sư Phạm - Đại học Đà Nẵng</h5>
+                        <p style="font-style: italic">459, Tôn Đức Thắng, Liên Chiểu, Đà Nẵng.</p>
                     </span>
                 </div>
                 <div>
                     <i class="fa fa-phone"></i>
                     <span>
-                        <h5><a href="tel:+8801765700825"> +880 1765 700 825 </a></h5>
-                        <p> Sunday to Thrushday, 9AM to 5PM </p>
+                        <h5><a href="tel:+02363.841323"> +02363.841323 </a></h5>
+                        <p style="font-style: italic"> Thứ hai - Chủ Nhật | 8:00 - 21:30 </p>
                     </span>
                 </div>
                 <div>
                     <i class="far fa-envelope"></i>
                     <span>
-                        <h5><a href="mailto:metrouni.cse.50@gmail.com" target="blank"> metrouni.cse.50@gmail.com </a></h5>
-                        <p> Email us your query </p>
+                        <h5>Thông tin liên hệ</h5>
+                        <p style="font-style: italic">Thư ký khoa: Cô Trần Thuý Trang (tttrang@ued.udn.vn)</p>
+                        <p style="font-style: italic">Trợ lý Sau đại học: TS. Nguyễn Đình Lầu (ndlau@ued.udn.vn)</p>
                     </span>
                 </div>
             </div>
@@ -154,9 +157,9 @@
                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse" method="post" target="msgForm" onsubmit="submitted=true" class="myform" id="contform">
 
                     <input type="email" name="emailAddress" placeholder="Email" required>
-                    <input type="text" name="entry.805276147" placeholder="Name" required>
-                    <input type="text" name="entry.605097215" placeholder="Subject" required>
-                    <textarea rows="5" name="entry.740878952" placeholder="Message" required></textarea>
+                    <input type="text" name="entry.805276147" placeholder="Tên" required>
+                    <input type="text" name="entry.605097215" placeholder="Môn học" required>
+                    <textarea rows="5" name="entry.740878952" placeholder="Tin nhắn" required></textarea>
                     <button type="submit" class="heroBtn widthBtn">Gửi tin nhắn  <i class="fas fa-paper-plane"></i> </button>
                 </form>
             </div>
@@ -191,47 +194,23 @@
             </div>
         </div>
         <div class="fcol col-3 ftrTopEle">
-
             <h4>Liên hệ</h4>
-
             <ol>
                 <li><a href="https://metrouni.edu.bd" target="blank"> Trang chủ | UED <i class="fas fa-external-link-alt"></i></a></li>
                 <li><a href="https://web.facebook.com/groups/Dept.of.CSE.MU/" target="blank"> Trang chủ khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
                 <li><a href="https://web.facebook.com/metropolitanuniversity" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
                 <li><a href="https://web.facebook.com/groups/metrouni/" target="blank">Facebook khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
-                <!-- <li><a href="https://web.facebook.com/groups/734057760032501/" target="blank">FB/ Computer Programming <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UC5HPvlTXV3rqOgit4Vp0IhA" target="blank"> MU YouTube Channel <i class="fas fa-external-link-alt"></i></a></li> -->
             </ol>
         </div>
         <div class="fcol col-3 ftrTopEle">
-
             <h4>Giới thiệu</h4>
-
             <p>This website is designed and developed by the students of CSE 50th batch of Metropolitan University and it is not an official website. Our main purpose is to help our batch and our junior batches through this website.</p><br>
         </div>
-        <!-- <div class="fcol col-3 flink ftrTopEle">
-
-            <h4>Theo dõi</h4>
-            <div class="icons">
-                <a href="#"> <i class="fab fa-facebook-f"> </i></a>
-                <a href="#"> <i class="fab fa-linkedin-in"> </i></a>
-            </div>
-        </div> -->
         <div class="fcol col-6">
             <hr>
-            <p> &copy; 2021 MU_CSE-50(Metropolitan University)</p>
-        </div>
-
-        <div class="fcol col-6 ftop">
-
-            <a href="#top">
-                <div class="gotop">
-                    Back to Top <i class="fas fa-angle-double-up"></i>
-                </div>
-            </a>
+            <p> &copy; 2024 - Khoa tin Trường Đại học Sư phạm</p>
         </div>
     </section>
-
     <!-- Footer -->
 
     <!-- Linked to javascript file -->
