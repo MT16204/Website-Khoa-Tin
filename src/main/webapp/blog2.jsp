@@ -147,9 +147,9 @@
     
     <!-- Pagination -->
     <section class="pagination">
-        <a href="blog.jsp" class="page active">1</a>
-        <a href="blog2.jsp" class="page">2</a>
-        <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+        <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
+        <a href="blog.jsp" class="page">1</a>
+        <a href="blog2.jsp" class="page active">2</a>
     </section>
 
 <!-- Footer -->

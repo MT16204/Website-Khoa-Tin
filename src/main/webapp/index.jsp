@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khoa tin học | UED</title>
-    <link rel="shortcut icon" type="image" href="/images/logo.png">
+    <link rel="shortcut icon" type="image" href="images/logo.png">
 
     <!-- Links of CSS files -->
     <link rel="stylesheet" href="style.css">
@@ -68,14 +68,14 @@
                             <a href="#"> Chuyên ngành <i class="fas fa-caret-right"></i> </a>
                             <input type="checkbox" id="btn-2">
                             <ul>
-                                <li><a href="Diff_Int_calc.jsp"> Cử nhân Công nghệ thông tin </a></li>
-                                <li><a href="English-1.jsp"> Cử nhân Sư phạm Tin học </a></li>
-                                <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li>
+                                <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
+                                <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
+                                <!-- <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li> -->
                             </ul>
                         </li>
                         <li>
                             <label for="btn-3" class="show">Đào tạo</label>
-                            <a href="daotao.jsp"> Đào tạo <i class="fas fa-caret-right"></i> </a>
+                            <a href="#"> Đào tạo <i class="fas fa-caret-right"></i> </a>
                             <input type="checkbox" id="btn-3">
 
                             <ul>
@@ -102,10 +102,10 @@
 
         <div class="content">
             <div class="principle">
-                <h1 id="headerH1">Welcome to <br>MU CSE 50</h1>
-                <p id="headerP">It's a website of 50th batch. Here students of 50th batch will get facilities such as routine, google classroom code, tutorials etc. Moreover, anyone can know about the curricular activities and study materials of 50th batch.</p>
+                <h1 id="headerH1">WEBSITE KHOA TIN - TRƯỜNG ĐẠI HỌC SƯ PHẠM ĐÀ NẴNG</h1>
+                <p id="headerP" style="font-style: italic">Đây là website giới thiệu về khoa tin Trường Đại học Sư Phạm - Đại học Đà Nẵng, cung cấp cho sinh viên các thông tin về đội ngũ giảng viên, chương trình đào tạo, lớp học của khoa.</p>
 
-                <a href="#about" class="heroBtn"> Explore to Know More </a>
+                <a href="#about" class="heroBtn"> Tìm hiểu ngay </a>
             </div>
         </div>
 
@@ -120,15 +120,11 @@
         <h1 class="headingStyle">Giới thiệu</h1>
         <div class="row">
             <div class="aboutCol">
-                <h2>We are the 1st batch of permanent campus</h2>
+                <h2>Khoa Tin học - Trường Đại học Sư phạm</h2>
 
-                <p>We are students of CSE 50th batch of Metropolitan University. We are the 1st batch of our permanent campus. Number of section of our batch is four. The number of students of our batch is 150. Majority of them are boys. Among them many
-                    are genius in various field such as singer, footballer, cricketer, poet, actor and some are recites well.</p>
+	            <p>Khoa Tin học thuộc Trường Đại học Sư phạm - Đại học Đà Nẵng là một trong những khoa tiên phong trong lĩnh vực đào tạo và nghiên cứu công nghệ thông tin. Với bề dày lịch sử phát triển, khoa đã không ngừng đổi mới, sáng tạo để đáp ứng nhu cầu ngày càng cao của xã hội và nền công nghiệp 4.0.</p>
 
-                <h2> We have many skillfull students </h2>
-                <p> Some of our students are very serious about their skills. Many are good at programming and they passionately learning about new things. Some of them good at web-developing, designing etc. Many of them are genius in various field such as
-                    singer, footballer, cricketer, poet, actor and some are recites well. </p>
-
+        	    <p>Khoa Tin học tự hào có đội ngũ giảng viên tâm huyết, trình độ cao, và luôn sẵn sàng hỗ trợ sinh viên phát triển toàn diện. Sinh viên của khoa không chỉ giỏi về lập trình, thiết kế web, và phát triển phần mềm mà còn tích cực tham gia các hoạt động ngoại khóa, nghiên cứu khoa học và đạt nhiều thành tích xuất sắc ở các cuộc thi trong nước và quốc tế.</p>
 
                 <a href="about.jsp"><div class="heroBtn redBtn">Tìm hiểu thêm</div></a>
             </div>
@@ -139,135 +135,78 @@
         </div>
     </section>
     <!-- Giới thiệu -->
-    
-    <!-- Chương trình đào tạo -->
-    <section class="course" id="course">
-        <h1 class="headingStyle" style="color: #f44336">Chương trình đào tạo</h1>
-        <div class="slider owl-carousel">
-            <div class="courseCol">
-                <div class="img">
-                    <img class="roundedIMG" src="images/electronics.jpg" alt="edu Icon">
-                </div>
-                <h3>Basic Electronics Engineering</h3>
-                <div class="cardDesc">
-                    <table class="crdTable">
-                        <tr>
-                            <td> Faculty </td>
-                            <td> : </td>
-                            <td> <strong>MD. Rashedul Islam</strong> </td>
-                        </tr>
-                        <tr>
-                            <td> Email </td>
-                            <td> : </td>
-                            <td> <a href="mailto:rashed@metrouni.edu.bd"><strong> rashed@metrouni.edu.bd </strong></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> Mobile </td>
-                            <td> : </td>
-                            <td> <a href="tel:+8801712271451"><strong>+8801712-271451</strong></a> </td>
-                        </tr>
-                    </table>
-                    <hr>
-                    <div>
-                        <a href="Basic_Electronics.jsp" class="heroBtn"> Books & Materials </a> <br>
-                    </div>
-                </div>
-            </div>
-            <div class="courseCol">
-                <div class="img">
-                    <img class="roundedIMG" src="images/m_cv_fa.jpg" alt="edu Icon">
-                </div>
-                <h3>Matrix, CV & Fourier Analysis</h3>
-                <div class="cardDesc">
-                    <table class="crdTable">
-                        <tr>
-                            <td> Faculty </td>
-                            <td> : </td>
-                            <td> <strong>Suhel Ahmed</strong> </td>
-                        </tr>
-                        <tr>
-                            <td> Email </td>
-                            <td> : </td>
-                            <td> <a href="mailto:suhel@metrouni.edu.bd"><strong> suhel@metrouni.edu.bd </strong></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> Mobile </td>
-                            <td> : </td>
-                            <td> <a href="tel:+8801723976961"><strong>+8801723-976961</strong></a> </td>
-                        </tr>
-                    </table>
-                    <hr>
-                    <div>
-                        <a href="Matrix_CV_FA.jsp" class="heroBtn"> Books & Materials </a> <br>
-                    </div>
-                </div>
-            </div>
-            <div class="courseCol">
-                <div class="img">
-                    <img class="roundedIMG" src="images/disc_math.jpg" alt="edu Icon">
-                </div>
-                <h3>Discreate Mathematics</h3>
-                <div class="cardDesc">
-                    <table class="crdTable">
-                        <tr>
-                            <td> Faculty </td>
-                            <td> : </td>
-                            <td> <strong style="font-size: 15px;">Nazia Sultana Chowdhury</strong> </td>
-                        </tr>
-                        <tr>
-                            <td> Email </td>
-                            <td> : </td>
-                            <td> <a href="mailto:nazia.nishat1971@gmail.com"><strong
-                                        style="font-size: 14px;">nazia.nishat1971@gmail.com</strong></a></td>
-                        </tr>
-                        <tr>
-                            <td> Mobile </td>
-                            <td> : </td>
-                            <td> <a href="tel:+8801627055017"><strong>+8801627-055017</strong></a> </td>
-                        </tr>
-                    </table>
-                    <hr>
-                    <div>
-                        <a href="Discreate_Math.jsp" class="heroBtn"> Books & Materials </a> <br>
-                    </div>
-                </div>
-            </div>
-            <div class="courseCol">
-                <div class="img">
-                    <img class="roundedIMG" src="images/project_200.jpg" alt="edu Icon">
-                </div>
-                <h3>Project 200</h3>
-                <div class="cardDesc">
-                    <table class="crdTable">
-                        <tr>
-                            <td> Faculty </td>
-                            <td> : </td>
-                            <td> <strong>Ranith Debnath Akash</strong> </td>
-                        </tr>
-                        <tr>
-                            <td> Email </td>
-                            <td> : </td>
-                            <td> <a href="mailto:ranit@metrouni.edu.bd"><strong> ranit@metrouni.edu.bd </strong></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> Mobile </td>
-                            <td> : </td>
-                            <td> <a href="tel:+8801682047902"><strong>+8801682-047902</strong></a></td>
-                        </tr>
-                    </table>
-                    <hr>
-                    <div>
-                        <a href="Project_200.jsp" class="heroBtn"> Books & Materials </a> <br>
-                    </div>
-                </div>
 
+    <!-- Bài viết -->
+    <section class="blog">
+        <h1 class="headingStyle">Bài viết</h1>
+        <div class="slider owl-carousel">
+            <div class="crd">
+                <div class="img prog"><img src="images/programming_Headphone.jpg" alt=""></div>
+                <div class="cont">
+                    <div class="ttl">Programming</div>
+                    <p>Programming is the process of creating a set of instructions that tell a computer how to perform a task. Programming can be done using a variety of computer programming languages.</p>
+                    <hr>
+                    <a href="Programming-Tuto.jsp" class="heroBtn"> Explore </a>
+                </div>
+            </div>
+            <div class="crd">
+                <div class="img"><img src="images/web_dev1.jpg" alt=""></div>
+                <div class="cont">
+                    <div class="ttl">Web Development</div>
+                    <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
+                    <hr>
+                    <a href="Web_Tuto.jsp" class="heroBtn"> Explore </a>
+                </div>
+            </div>
+            <div class="crd">
+                <div class="img"><img src="images/cse_core.jpg" alt=""></div>
+                <div class="cont">
+                    <div class="ttl">CSE Core Courses</div>
+                    <p>CSE Core Courses is classified into six groups: Introduction to CSE, Computational Mathematics, High Performance Computing, Intelligent Computing, Scientific Visualization, and Computational Optimization.
+                    </p>
+                    <hr>
+                    <a href="CoreCourse_Tuto.jsp" class="heroBtn"> Explore </a>
+                </div>
+            </div>
+            <div class="crd">
+                <div class="img"><img src="images/Android.jpg" alt=""></div>
+                <div class="cont">
+                    <div class="ttl">Android Development</div>
+                    <p>Android software development is the process by which applications are created for devices running the Android operating system.</p>
+                    <hr>
+                    <a href="Android_Tuto.jsp" class="heroBtn"> Explore </a>
+                </div>
+            </div>
+            <div class="crd">
+                <div class="img"><img src="images/uiux_design.jpg" alt=""></div>
+                <div class="cont">
+                    <div class="ttl">UI/UX Design</div>
+                    <p>UX design refers to user experience design, while UI design stands for user interface design. Both of these are crucial to an IT product and need to work closely together.</p>
+                    <hr>
+                    <a href="UiUx_Tuto.jsp" class="heroBtn"> Explore </a>
+                </div>
+            </div>
+            <div class="crd">
+                <div class="img"><img src="images/Graphic_Design.jpg" alt=""></div>
+                <div class="cont">
+                    <div class="ttl">Graphic Design</div>
+                    <p>Graphic design is the art or profession of visual communication that combines images, words, and ideas to convey information to an audience, especially to produce a specific effect.</p>
+                    <hr>
+                    <a href="GraphicD_Tuto.jsp" class="heroBtn"> Explore </a>
+                </div>
+            </div>
+            <div class="crd">
+                <div class="img"><img src="images/video_editing.jpg" alt=""></div>
+                <div class="cont">
+                    <div class="ttl">Video Editing</div>
+                    <p>Video editing is the manipulation and arrangement of video shots. Video editing is used to structure and present all video information, including films and television shows, video advertisements and video essays.</p>
+                    <hr>
+                    <a href="Video_Edit_tuto.jsp" class="heroBtn"> Explore </a>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Chương trình đào tạo -->
+    <!-- Bài viết -->
 
     <!-- Đội ngũ giảng viên -->
     <section class="faculty" id="faculty">
@@ -331,6 +270,7 @@
 
             <div class="facProfile">
                 <img src="images/lau.jpg" alt="">
+
                 <h2> TS. NGUYỄN ĐÌNH LẦU </h2>
                 <p> Chức vụ: Trưởng bộ môn </p>
 
@@ -351,75 +291,159 @@
             </div> 
         </div>
     </section>
-		<br>
-	<br>
-<br>
     <!-- Đội ngũ giảng viên -->
 
-	<!-- Bài viết -->
-    <section class="blog">
-        <h1 class="headingStyle" style="color: #f44336">Bài viết</h1>
+
+    <!-- Chương trình đào tạo 
+    <section class="course" id="course">
+        <h1 class="headingStyle">Chương trình đào tạo</h1>
         <div class="slider owl-carousel">
-            <div class="crd">
-                <div class="img prog"><img src="images/20nam.jpg" alt=""></div>
-                <div class="cont">
-                    <div class="ttl" style="background-color: transparent;">Lễ kỷ niệm 20 năm thành ...</div>
-                    <p>Một dòng sông không có thác ghềnh, một con kênh không có bậc nước sẽ trở thành dòng sông và con kênh êm đềm, phẳng lặng. Nhưng dòng thời gian mà thiếu đi những mốc son, dấu ấn, điểm nhấn...</p>
-                    <a href="Programming-Tuto.jsp" class="heroBtn"> Đọc thêm </a>
+            <div class="courseCol">
+
+                <div class="img">
+                    <img class="roundedIMG" src="images/electronics.jpg" alt="edu Icon">
                 </div>
+
+                <h3>Basic Electronics Engineering</h3>
+
+                <div class="cardDesc">
+
+                    <table class="crdTable">
+                        <tr>
+                            <td> Faculty </td>
+                            <td> : </td>
+                            <td> <strong>MD. Rashedul Islam</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> Email </td>
+                            <td> : </td>
+                            <td> <a href="mailto:rashed@metrouni.edu.bd"><strong> rashed@metrouni.edu.bd </strong></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Mobile </td>
+                            <td> : </td>
+                            <td> <a href="tel:+8801712271451"><strong>+8801712-271451</strong></a> </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <div>
+                        <a href="Basic_Electronics.jsp" class="heroBtn"> Books & Materials </a> <br>
+                    </div>
+                </div>
+
             </div>
-            <div class="crd">
-                <div class="img prog"><img src="images/20nam.jpg" alt=""></div>
-                <div class="cont">
-                    <div class="ttl" style="background-color: transparent;">Lễ kỷ niệm 20 năm thành ...</div>
-                    <p>Một dòng sông không có thác ghềnh, một con kênh không có bậc nước sẽ trở thành dòng sông và con kênh êm đềm, phẳng lặng. Nhưng dòng thời gian mà thiếu đi những mốc son, dấu ấn, điểm nhấn...</p>
-                    <a href="Programming-Tuto.jsp" class="heroBtn"> Đọc thêm </a>
+
+            <div class="courseCol">
+
+                <div class="img">
+                    <img class="roundedIMG" src="images/m_cv_fa.jpg" alt="edu Icon">
                 </div>
+
+                <h3>Matrix, CV & Fourier Analysis</h3>
+
+                <div class="cardDesc">
+
+                    <table class="crdTable">
+                        <tr>
+                            <td> Faculty </td>
+                            <td> : </td>
+                            <td> <strong>Suhel Ahmed</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> Email </td>
+                            <td> : </td>
+                            <td> <a href="mailto:suhel@metrouni.edu.bd"><strong> suhel@metrouni.edu.bd </strong></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Mobile </td>
+                            <td> : </td>
+                            <td> <a href="tel:+8801723976961"><strong>+8801723-976961</strong></a> </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <div>
+                        <a href="Matrix_CV_FA.jsp" class="heroBtn"> Books & Materials </a> <br>
+                    </div>
+                </div>
+
             </div>
-            <div class="crd">
-                <div class="img prog"><img src="images/20nam.jpg" alt=""></div>
-                <div class="cont">
-                    <div class="ttl" style="background-color: transparent;">Lễ kỷ niệm 20 năm thành ...</div>
-                    <p>Một dòng sông không có thác ghềnh, một con kênh không có bậc nước sẽ trở thành dòng sông và con kênh êm đềm, phẳng lặng. Nhưng dòng thời gian mà thiếu đi những mốc son, dấu ấn, điểm nhấn...</p>
-                    <a href="Programming-Tuto.jsp" class="heroBtn"> Đọc thêm </a>
+
+            <div class="courseCol">
+
+                <div class="img">
+                    <img class="roundedIMG" src="images/disc_math.jpg" alt="edu Icon">
                 </div>
+
+                <h3>Discreate Mathematics</h3>
+
+                <div class="cardDesc">
+
+                    <table class="crdTable">
+                        <tr>
+                            <td> Faculty </td>
+                            <td> : </td>
+                            <td> <strong style="font-size: 15px;">Nazia Sultana Chowdhury</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> Email </td>
+                            <td> : </td>
+                            <td> <a href="mailto:nazia.nishat1971@gmail.com"><strong
+                                        style="font-size: 14px;">nazia.nishat1971@gmail.com</strong></a></td>
+                        </tr>
+                        <tr>
+                            <td> Mobile </td>
+                            <td> : </td>
+                            <td> <a href="tel:+8801627055017"><strong>+8801627-055017</strong></a> </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <div>
+                        <a href="Discreate_Math.jsp" class="heroBtn"> Books & Materials </a> <br>
+                    </div>
+                </div>
+
             </div>
-            <div class="crd">
-                <div class="img prog"><img src="images/20nam.jpg" alt=""></div>
-                <div class="cont">
-                    <div class="ttl" style="background-color: transparent;">Lễ kỷ niệm 20 năm thành ...</div>
-                    <p>Một dòng sông không có thác ghềnh, một con kênh không có bậc nước sẽ trở thành dòng sông và con kênh êm đềm, phẳng lặng. Nhưng dòng thời gian mà thiếu đi những mốc son, dấu ấn, điểm nhấn...</p>
-                    <a href="Programming-Tuto.jsp" class="heroBtn"> Đọc thêm </a>
+
+            <div class="courseCol">
+
+                <div class="img">
+                    <img class="roundedIMG" src="images/project_200.jpg" alt="edu Icon">
                 </div>
-            </div>
-            <div class="crd">
-                <div class="img prog"><img src="images/20nam.jpg" alt=""></div>
-                <div class="cont">
-                    <div class="ttl" style="background-color: transparent;">Lễ kỷ niệm 20 năm thành ...</div>
-                    <p>Một dòng sông không có thác ghềnh, một con kênh không có bậc nước sẽ trở thành dòng sông và con kênh êm đềm, phẳng lặng. Nhưng dòng thời gian mà thiếu đi những mốc son, dấu ấn, điểm nhấn...</p>
-                    <a href="Programming-Tuto.jsp" class="heroBtn"> Đọc thêm </a>
+
+                <h3>Project 200</h3>
+
+                <div class="cardDesc">
+
+                    <table class="crdTable">
+                        <tr>
+                            <td> Faculty </td>
+                            <td> : </td>
+                            <td> <strong>Ranith Debnath Akash</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> Email </td>
+                            <td> : </td>
+                            <td> <a href="mailto:ranit@metrouni.edu.bd"><strong> ranit@metrouni.edu.bd </strong></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Mobile </td>
+                            <td> : </td>
+                            <td> <a href="tel:+8801682047902"><strong>+8801682-047902</strong></a></td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <div>
+                        <a href="Project_200.jsp" class="heroBtn"> Books & Materials </a> <br>
+                    </div>
                 </div>
-            </div>
-            <div class="crd">
-                <div class="img prog"><img src="images/20nam.jpg" alt=""></div>
-                <div class="cont">
-                    <div class="ttl" style="background-color: transparent;">Lễ kỷ niệm 20 năm thành ...</div>
-                    <p>Một dòng sông không có thác ghềnh, một con kênh không có bậc nước sẽ trở thành dòng sông và con kênh êm đềm, phẳng lặng. Nhưng dòng thời gian mà thiếu đi những mốc son, dấu ấn, điểm nhấn...</p>
-                    <a href="Programming-Tuto.jsp" class="heroBtn"> Đọc thêm </a>
-                </div>
-            </div>
-            <div class="crd">
-                <div class="img prog"><img src="images/20nam.jpg" alt=""></div>
-                <div class="cont">
-                    <div class="ttl" style="background-color: transparent;">Lễ kỷ niệm 20 năm thành ...</div>
-                    <p>Một dòng sông không có thác ghềnh, một con kênh không có bậc nước sẽ trở thành dòng sông và con kênh êm đềm, phẳng lặng. Nhưng dòng thời gian mà thiếu đi những mốc son, dấu ấn, điểm nhấn...</p>
-                    <a href="Programming-Tuto.jsp" class="heroBtn"> Đọc thêm </a>
-                </div>
+
             </div>
         </div>
     </section>
-    <!-- Bài viết -->
-    
+    Chương trình đào tạo --> 
 
 
     <!-- Liên hệ -->
@@ -469,8 +493,6 @@
                 <li><a href="https://web.facebook.com/groups/Dept.of.CSE.MU/" target="blank"> Trang chủ khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
                 <li><a href="https://web.facebook.com/metropolitanuniversity" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
                 <li><a href="https://web.facebook.com/groups/metrouni/" target="blank">Facebook khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
-                <!-- <li><a href="https://web.facebook.com/groups/734057760032501/" target="blank">FB/ Computer Programming <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UC5HPvlTXV3rqOgit4Vp0IhA" target="blank"> MU YouTube Channel <i class="fas fa-external-link-alt"></i></a></li> -->
             </ol>
         </div>
         <div class="fcol col-3 ftrTopEle">
@@ -479,17 +501,9 @@
 
             <p>This website is designed and developed by the students of CSE 50th batch of Metropolitan University and it is not an official website. Our main purpose is to help our batch and our junior batches through this website.</p><br>
         </div>
-        <!-- <div class="fcol col-3 flink ftrTopEle">
-
-            <h4>Theo dõi</h4>
-            <div class="icons">
-                <a href="#"> <i class="fab fa-facebook-f"> </i></a>
-                <a href="#"> <i class="fab fa-linkedin-in"> </i></a>
-            </div>
-        </div> -->
         <div class="fcol col-6">
             <hr>
-            <p> &copy; 2021 MU_CSE-50(Metropolitan University)</p>
+            <p> &copy; 2024 - Khoa tin Trường Đại học Sư phạm</p>
         </div>
 
         <div class="fcol col-6 ftop">

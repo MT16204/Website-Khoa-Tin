@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đào tạo - Khoa tin học Trường Đại học Sư phạm</title>
+    <title>Bậc Thạc sĩ - Khoa tin học Trường Đại học Sư phạm</title>
     <link rel="shortcut icon" type="image" href="images/logo.png">
 
     <!-- Links of CSS files -->
@@ -54,14 +54,14 @@
                             <a href="#"> Chuyên ngành <i class="fas fa-caret-right"></i> </a>
                             <input type="checkbox" id="btn-2">
                             <ul>
-                                <li><a href="Diff_Int_calc.jsp"> Cử nhân Công nghệ thông tin </a></li>
-                                <li><a href="English-1.jsp"> Cử nhân Sư phạm Tin học </a></li>
-                                <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li>
+                                <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
+                                <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
+                                <!-- <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li> -->
                             </ul>
                         </li>
                         <li>
                             <label for="btn-3" class="show">Đào tạo</label>
-                            <a href="daotao.jsp"> Đào tạo <i class="fas fa-caret-right"></i> </a>
+                            <a href="#"> Đào tạo <i class="fas fa-caret-right"></i> </a>
                             <input type="checkbox" id="btn-3">
 
                             <ul>
@@ -81,8 +81,10 @@
             </ul>
         </nav>
 
+        <!-- Navigation Section Ended -->
 
-        <h1>Đào tạo</h1>
+
+        <h1>BẬC TIẾN SĨ</h1>
 
 
     </section>
@@ -95,7 +97,7 @@
         <div class="rows">
             <div class="rcard col-3">
 
-                <h3>Bậc Đại Học</h3>
+                <h3>Kế hoạch đào tạo (2023)</h3>
                 <!-- <div class="rtxt">
                     <strong> Starting Time: </strong> January-2020 <br>
                     <strong> Ending Time: </strong> Jun-2020 <br>
@@ -103,73 +105,15 @@
                     <strong> Credit Completed: </strong> 9 <br>
                 </div> -->
                 <hr><br>
-                <a href="bacdaihoc.jsp" class="heroBtn"><i
+                <a href="pdf/daotao/bactiensi/HTTT-2023.pdf" target="blank" class="heroBtn"><i
                         class="fas fa-external-link-alt"></i></a> <br> <br>
             </div>
-            <div class="rcard col-3">
-
-                <h3>Bậc Thạc Sĩ</h3>
-                <!-- <div class="rtxt">
-                    <strong> Starting Time: </strong> July-2020 <br>
-                    <strong> Ending Time: </strong> August-2020 <br>
-                    <strong> Course Completed: </strong> 5 <br>
-                    <strong> Credit Completed: </strong> 13.5 <br>
-                </div> -->
-                <hr><br>
-                <a href="bacdthacsi.jsp" class="heroBtn"><i
-                        class="fas fa-external-link-alt"></i></a> <br> <br>
-
-            </div>
-            <div class="rcard col-3">
-
-                <h3>Bậc Tiến Sĩ</h3>
-                <!-- <div class="rtxt">
-                    <strong> Starting Time: </strong> September-2020 <br>
-                    <strong> Ending Time: </strong> December-2020 <br>
-                    <strong> Course Completed: </strong> 5 <br>
-                    <strong> Credit Completed: </strong> 13.5 <br>
-                </div> -->
-                <hr><br>
-                <a href="" target="blank" class="heroBtn"><i
-                        class="fas fa-external-link-alt"></i></a> <br> <br>
-
-            </div>
-            <!-- <div class="rcard col-3">
-
-                <h3>4th Semester</h3>
-                <div class="rtxt">
-                    <strong> Starting Time: </strong> January-2021 <br>
-                    <strong> Ending Time: </strong> April-2021 <br>
-                    <strong> Course Completed: </strong> 4 <br>
-                    <strong> Credit Completed: </strong> 10.5 <br>
-                </div>
-                <hr><br>
-                <a href="result_records/Spring_2021.pdf" target="blank" class="heroBtn"> See Result <i
-                        class="fas fa-external-link-alt"></i></a> <br> <br>
-
-            </div>
-            <div class="rcard col-3">
-
-                <h3>5th Semester</h3>
-                <div class="rtxt">
-                    <strong> Starting Time: </strong> May-2021 <br>
-                    <strong> Ending Time: </strong> Running <br>
-                    <strong> Course Completed: </strong> -- <br>
-                    <strong> Credit Completed: </strong> -- <br>
-                </div>
-                <hr><br>
-                <a href="" class="heroBtn"> See Result <i class="fas fa-external-link-alt"></i></a> <br> <br>
-
-            </div> -->
         </div>
     </div>
 
 
 
     <!-- Result Section Ended -->
-
-
-
 
     <!-- Script for form started -->
 
@@ -237,12 +181,10 @@
             </a>
         </div>
     </section>
-
     <!-- Footer -->
 
     <!-- Linked to javascript file -->
-    <script src="index.js"></script>
-
+    <script src="js/index.js"></script>
 
 </body>
 

@@ -54,19 +54,19 @@
                             <a href="#"> Chuyên ngành <i class="fas fa-caret-right"></i> </a>
                             <input type="checkbox" id="btn-2">
                             <ul>
-                                <li><a href="Diff_Int_calc.jsp"> Cử nhân Công nghệ thông tin </a></li>
-                                <li><a href="English-1.jsp"> Cử nhân Sư phạm Tin học </a></li>
-                                <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li>
+                                <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
+                                <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
+                                <!-- <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li> -->
                             </ul>
                         </li>
                         <li>
                             <label for="btn-3" class="show">Đào tạo</label>
-                            <a href="daotao.jsp"> Đào tạo <i class="fas fa-caret-right"></i> </a>
+                            <a href="#"> Đào tạo <i class="fas fa-caret-right"></i> </a>
                             <input type="checkbox" id="btn-3">
 
                             <ul>
                                 <li><a href="bacdaihoc.jsp"> Đào tạo bậc đại học </a></li>
-                                <li><a href="bacthacsi.jsp"> Đào tạo bậc thạc sĩ </a></li>
+                                <li><a href="bacdthacsi.jsp"> Đào tạo bậc thạc sĩ </a></li>
                                 <li><a href="bactiensi.jsp"> Đào tạo bậc tiến sĩ </a></li>
                             </ul>
                         </li>

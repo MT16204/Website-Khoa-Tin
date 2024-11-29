@@ -42,7 +42,7 @@
 
         <!-- Navigation Section Started -->
   
-        <nav>
+        <nav><nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
             </div>
@@ -54,7 +54,7 @@
 
             <ul>
                 <li> <a href="index.jsp">Trang chủ</a></li>
-                <li> <a href="about.jsp">Giới thiệu</a></li>
+                <li> <a href="#about">Giới thiệu</a></li>
                 <li>
                     <label for="btn-1" class="show">Chương trình đào tạo <i class="fas fa-caret-down"></i></label>
 
@@ -66,19 +66,19 @@
                             <a href="#"> Chuyên ngành <i class="fas fa-caret-right"></i> </a>
                             <input type="checkbox" id="btn-2">
                             <ul>
-                                <li><a href="Diff_Int_calc.jsp"> Cử nhân Công nghệ thông tin </a></li>
-                                <li><a href="English-1.jsp"> Cử nhân Sư phạm Tin học </a></li>
-                                <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li>
+                                <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
+                                <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
+                                <!-- <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li> -->
                             </ul>
                         </li>
                         <li>
                             <label for="btn-3" class="show">Đào tạo</label>
-                            <a href="daotao.jsp"> Đào tạo <i class="fas fa-caret-right"></i> </a>
+                            <a href="#"> Đào tạo <i class="fas fa-caret-right"></i> </a>
                             <input type="checkbox" id="btn-3">
 
                             <ul>
                                 <li><a href="bacdaihoc.jsp"> Đào tạo bậc đại học </a></li>
-                                <li><a href="bacthacsi.jsp"> Đào tạo bậc thạc sĩ </a></li>
+                                <li><a href="bacdthacsi.jsp"> Đào tạo bậc thạc sĩ </a></li>
                                 <li><a href="bactiensi.jsp"> Đào tạo bậc tiến sĩ </a></li>
                             </ul>
                         </li>
@@ -86,7 +86,7 @@
                     </ul>
                 </li>
 
-                <li> <a href="faculty.jsp">Đội ngũ giảng viên</a></li>
+                <li> <a href="#faculty">Đội ngũ giảng viên</a></li>
                 <li> <a href="blog.jsp">Bài viết</a></li>
                 <li> <a href="contact.jsp">Liên hệ</a></li>
                 <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>
@@ -97,30 +97,54 @@
   
     </section>
 
-    <!-- Giới thiệu -->
-    <section class="aboutUs" id="about">
+    <!-- Section Giới thiệu -->
+	<section class="sub-aboutUs" id="about">
+	    <div class="row">
+	        <div class="sub-aboutCol">
+	            <h2>Giới thiệu Khoa Tin học</h2>
+	            <p>
+	                Khoa Tin học, thuộc Trường Đại học Sư phạm - Đại học Đà Nẵng, được thành lập vào tháng 2 năm 2004. 
+	                Khoa chuyên đào tạo và nghiên cứu trong lĩnh vực Công nghệ thông tin và Hệ thống thông tin, với cam kết đặt người học làm trung tâm và không ngừng nâng cao chất lượng giáo dục.
+	            </p>
+	        </div>
+	        <div class="sub-aboutCol">
+	            <img src="images/aboutGRP.jpg" alt="Khoa Tin học" class="aboutImage">
+	        </div>
+	    </div>
+	    
+	    <div class="row">
+	        <div class="sub-aboutCol">
+	            <img src="images/aboutGRP.jpg" alt="Đội ngũ giảng viên" class="aboutImage">
+	        </div>
+	        <div class="sub-aboutCol">
+	            <h2>Chức năng và Nhiệm vụ</h2>
+	            <p>
+	                Khoa Tin học đảm nhận vai trò đào tạo các chuyên ngành như Công nghệ thông tin, Sư phạm Tin học, và Hệ thống thông tin. 
+	                Ngoài ra, Khoa còn thực hiện nghiên cứu khoa học trong nhiều lĩnh vực như Giáo dục điện tử, Thuật toán tối ưu, và Tin sinh học, 
+	                góp phần phát triển nền khoa học công nghệ tại Việt Nam.
+	            </p>
+	        </div>
+	    </div>
+	
+	    <div class="row">
+	        <div class="sub-aboutCol">
+	            <h2>Đội ngũ Giảng viên và Hợp tác</h2>
+	            <p>
+	                Đội ngũ giảng viên gồm 15 người, trong đó có 9 Tiến sĩ và 5 Nghiên cứu sinh. 
+	                Khoa hợp tác với nhiều doanh nghiệp lớn như FPT, Gameloft, và Axon Active, mang đến môi trường học tập và thực hành chất lượng cho sinh viên.
+	            </p>
+	        </div>
+	        <div class="sub-aboutCol">
+	            <img src="images/aboutGRP.jpg" alt="Hợp tác doanh nghiệp" class="aboutImage">
+	        </div>
+	    </div>
+	    
+	    <!-- Đảm bảo phần tử nút được bao bọc trong một div có class là buttonContainer -->
+	    <div class="buttonContainer">
+	        <a href="faculty.jsp" class="sub-heroBtn redBtn">Cơ cấu tổ chức</a>
+	    </div>
+	</section>
 
-        <div class="row">
-            <div class="aboutCol">
-                <h2>We are the 1st batch of permanent campus</h2>
-
-                <p>We are students of CSE 50th batch of Metropolitan University. We are the 1st batch of our permanent campus. Number of section of our batch is four. The number of students of our batch is 150. Majority of them are boys. Among them many
-                    are genius in various field such as singer, footballer, cricketer, poet, actor and some are recites well.</p>
-
-                <h2> We have many skillfull students </h2>
-                <p> Some of our students are very serious about their skills. Many are good at programming and they passionately learning about new things. Some of them good at web-developing, designing etc. Many of them are genius in various field such as
-                    singer, footballer, cricketer, poet, actor and some are recites well. </p>
-
-
-                <a href="faculty.jsp"><div class="heroBtn redBtn">Cơ cấu tổ chức</div></a>
-            </div>
-
-            <div class="aboutCol">
-                <img src="images/aboutGRP.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    <!-- Giới thiệu -->
 
     <!-- Script for form started -->
 

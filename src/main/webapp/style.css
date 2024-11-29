@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +45,6 @@ p {
     font-family: 'Oswald', sans-serif;
     display: flex;
     justify-content: center;
-   	padding: 20px;
 }
 
 
@@ -254,6 +252,7 @@ nav input {
     margin-left: 7.5%;
     width: 43%;
     margin-top: 17vh;
+    text-shadow: 2p 0px #ccc;
 }
 
 .principle h1 {
@@ -265,6 +264,7 @@ nav input {
 .principle p {
     font-size: 16px;
     color: #fff;
+	
     margin-bottom: 20px;
 }
 
@@ -347,7 +347,6 @@ nav input {
     width: 100%;
     margin: auto;
     margin-top: 40px;
-    background-color: rgba(0, 0, 0, 0.8) ;
 }
 
 .course h1 {
@@ -429,7 +428,7 @@ nav input {
 }
 
 .slider .crd {
-    background: #fff;
+    background: #ccc;
     /* background: linear-gradient(to top, #001B48, #00a8ad); */
     flex: 1;
     margin: 15px 10px;
@@ -522,7 +521,7 @@ nav input {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #f44336 !important;
+    color: #616161 !important;
     font-size: 65px !important;
     background: none !important;
 }
@@ -742,22 +741,7 @@ nav input {
 /* --------Footer section Ended--------- */
 
 
-/* -------About Page Started------- */
-.sub-header {
-    height:55vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/AboutIMG1.jpg);
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    padding-top: 80px;
-}
-
-.sub-header h1 {
-    margin: 13vh 20px 20px 20px;
-    text-align: center;
-    margin-bottom: 10px;
-}
+/* Trang chủ - mục giới thiệu */
 
 .aboutUs {
     width: 100%;
@@ -794,10 +778,100 @@ nav input {
     color: #fff;
 }
 
-/* Blog */
-.blog{  background-color: rgba(0, 0, 0, 0.8);}
 
-/* Blog Container */
+/* Trang giới thiệu */
+.sub-header {
+    height:55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/AboutIMG1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.sub-header h1 {
+    margin: 13vh 20px 20px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.sub-aboutUs {
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.sub-aboutCol {
+    flex: 1;
+    max-width: 50%;
+}
+
+
+.sub-aboutCol h2 {
+    padding-top: 0;
+}
+
+.sub-aboutCol p {
+    padding: 15px 0 25px;
+    text-align: justify;
+}
+
+.sub-aboutCol img {
+    width: 80%;
+}
+
+.sub-aboutCol .aboutImage{
+	width: 100%;
+	height: auto;
+    position: relative;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+}
+
+/* Căn giữa nút "Cơ cấu tổ chức" */
+.buttonContainer {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 100%; /* Đảm bảo phần tử chiếm toàn bộ chiều rộng */
+    text-align: center;
+    margin-top: 40px; /* Thêm khoảng cách phía trên */
+}
+
+/* Nút cơ cấu tổ chức */
+.sub-heroBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sub-heroBtn.redBtn {
+    border: 1.5px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+.sub-heroBtn.redBtn:hover {
+    color: #fff;
+    background-color: #f44336;
+}
+
+
+
+/* Blog */
 .blog-container {
    display: flex;
    justify-content: space-between;
@@ -845,7 +919,7 @@ nav input {
 
 .post-meta .category {
    font-weight: bold;
-   color: #f44336;
+   color: #007BFF;
 }
 
 .post h2 {
@@ -868,7 +942,7 @@ nav input {
    display: inline-block;
    margin-top: 15px;
    padding: 10px 20px;
-   background-color: #f44336;
+   background-color: #007BFF;
    color: white;
    text-decoration: none;
    border-radius: 5px;
@@ -876,7 +950,7 @@ nav input {
 }
 
 .read-more:hover {
-   background-color: #f44336;
+   background-color: #0056b3;
 }
 
 /* Sidebar */
@@ -905,11 +979,11 @@ nav input {
 
 .blog-sidebar ul li a {
    text-decoration: none;
-   color: #f44336;
+   color: #007BFF;
 }
 
 .blog-sidebar ul li a:hover {
-   color: #f44336;
+   color: #0056b3;
 }
 
 /* Pagination */
@@ -922,7 +996,7 @@ nav input {
 .pagination a {
    text-decoration: none;
    padding: 10px 15px;
-   color: #f44336;
+   color: #007BFF;
    border-radius: 5px;
    transition: background-color 0.3s ease;
 }
@@ -933,7 +1007,7 @@ nav input {
 
 .pagination .active {
    font-weight: bold;
-   background-color: #f44336;
+   background-color: #007BFF;
    color: white;
 }
 
