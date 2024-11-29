@@ -143,7 +143,7 @@
                     <div class="ttl">Programming</div>
                     <p>Programming is the process of creating a set of instructions that tell a computer how to perform a task. Programming can be done using a variety of computer programming languages.</p>
                     <hr>
-                    <a href="Programming-Tuto.jsp" class="heroBtn"> Explore </a>
+                    <a href="blog.jsp" class="heroBtn"> Explore </a>
                 </div>
             </div>
             <div class="crd">
@@ -152,7 +152,7 @@
                     <div class="ttl">Web Development</div>
                     <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
                     <hr>
-                    <a href="Web_Tuto.jsp" class="heroBtn"> Explore </a>
+                    <a href="blog.jsp" class="heroBtn"> Explore </a>
                 </div>
             </div>
             <div class="crd">
@@ -162,7 +162,7 @@
                     <p>CSE Core Courses is classified into six groups: Introduction to CSE, Computational Mathematics, High Performance Computing, Intelligent Computing, Scientific Visualization, and Computational Optimization.
                     </p>
                     <hr>
-                    <a href="CoreCourse_Tuto.jsp" class="heroBtn"> Explore </a>
+                    <a href="blog.jsp" class="heroBtn"> Explore </a>
                 </div>
             </div>
             <div class="crd">
@@ -171,7 +171,7 @@
                     <div class="ttl">Android Development</div>
                     <p>Android software development is the process by which applications are created for devices running the Android operating system.</p>
                     <hr>
-                    <a href="Android_Tuto.jsp" class="heroBtn"> Explore </a>
+                    <a href="blog.jsp" class="heroBtn"> Explore </a>
                 </div>
             </div>
             <div class="crd">
@@ -180,7 +180,7 @@
                     <div class="ttl">UI/UX Design</div>
                     <p>UX design refers to user experience design, while UI design stands for user interface design. Both of these are crucial to an IT product and need to work closely together.</p>
                     <hr>
-                    <a href="UiUx_Tuto.jsp" class="heroBtn"> Explore </a>
+                    <a href="blog.jsp" class="heroBtn"> Explore </a>
                 </div>
             </div>
             <div class="crd">
@@ -189,16 +189,7 @@
                     <div class="ttl">Graphic Design</div>
                     <p>Graphic design is the art or profession of visual communication that combines images, words, and ideas to convey information to an audience, especially to produce a specific effect.</p>
                     <hr>
-                    <a href="GraphicD_Tuto.jsp" class="heroBtn"> Explore </a>
-                </div>
-            </div>
-            <div class="crd">
-                <div class="img"><img src="images/video_editing.jpg" alt=""></div>
-                <div class="cont">
-                    <div class="ttl">Video Editing</div>
-                    <p>Video editing is the manipulation and arrangement of video shots. Video editing is used to structure and present all video information, including films and television shows, video advertisements and video essays.</p>
-                    <hr>
-                    <a href="Video_Edit_tuto.jsp" class="heroBtn"> Explore </a>
+                    <a href="blog.jsp" class="heroBtn"> Explore </a>
                 </div>
             </div>
         </div>
