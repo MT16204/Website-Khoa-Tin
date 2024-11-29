@@ -122,11 +122,11 @@
                 <a href="html/blog/post5.jsp" class="read-more">Đọc thêm</a>
             </article>
             
-            <article class="post" data-category="ThongBao">
+            <article class="post" data-category="TinTuc">
                 <img src="images/banchaphanhlienchi.jpg" alt="">
                 <div class="post-meta">
                     <span class="author">Khao tin học / 03-11-2024</span>
-                    <span class="category">Thông báo</span>
+                    <span class="category">Tin tức</span>
                 </div>
                 <h2>Ra Mắt Ban Chấp Hành Liên Chi Đoàn Khoa Tin Học Trường Đại Học Sư Phạm – ĐHĐN, Nhiệm Kỳ 2024 – 2025</h2>
                 <p>Vừa qua Hội nghị kiện toàn Ban Chấp hành Liên Chi Đoàn Khoa Tin học đã diễn ra trong không khí trang trọng và phấn khởi...</p>
@@ -138,7 +138,6 @@
             <h3>Danh mục</h3>
             <ul>
                 <li><a href="blog.jsp" onclick="filterPosts('All')">Tất cả</a></li>  
-                <li><a href="#" onclick="filterPosts('ThongBao')">Thông báo</a></li>
                 <li><a href="#" onclick="filterPosts('SuKien')">Sự kiện</a></li>
                 <li><a href="#" onclick="filterPosts('TinTuc')">Tin tức</a></li>
             </ul>

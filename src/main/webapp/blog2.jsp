@@ -100,37 +100,37 @@
     
     <div class="blog-container">
         <section class="blog-posts">
-            <article class="post" data-category="SuKien">
-                <img src="images/20nam.jpg" alt="">
+            <article class="post" data-category="TinTuc">
+                <img src="images/thietkelogo.png" alt="">
                 <div class="post-meta">
-                    <span class="author">Khao tin học / 22-11-2024</span>
-                    <span class="category">Sự kiện</span>
+                    <span class="author">Khao tin học / 03-11-2024</span>
+                    <span class="category">Tin Tức</span>
                 </div>
-                <h2>Lễ kỷ niệm 20 năm thành lập Khoa Tin học</h2>
-                <p>Một dòng sông không có thác ghềnh, một con kênh không có bậc nước sẽ trở thành dòng sông và con kênh êm đềm, phẳng lặng. Nhưng dòng thời gian mà thiếu đi những mốc son, dấu ấn, điểm nhấn...</p>
-                <a href="html/blog/post6.jsp" class="read-more">Đọc thêm</a>
+                <h2>Cuộc thi thiết kế logo khoa Tin học nhân dịp kỷ niệm 20 năm ngày thành lập Khoa</h2>
+                <p>Các bạn sinh viên yêu thích sáng tạo đâu rồi?! Bạn có ý tưởng độc đáo? Bạn muốn dấu ấn của mình hiện diện trên logo của Khoa Tin học? Đây là cơ hội dành cho bạn! Khoa Tin học...</p>
+                <a href="post3.jsp" class="read-more">Đọc thêm</a>
+            </article>
+            
+            <article class="post" data-category="TinTuc">
+                <img src="images/chunhatxanh.jpeg" alt="">
+                <div class="post-meta">
+                    <span class="author">Khao tin học / 03-11-2024</span>
+                    <span class="category">Tin Tức</span>
+                </div>
+                <h2>Ngày chủ nhật xanh sinh viên Khoa Tin học</h2>
+                <p>RA QUÂN NGÀY CAO ĐIỂM: “NGÀY CHỦ NHẬT XANH “ ĐỢT IV NĂM 2024 Ngày 22/09/2024 BCH Liên Chi Tin học cùng các bạn sinh viên đã đồng loạt ra quân “Ngày chủ nhật xanh” để dọn sạch bãi biển...</p>
+                <a href="post2.jsp" class="read-more">Đọc thêm</a>
             </article>
             
             <article class="post" data-category="SuKien">
-                <img src="images/chaodontansinhvien2024.jpg" alt="">
+                <img src="images/tuandoanhnghiep.png" alt="">
                 <div class="post-meta">
-                    <span class="author">Khao tin học / 03-11-2024</span>
-                    <span class="category">Sự kiện</span>
-                </div>
-                <h2>Buổi Chào Đón Tân Sinh Viên Khóa 2024 – Khoa Tin Học</h2>
-                <p>Tối 29/10 vừa qua, được sự chỉ đạo của khoa Tin học, liên chi đoàn đã tổ chức buổi chào đón các bạn tân sinh viên K24 đã diễn ra thành công và đầy cảm xúc...</p>
-                <a href="html/blog/post5.jsp" class="read-more">Đọc thêm</a>
-            </article>
-            
-            <article class="post" data-category="ThongBao">
-                <img src="images/banchaphanhlienchi.jpg" alt="">
-                <div class="post-meta">
-                    <span class="author">Khao tin học / 03-11-2024</span>
+                    <span class="author">Khao tin học / 21-10-2024</span>
                     <span class="category">Thông báo</span>
                 </div>
-                <h2>Ra Mắt Ban Chấp Hành Liên Chi Đoàn Khoa Tin Học Trường Đại Học Sư Phạm – ĐHĐN, Nhiệm Kỳ 2024 – 2025</h2>
-                <p>Vừa qua Hội nghị kiện toàn Ban Chấp hành Liên Chi Đoàn Khoa Tin học đã diễn ra trong không khí trang trọng và phấn khởi...</p>
-                <a href="post4.jsp" class="read-more">Đọc thêm</a>
+                <h2>Sự kiện tuần doanh nghiệp 2024</h2>
+                <p>THÔNG BÁO: SỰ KIỆN TUẦN DOANH NGHIỆP Đây là cơ hội tốt để các em nắm bắt thông tin, tìm cơ hội thực tập, việc làm...</p>
+                <a href="post1.jsp" class="read-more">Đọc thêm</a>
             </article>
         </section>
     
@@ -138,7 +138,6 @@
             <h3>Danh mục</h3>
             <ul>
                 <li><a href="blog.jsp" onclick="filterPosts('All')">Tất cả</a></li>  
-                <li><a href="#" onclick="filterPosts('ThongBao')">Thông báo</a></li>
                 <li><a href="#" onclick="filterPosts('SuKien')">Sự kiện</a></li>
                 <li><a href="#" onclick="filterPosts('TinTuc')">Tin tức</a></li>
             </ul>
@@ -147,7 +146,7 @@
     
     <!-- Pagination -->
     <section class="pagination">
-        <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
+        <a href="blog.jsp" class="prev"><i class="fas fa-chevron-left"></i></a>
         <a href="blog.jsp" class="page">1</a>
         <a href="blog2.jsp" class="page active">2</a>
     </section>
