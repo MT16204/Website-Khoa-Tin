@@ -47,10 +47,15 @@ public class HomeControl extends HttpServlet {
 		DAO dao = new DAO();
 		List<com.entity.Bomon> list1 = dao.bomon(); 
 		List<teacher> list2 = dao.getAllTeacher();
-		List<com.entity.chuyennganh> list3 = dao.chuyennganh(); 
+		List<com.entity.chuyennganh> list3 = dao.chuyennganh();
 		request.setAttribute("list3", list3);
 		request.setAttribute("list2", list2);
 		request.setAttribute("list", list1);
+		
+		  List<subject> list5 = dao.subject1(); 
+		  request.setAttribute("list5",list5);
+		 
+			
 		request.getRequestDispatcher("qlgiaovien.jsp").forward(request, response);
 		
 	}

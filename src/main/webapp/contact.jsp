@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.List" %>
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
     
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 968px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 968px)">
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -33,12 +34,14 @@
     <!-- OwlCarousel2 CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    
 
 </head>
 
 <body>
+<c:if test="${param.message == 'success'}">
+        <div class="alert alert-success">Cảm ơn bạn, chúng tôi đã nhận được thông tin!</div>
+    </c:if>
+
 
     <!-- Header Section Started -->
 
@@ -58,7 +61,7 @@
 
             <ul>
                 <li> <a href="index.jsp">Trang chủ</a></li>
-                <li> <a href="#about">Giới thiệu</a></li>
+                <li> <a href="about.jsp">Giới thiệu</a></li>
                 <li>
                     <label for="btn-1" class="show">Chương trình đào tạo <i class="fas fa-caret-down"></i></label>
 
@@ -70,14 +73,14 @@
                             <a href="#"> Chuyên ngành <i class="fas fa-caret-right"></i> </a>
                             <input type="checkbox" id="btn-2">
                             <ul>
-                                <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
-                                <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
-                                <!-- <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li> -->
+                                <li><a href="Diff_Int_calc.jsp"> Cử nhân Công nghệ thông tin </a></li>
+                                <li><a href="English-1.jsp"> Cử nhân Sư phạm Tin học </a></li>
+                                <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li>
                             </ul>
                         </li>
                         <li>
                             <label for="btn-3" class="show">Đào tạo</label>
-                            <a href="#"> Đào tạo <i class="fas fa-caret-right"></i> </a>
+                            <a href="daotao.jsp"> Đào tạo <i class="fas fa-caret-right"></i> </a>
                             <input type="checkbox" id="btn-3">
 
                             <ul>
@@ -90,9 +93,9 @@
                     </ul>
                 </li>
 
-                <li> <a href="#faculty">Đội ngũ giảng viên</a></li>
+                <li> <a href="faculty.jsp">Đội ngũ giảng viên</a></li>
                 <li> <a href="blog.jsp">Bài viết</a></li>
-                <li> <a href="contact.jsp">Liên hệ</a></li>
+                <li> <a href="ContactServlet">Liên hệ</a></li>
                 <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>
             </ul>
         </nav>
@@ -123,49 +126,64 @@
 
     </section>
 
-    <section class="contactUs">
-
-        <div class="row">
-
-            <div class="contactCol">
-                <div>
-                    <i class="fa fa-map"></i>
-                    <span>
-                        <h5>Trường Đại học Sư Phạm - Đại học Đà Nẵng</h5>
-                        <p style="font-style: italic">459, Tôn Đức Thắng, Liên Chiểu, Đà Nẵng.</p>
-                    </span>
-                </div>
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <span>
-                        <h5><a href="tel:+02363.841323"> +02363.841323 </a></h5>
-                        <p style="font-style: italic"> Thứ hai - Chủ Nhật | 8:00 - 21:30 </p>
-                    </span>
-                </div>
-                <div>
-                    <i class="far fa-envelope"></i>
-                    <span>
-                        <h5>Thông tin liên hệ</h5>
-                        <p style="font-style: italic">Thư ký khoa: Cô Trần Thuý Trang (tttrang@ued.udn.vn)</p>
-                        <p style="font-style: italic">Trợ lý Sau đại học: TS. Nguyễn Đình Lầu (ndlau@ued.udn.vn)</p>
-                    </span>
-                </div>
+<section class="contactUs">
+    <div class="row">
+        <!-- Contact Information -->
+        <div class="contactCol">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Metropoliton University Bangladesh</h5>
+                    <p>Tamabil Hwy, Bateshwar, Sylhet, Bangladesh.</p>
+                </span>
             </div>
-
-            <div class="contactCol msg">
-
-                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse" method="post" target="msgForm" onsubmit="submitted=true" class="myform" id="contform">
-
-                    <input type="email" name="emailAddress" placeholder="Email" required>
-                    <input type="text" name="entry.805276147" placeholder="Tên" required>
-                    <input type="text" name="entry.605097215" placeholder="Môn học" required>
-                    <textarea rows="5" name="entry.740878952" placeholder="Tin nhắn" required></textarea>
-                    <button type="submit" class="heroBtn widthBtn">Gửi tin nhắn  <i class="fas fa-paper-plane"></i> </button>
-                </form>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5><a href="tel:+8801765700825" style="text-decoration: none; color: inherit;"> +880 1765 700 825 </a></h5>
+                    <p>Sunday to Thursday, 9AM to 5PM</p>
+                </span>
             </div>
-
+            <div>
+                <i class="far fa-envelope"></i>
+                <span>
+                    <h5><a href="mailto:metrouni.cse.50@gmail.com" target="_blank" style="text-decoration: none; color: inherit;"> metrouni.cse.50@gmail.com </a></h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
         </div>
-    </section>
+
+        <!-- Contact Form -->
+        <div class="contactCol msg">
+            <form
+                action="ContactServletadd"
+                method="post" target="msgForm" onsubmit="submitted=true"
+                class="myform" id="contform">
+
+					<input type="email" name="emailAddress" placeholder="Email"
+						required> 
+					<input type="text" name="entry.805276147"
+						placeholder="Name" required> 
+					<label for="subject">Chọn tiêu đề:</label>
+					<select name="subject" id="subject" required>
+    					<option value="" disabled selected>-- Chọn một tiêu đề --</option>
+    					<c:forEach items="${list3}" var="o">
+        				<option value="${o.idsubject}">${o.namesubject}</option>
+    					</c:forEach>
+					</select>
+
+
+					<textarea rows="5" name="entry.740878952" placeholder="Message"
+						required></textarea>
+
+					<button type="submit" class="heroBtn widthBtn">
+						Gửi<i class="fas fa-paper-plane"></i>
+					</button>
+				</form>
+        </div>
+    </div>
+</section>
+
 
 
     <!-- Script for form started -->

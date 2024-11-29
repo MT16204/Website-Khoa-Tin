@@ -132,6 +132,98 @@ public class DAO {
 	    }
 	    return list1;        
 	}
+	public void insercontact(String email, String name, String idsubject, String message) {
+	    String query = "INSERT INTO Contacts (email, name, idsubject, message) VALUES (?,?,?,?)";
+	    try {
+	        DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        ps.setString(1, email);
+	        ps.setString(2, name);
+	        ps.setString(3, idsubject); // Chỉnh sửa đây
+	        ps.setString(4, message);
+	        ps.executeUpdate(); // Thực thi câu lệnh
+
+	    } catch (Exception e) {
+	        e.printStackTrace(); // In chi tiết lỗi ra console
+	    }
+	}
+
+	public List<subject> subject(){
+	    List<subject> list1 = new ArrayList<>();
+	    String query = "SELECT * FROM  subject";
+	    try {
+	    	DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        rs = ps.executeQuery();
+	        while (rs.next()) {
+	        	list1.add(new subject(rs.getString(1), rs.getString(2)));
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            if (rs != null) rs.close();
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception ex) {
+	            ex.printStackTrace();
+	        }
+	    }
+	    
+	    return list1;        
+	}
+	
+	public List<subject> subject1(){
+	    List<subject> list1 = new ArrayList<>();
+	    String query = "SELECT * FROM  subject";
+	    try {
+	    	DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        rs = ps.executeQuery();
+	        while (rs.next()) {
+	        	list1.add(new subject(rs.getString(1), rs.getString(2)));
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            if (rs != null) rs.close();
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception ex) {
+	            ex.printStackTrace();
+	        }
+	    }
+	    
+	    return list1;        
+	}
+	public List<contact> contactbyid(String id){
+		List<contact> list = new ArrayList<>();
+		String querry = "select * from contacts \n"+" where idsubject=?";
+		try {
+			DatabaseConnection dbContext = new DatabaseConnection();
+			conn = dbContext.getConnection() ;
+			ps = conn.prepareStatement(querry);
+			ps.setString(1,id);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				list.add (new contact(rs.getString(1), 
+						rs.getString(2),
+						rs.getString(3),
+						rs.getString(4),
+						rs.getString(5),
+						rs.getString(6)));
+			}
+			//
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return list;
+		
+	}
 	
 	public List<teacher> getteacherbybomon(String id){
 		List<teacher> list = new ArrayList<>();
