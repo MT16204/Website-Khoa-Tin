@@ -314,7 +314,7 @@ ul {
 
 /* contact page ended */
 
-.aboutUs {
+.sub-aboutUs {
     width: 90%;
 }
 
@@ -419,26 +419,3 @@ ul {
 
 
 /* --------Faculty Info Ended--------- */
-
-
-/* ---------Bus Schedule Started--------- */
-
-.container .busRoute {
-    width: 100%;
-}
-
-.container .busTime {
-    width: 100%;
-    padding: 0;
-    border: none;
-    background: none;
-}
-
-.container .busTime table th,
-.container .busTime table td {
-    padding: 3px;
-    font-size: 13px;
-}
-
-
-/* ---------Bus Schedule Ended--------- */

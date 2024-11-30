@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bậc Tiến Sĩ - Khoa tin học Trường Đại học Sư phạm</title>
+    <title>Sư Phạm Tin - Khoa tin học Trường Đại học Sư phạm</title>
     <link rel="shortcut icon" type="image" href="images/logo.png">
 
     <!-- Links of CSS files -->
@@ -83,35 +83,53 @@
         <!-- Navigation Section Ended -->
 
 
-        <h1>BẬC TIẾN SĨ</h1>
+        <h1>CỬ NHÂN SƯ PHẠM TIN HỌC</h1>
 
 
     </section>
     <!-- Header Section Ended -->
 
 
-
-
     <div class="container">
         <div class="rows">
             <div class="rcard col-3">
 
-                <h3>Kế hoạch đào tạo (2023)</h3>
-                <!-- <div class="rtxt">
-                    <strong> Starting Time: </strong> January-2020 <br>
-                    <strong> Ending Time: </strong> Jun-2020 <br>
-                    <strong> Course Completed: </strong> 3 <br>
-                    <strong> Credit Completed: </strong> 9 <br>
-                </div> -->
+                <h3>SPT</h3><br>
+                <p>Sư Phạm Tin Học</p>
                 <hr><br>
-                <a href="pdf/daotao/bactiensi/HTTT-2023.pdf" target="blank" class="heroBtn"><i
+                <a href="pdf/daotao/bacdaihoc/KeHoach-DaoTao-2024-2025.pdf" target="blank" class="heroBtn"><i
                         class="fas fa-external-link-alt"></i></a> <br> <br>
             </div>
+
+            <!-- <div class="rcard col-3">
+
+                <h3>4th Semester</h3>
+                <div class="rtxt">
+                    <strong> Starting Time: </strong> January-2021 <br>
+                    <strong> Ending Time: </strong> April-2021 <br>
+                    <strong> Course Completed: </strong> 4 <br>
+                    <strong> Credit Completed: </strong> 10.5 <br>
+                </div>
+                <hr><br>
+                <a href="result_records/Spring_2021.pdf" target="blank" class="heroBtn"> See Result <i
+                        class="fas fa-external-link-alt"></i></a> <br> <br>
+
+            </div>
+            <div class="rcard col-3">
+
+                <h3>5th Semester</h3>
+                <div class="rtxt">
+                    <strong> Starting Time: </strong> May-2021 <br>
+                    <strong> Ending Time: </strong> Running <br>
+                    <strong> Course Completed: </strong> -- <br>
+                    <strong> Credit Completed: </strong> -- <br>
+                </div>
+                <hr><br>
+                <a href="" class="heroBtn"> See Result <i class="fas fa-external-link-alt"></i></a> <br> <br>
+
+            </div> -->
         </div>
     </div>
-
-
-
     <!-- Result Section Ended -->
 
     <!-- Script for form started -->

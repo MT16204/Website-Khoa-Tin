@@ -54,11 +54,11 @@
 
             <ul>
                 <li> <a href="index.jsp">Trang chủ</a></li>
-                <li> <a href="#about">Giới thiệu</a></li>
+                <li> <a href="about.jsp">Giới thiệu</a></li>
                 <li>
                     <label for="btn-1" class="show">Chương trình đào tạo <i class="fas fa-caret-down"></i></label>
 
-                    <a href="#course">Chương trình đào tạo  <i class="fas fa-caret-down"></i></a>
+                    <a href="#">Chương trình đào tạo  <i class="fas fa-caret-down"></i></a>
                     <input type="checkbox" id="btn-1">
                     <ul>
                         <li>
@@ -68,7 +68,6 @@
                             <ul>
                                 <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
                                 <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
-                                <!-- <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li> -->
                             </ul>
                         </li>
                         <li>
@@ -92,7 +91,8 @@
                 <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>
             </ul>
         </nav>
-        <h1>Giới thiệu</h1>
+        
+        <h1>GIỚI THIỆU</h1>
         <!-- Header text Section Ended -->
   
     </section>
@@ -108,13 +108,13 @@
 	            </p>
 	        </div>
 	        <div class="sub-aboutCol">
-	            <img src="images/aboutGRP.jpg" alt="Khoa Tin học" class="aboutImage">
+	            <img src="images/about1.jpg" alt="Khoa Tin học" class="aboutImage">
 	        </div>
 	    </div>
 	    
 	    <div class="row">
 	        <div class="sub-aboutCol">
-	            <img src="images/aboutGRP.jpg" alt="Đội ngũ giảng viên" class="aboutImage">
+	            <img src="images/about2.jpg" alt="Đội ngũ giảng viên" class="aboutImage">
 	        </div>
 	        <div class="sub-aboutCol">
 	            <h2>Chức năng và Nhiệm vụ</h2>
@@ -135,7 +135,7 @@
 	            </p>
 	        </div>
 	        <div class="sub-aboutCol">
-	            <img src="images/aboutGRP.jpg" alt="Hợp tác doanh nghiệp" class="aboutImage">
+	            <img src="images/about3.jpg" alt="Hợp tác doanh nghiệp" class="aboutImage">
 	        </div>
 	    </div>
 	    
@@ -164,9 +164,9 @@
 
                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform" id="myform">
 
-                    <input type="text" name="entry.805276147" placeholder="Name" required>
+                    <input type="text" name="entry.805276147" placeholder="Tên" required>
                     <input type="email" name="emailAddress" placeholder="Email" required>
-                    <textarea rows="3" name="entry.1586819207" placeholder="Feedback" required></textarea>
+                    <textarea rows="3" name="entry.1586819207" placeholder="Lời nhắn" required></textarea>
                     <button type="submit" class="heroBtn"> Gửi <i class="fas fa-paper-plane"></i> </button>
                 </form>
             </div>
@@ -174,15 +174,15 @@
         <div class="fcol col-3 ftrTopEle">
             <h4>Liên hệ</h4>
             <ol>
-                <li><a href="https://metrouni.edu.bd" target="blank"> Trang chủ | UED <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://web.facebook.com/groups/Dept.of.CSE.MU/" target="blank"> Trang chủ khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://web.facebook.com/metropolitanuniversity" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://web.facebook.com/groups/metrouni/" target="blank">Facebook khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://ued.udn.vn/" target="blank"> Trang chủ - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://it.ued.udn.vn/" target="blank"> Trang chủ khoa tin - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://www.facebook.com/ueddn" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://www.facebook.com/khoatinhoc" target="blank">Facebook khoa tin - UED <i class="fas fa-external-link-alt"></i></a></li>
             </ol>
         </div>
         <div class="fcol col-3 ftrTopEle">
             <h4>Giới thiệu</h4>
-            <p>This website is designed and developed by the students of CSE 50th batch of Metropolitan University and it is not an official website. Our main purpose is to help our batch and our junior batches through this website.</p><br>
+            <p>Đây là website giới thiệu về khoa tin Trường Đại học Sư Phạm - Đại học Đà Nẵng, cung cấp cho sinh viên các thông tin về đội ngũ giảng viên, chương trình đào tạo, lớp học của khoa.</p>
         </div>
         <div class="fcol col-6">
             <hr>

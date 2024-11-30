@@ -57,7 +57,7 @@
                 <li>
                     <label for="btn-1" class="show">Chương trình đào tạo <i class="fas fa-caret-down"></i></label>
 
-                    <a href="#course">Chương trình đào tạo  <i class="fas fa-caret-down"></i></a>
+                    <a href="#">Chương trình đào tạo  <i class="fas fa-caret-down"></i></a>
                     <input type="checkbox" id="btn-1">
                     <ul>
                         <li>
@@ -67,7 +67,6 @@
                             <ul>
                                 <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
                                 <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
-                                <!-- <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li> -->
                             </ul>
                         </li>
                         <li>
@@ -86,14 +85,11 @@
                 </li>
 
                 <li> <a href="#faculty">Đội ngũ giảng viên</a></li>
-                <li> <a href="blog.jsp">Bài viết</a></li>
+                <li> <a href="#blog">Bài viết</a></li>
                 <li> <a href="ContactServlet">Liên hệ</a></li>
                 <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>
             </ul>
         </nav>
-
-        <!-- Navigation Section Ended -->
-
 
         <!-- Header text Section Started -->
 
@@ -134,62 +130,56 @@
     <!-- Giới thiệu -->
 
     <!-- Bài viết -->
-    <section class="blog">
+    <section class="blog" id="blog">
         <h1 class="headingStyle">Bài viết</h1>
+		<p style="font-style: italic; margin-top: 20px; margin-bottom: 20px; text-align: center;">Tìm hiểu những bài viết mới nhất của khoa</p>        
         <div class="slider owl-carousel">
             <div class="crd">
-                <div class="img prog"><img src="images/programming_Headphone.jpg" alt=""></div>
+                <div class="img prog"><img src="images/20nam.jpg" alt=""></div>
                 <div class="cont">
-                    <div class="ttl">Programming</div>
-                    <p>Programming is the process of creating a set of instructions that tell a computer how to perform a task. Programming can be done using a variety of computer programming languages.</p>
-                    <hr>
-                    <a href="blog.jsp" class="heroBtn"> Explore </a>
+                    <div class="ttl">Lễ kỷ niệm 20 năm thành lập Khoa Tin học</div>
+                    <p>Một dòng sông không có thác ghềnh, một con kênh không có bậc nước sẽ trở thành dòng sông và con kênh êm đềm, phẳng lặng...</p>
+                    <a href="blog.jsp" class="heroBtn"> Đọc thêm </a>
                 </div>
             </div>
             <div class="crd">
-                <div class="img"><img src="images/web_dev1.jpg" alt=""></div>
+                <div class="img prog"><img src="images/chaodontansinhvien2024.jpg" alt=""></div>
                 <div class="cont">
-                    <div class="ttl">Web Development</div>
-                    <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).</p>
-                    <hr>
-                    <a href="blog.jsp" class="heroBtn"> Explore </a>
+                    <div class="ttl">Buổi Chào Đón Tân Sinh Viên Khóa 2024 – Khoa Tin Học</div>
+                    <p>Tối 29/10 vừa qua, được sự chỉ đạo của khoa Tin học, liên chi đoàn đã tổ chức buổi chào đón các bạn tân sinh viên K24 đã diễn ra thành công...</p>
+                    <a href="blog.jsp" class="heroBtn"> Đọc thêm </a>
                 </div>
             </div>
             <div class="crd">
-                <div class="img"><img src="images/cse_core.jpg" alt=""></div>
+                <div class="img prog"><img src="images/banchaphanhlienchi.jpg" alt=""></div>
                 <div class="cont">
-                    <div class="ttl">CSE Core Courses</div>
-                    <p>CSE Core Courses is classified into six groups: Introduction to CSE, Computational Mathematics, High Performance Computing, Intelligent Computing, Scientific Visualization, and Computational Optimization.
-                    </p>
-                    <hr>
-                    <a href="blog.jsp" class="heroBtn"> Explore </a>
+                    <div class="ttl">Ra Mắt Ban Chấp Hành Liên Chi Đoàn Khoa Tin Học </div>
+                    <p>Vừa qua Hội nghị kiện toàn Ban Chấp hành Liên Chi Đoàn Khoa Tin học đã diễn ra trong không khí trang trọng và phấn khởi. Sự kiện lần này...</p>
+                    <a href="blog.jsp" class="heroBtn"> Đọc thêm </a>
                 </div>
             </div>
             <div class="crd">
-                <div class="img"><img src="images/Android.jpg" alt=""></div>
+                <div class="img prog"><img src="images/thietkelogo.png" alt=""></div>
                 <div class="cont">
-                    <div class="ttl">Android Development</div>
-                    <p>Android software development is the process by which applications are created for devices running the Android operating system.</p>
-                    <hr>
-                    <a href="blog.jsp" class="heroBtn"> Explore </a>
+                    <div class="ttl">Cuộc thi thiết kế logo khoa Tin học</div>
+                    <p>Các bạn sinh viên yêu thích sáng tạo đâu rồi?! Bạn có ý tưởng độc đáo? Bạn muốn dấu ấn của mình hiện diện trên logo của Khoa? Đây là cơ hội...</p>
+                    <a href="blog.jsp" class="heroBtn"> Đọc thêm </a>
                 </div>
             </div>
             <div class="crd">
-                <div class="img"><img src="images/uiux_design.jpg" alt=""></div>
+                <div class="img prog"><img src="images/chunhatxanh.jpeg" alt=""></div>
                 <div class="cont">
-                    <div class="ttl">UI/UX Design</div>
-                    <p>UX design refers to user experience design, while UI design stands for user interface design. Both of these are crucial to an IT product and need to work closely together.</p>
-                    <hr>
-                    <a href="blog.jsp" class="heroBtn"> Explore </a>
+                    <div class="ttl">Ngày chủ nhật xanh sinh viên Khoa Tin học</div>
+                    <p>RA QUÂN NGÀY CAO ĐIỂM: “NGÀY CHỦ NHẬT XANH “ ĐỢT IV NĂM 2024 Ngày 22/09/2024 BCH Liên Chi Tin học cùng các bạn sinh viên đã đồng loạt...</p>
+                    <a href="blog.jsp" class="heroBtn"> Đọc thêm </a>
                 </div>
             </div>
             <div class="crd">
-                <div class="img"><img src="images/Graphic_Design.jpg" alt=""></div>
+                <div class="img prog"><img src="images/tuandoanhnghiep.png" alt=""></div>
                 <div class="cont">
-                    <div class="ttl">Graphic Design</div>
-                    <p>Graphic design is the art or profession of visual communication that combines images, words, and ideas to convey information to an audience, especially to produce a specific effect.</p>
-                    <hr>
-                    <a href="blog.jsp" class="heroBtn"> Explore </a>
+                    <div class="ttl">Sự kiện tuần doanh nghiệp 2024</div>
+                    <p>THÔNG BÁO: SỰ KIỆN TUẦN DOANH NGHIỆP Đây là cơ hội tốt để các em nắm bắt thông tin, tìm cơ hội thực tập, việc làm dành cho sinh viên...</p>
+                    <a href="blog.jsp" class="heroBtn"> Đọc thêm </a>
                 </div>
             </div>
         </div>
@@ -198,10 +188,9 @@
 
     <!-- Đội ngũ giảng viên -->
     <section class="faculty" id="faculty">
-        <div class="facTray">
-            <div class="faculty">
-                <h1 class="headingStyle">Đội ngũ giảng viên</h1>
-            </div>
+    	<h1 class="headingStyle">Đội ngũ giảng viên</h1>
+        <p style="font-style: italic; margin-top: 20px; margin-bottom: 20px; text-align: center;">Tìm hiểu những bài viết mới nhất của khoa</p>
+      
             <div class="facProfile">
                 <img src="images/vinh.jpg" alt="">
 
@@ -277,7 +266,7 @@
             <div class="d-flex justify-content-center mt-4">
                 <a href="faculty.jsp" class="heroBtn">Xem thêm</a>
             </div> 
-        </div>
+       
     </section>
     <!-- Đội ngũ giảng viên -->
 
@@ -465,9 +454,9 @@
 
                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform" id="myform">
 
-                    <input type="text" name="entry.805276147" placeholder="Name" required>
+                    <input type="text" name="entry.805276147" placeholder="Tên" required>
                     <input type="email" name="emailAddress" placeholder="Email" required>
-                    <textarea rows="3" name="entry.1586819207" placeholder="Feedback" required></textarea>
+                    <textarea rows="3" name="entry.1586819207" placeholder="Lời nhắn" required></textarea>
                     <button type="submit" class="heroBtn"> Gửi <i class="fas fa-paper-plane"></i> </button>
                 </form>
             </div>
@@ -475,15 +464,15 @@
         <div class="fcol col-3 ftrTopEle">
             <h4>Liên hệ</h4>
             <ol>
-                <li><a href="https://metrouni.edu.bd" target="blank"> Trang chủ | UED <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://web.facebook.com/groups/Dept.of.CSE.MU/" target="blank"> Trang chủ khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://web.facebook.com/metropolitanuniversity" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://web.facebook.com/groups/metrouni/" target="blank">Facebook khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://ued.udn.vn/" target="blank"> Trang chủ - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://it.ued.udn.vn/" target="blank"> Trang chủ khoa tin - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://www.facebook.com/ueddn" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://www.facebook.com/khoatinhoc" target="blank">Facebook khoa tin - UED <i class="fas fa-external-link-alt"></i></a></li>
             </ol>
         </div>
         <div class="fcol col-3 ftrTopEle">
             <h4>Giới thiệu</h4>
-            <p>This website is designed and developed by the students of CSE 50th batch of Metropolitan University and it is not an official website. Our main purpose is to help our batch and our junior batches through this website.</p><br>
+            <p>Đây là website giới thiệu về khoa tin Trường Đại học Sư Phạm - Đại học Đà Nẵng, cung cấp cho sinh viên các thông tin về đội ngũ giảng viên, chương trình đào tạo, lớp học của khoa.</p>
         </div>
         <div class="fcol col-6">
             <hr>
@@ -491,6 +480,59 @@
         </div>
     </section>
     <!-- Footer -->
+    
+    <!-- Nút Liên hệ -->
+    
+    <div class="echbay-sms-messenger style-for-position-br">
+		<div class="phonering-alo-alo">
+			<a href="tel:0903123456" rel="nofollow" class="echbay-phonering-alo-event">.</a>
+		</div>
+		<div class="phonering-alo-messenger">
+			<a href="https://www.messenger.com/t/aiken.trung" target="_blank" rel="nofollow" class="echbay-phonering-messenger-event">.</a>
+		</div>
+	</div>
+	
+
+	<style>	
+	.echbay-sms-messenger {
+		width:45px
+	}
+	.echbay-sms-messenger a {
+		line-height:45px;
+	        color: transparent;
+	display:block;
+	}
+	.echbay-sms-messenger {
+		display:block
+	}
+	
+	.echbay-sms-messenger div.phonering-alo-alo {
+	    background-image: url(https://codfe.com/wp-content/uploads/2020/08/call.png);
+		background-color:#f44336
+	    
+	}
+	
+	.echbay-sms-messenger div.phonering-alo-messenger {
+	    background-image: url(https://codfe.com/wp-content/uploads/2020/08/messenger.png);
+	    background-color:#f44336
+	    
+	}
+	.echbay-sms-messenger div {
+	    margin: 14px 0;
+	    background: #0084FF center no-repeat;
+	    background-size: 70%;
+	    border-radius: 50%;
+	    box-shadow: 0 3px 10px #888;
+	}
+	.echbay-sms-messenger {
+	    text-align: center;
+	    left:20px;
+	    position: fixed;
+	    bottom: 20px;
+	    z-index: 999;
+	}
+	</style>
+	
 
     <script>
         $(".slider").owlCarousel({

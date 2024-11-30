@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
     
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 968px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 968px)">
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -94,7 +94,7 @@
         </nav>
 
         
-        <h1> Bài viết </h1>
+        <h1> BÀI VIẾT </h1>
     </section>
 
     
@@ -160,9 +160,9 @@
 
                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform" id="myform">
 
-                    <input type="text" name="entry.805276147" placeholder="Name" required>
+                    <input type="text" name="entry.805276147" placeholder="Tên" required>
                     <input type="email" name="emailAddress" placeholder="Email" required>
-                    <textarea rows="3" name="entry.1586819207" placeholder="Feedback" required></textarea>
+                    <textarea rows="3" name="entry.1586819207" placeholder="Lời nhắn" required></textarea>
                     <button type="submit" class="heroBtn"> Gửi <i class="fas fa-paper-plane"></i> </button>
                 </form>
             </div>
@@ -170,15 +170,15 @@
         <div class="fcol col-3 ftrTopEle">
             <h4>Liên hệ</h4>
             <ol>
-                <li><a href="https://metrouni.edu.bd" target="blank"> Trang chủ | UED <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://web.facebook.com/groups/Dept.of.CSE.MU/" target="blank"> Trang chủ khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://web.facebook.com/metropolitanuniversity" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://web.facebook.com/groups/metrouni/" target="blank">Facebook khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://ued.udn.vn/" target="blank"> Trang chủ - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://it.ued.udn.vn/" target="blank"> Trang chủ khoa tin - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://www.facebook.com/ueddn" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://www.facebook.com/khoatinhoc" target="blank">Facebook khoa tin - UED <i class="fas fa-external-link-alt"></i></a></li>
             </ol>
         </div>
         <div class="fcol col-3 ftrTopEle">
             <h4>Giới thiệu</h4>
-            <p>This website is designed and developed by the students of CSE 50th batch of Metropolitan University and it is not an official website. Our main purpose is to help our batch and our junior batches through this website.</p><br>
+            <p>Đây là website giới thiệu về khoa tin Trường Đại học Sư Phạm - Đại học Đà Nẵng, cung cấp cho sinh viên các thông tin về đội ngũ giảng viên, chương trình đào tạo, lớp học của khoa.</p>
         </div>
         <div class="fcol col-6">
             <hr>

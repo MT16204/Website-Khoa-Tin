@@ -65,7 +65,7 @@
                 <li>
                     <label for="btn-1" class="show">Chương trình đào tạo <i class="fas fa-caret-down"></i></label>
 
-                    <a href="#course">Chương trình đào tạo  <i class="fas fa-caret-down"></i></a>
+                    <a href="#">Chương trình đào tạo  <i class="fas fa-caret-down"></i></a>
                     <input type="checkbox" id="btn-1">
                     <ul>
                         <li>
@@ -73,14 +73,13 @@
                             <a href="#"> Chuyên ngành <i class="fas fa-caret-right"></i> </a>
                             <input type="checkbox" id="btn-2">
                             <ul>
-                                <li><a href="Diff_Int_calc.jsp"> Cử nhân Công nghệ thông tin </a></li>
-                                <li><a href="English-1.jsp"> Cử nhân Sư phạm Tin học </a></li>
-                                <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li>
+                                <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
+                                <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
                             </ul>
                         </li>
                         <li>
                             <label for="btn-3" class="show">Đào tạo</label>
-                            <a href="daotao.jsp"> Đào tạo <i class="fas fa-caret-right"></i> </a>
+                            <a href="#"> Đào tạo <i class="fas fa-caret-right"></i> </a>
                             <input type="checkbox" id="btn-3">
 
                             <ul>
@@ -103,7 +102,7 @@
         <!-- Navigation Section Ended -->
 
 
-        <h1> Liên hệ </h1>
+        <h1> LIÊN HỆ </h1>
 
     </section>
 
@@ -128,27 +127,28 @@
 
 <section class="contactUs">
     <div class="row">
-        <!-- Contact Information -->
         <div class="contactCol">
             <div>
-                <i class="fa fa-home"></i>
+                <i class="fa fa-map"></i>
                 <span>
-                    <h5>Metropoliton University Bangladesh</h5>
-                    <p>Tamabil Hwy, Bateshwar, Sylhet, Bangladesh.</p>
+                    <h5>Khoa Tin Học - Trường Đại Học Sư Phạm - Đại Học Đà Nẵng</h5>
+                    <p style="font-style: italic">459 Tôn Đức Thắng, quận Liên Chiểu, TP. Đà Nẵng</p>
                 </span>
             </div>
             <div>
                 <i class="fa fa-phone"></i>
                 <span>
-                    <h5><a href="tel:+8801765700825" style="text-decoration: none; color: inherit;"> +880 1765 700 825 </a></h5>
-                    <p>Sunday to Thursday, 9AM to 5PM</p>
+                    <h5><a href="tel:+02363841323" style="text-decoration: none; color: inherit;"> +02363.841323 </a></h5>
+                    <p style="font-style: italic">Thứ hai - Chủ nhật | 8:00 - 21:30</p>
                 </span>
             </div>
             <div>
                 <i class="far fa-envelope"></i>
                 <span>
-                    <h5><a href="mailto:metrouni.cse.50@gmail.com" target="_blank" style="text-decoration: none; color: inherit;"> metrouni.cse.50@gmail.com </a></h5>
-                    <p>Email us your query</p>
+                    <h5>Thông tin liên hệ</h5>
+                    <p style="font-style: italic">Trưởng Khoa: TS. Nguyễn Trần Quốc Vinh (ntqvinh@ued.udn.vn)</p>
+                    <p style="font-style: italic">Trợ lý sau đại học: TS. Nguyễn Đình Lầu (ndlau@ued.udn.vn)</p>
+                    <p style="font-style: italic">Thư ký khoa: Cô Trần Thuỳ Trang (tttrang@ued.udn.vn)</p>
                 </span>
             </div>
         </div>
@@ -163,7 +163,7 @@
 					<input type="email" name="emailAddress" placeholder="Email"
 						required> 
 					<input type="text" name="entry.805276147"
-						placeholder="Name" required> 
+						placeholder="Tên" required> 
 					<label for="subject">Chọn tiêu đề:</label>
 					<select name="subject" id="subject" required>
     					<option value="" disabled selected>-- Chọn một tiêu đề --</option>
@@ -173,7 +173,7 @@
 					</select>
 
 
-					<textarea rows="5" name="entry.740878952" placeholder="Message"
+					<textarea rows="5" name="entry.740878952" placeholder="Lời nhắn"
 						required></textarea>
 
 					<button type="submit" class="heroBtn widthBtn">
@@ -204,9 +204,9 @@
 
                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMlX0B_uFTrGkYDPPhw_hL1YmaveLVuTKmwvf587E1J7V_xg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform" id="myform">
 
-                    <input type="text" name="entry.805276147" placeholder="Name" required>
+                    <input type="text" name="entry.805276147" placeholder="Tên" required>
                     <input type="email" name="emailAddress" placeholder="Email" required>
-                    <textarea rows="3" name="entry.1586819207" placeholder="Feedback" required></textarea>
+                    <textarea rows="3" name="entry.1586819207" placeholder="Lời nhắn" required></textarea>
                     <button type="submit" class="heroBtn"> Gửi <i class="fas fa-paper-plane"></i> </button>
                 </form>
             </div>
@@ -214,15 +214,15 @@
         <div class="fcol col-3 ftrTopEle">
             <h4>Liên hệ</h4>
             <ol>
-                <li><a href="https://metrouni.edu.bd" target="blank"> Trang chủ | UED <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://web.facebook.com/groups/Dept.of.CSE.MU/" target="blank"> Trang chủ khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://web.facebook.com/metropolitanuniversity" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://web.facebook.com/groups/metrouni/" target="blank">Facebook khoa tin | UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://ued.udn.vn/" target="blank"> Trang chủ - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://it.ued.udn.vn/" target="blank"> Trang chủ khoa tin - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://www.facebook.com/ueddn" target="blank"> Facebook - UED <i class="fas fa-external-link-alt"></i></a></li>
+                <li><a href="https://www.facebook.com/khoatinhoc" target="blank">Facebook khoa tin - UED <i class="fas fa-external-link-alt"></i></a></li>
             </ol>
         </div>
         <div class="fcol col-3 ftrTopEle">
             <h4>Giới thiệu</h4>
-            <p>This website is designed and developed by the students of CSE 50th batch of Metropolitan University and it is not an official website. Our main purpose is to help our batch and our junior batches through this website.</p><br>
+            <p>Đây là website giới thiệu về khoa tin Trường Đại học Sư Phạm - Đại học Đà Nẵng, cung cấp cho sinh viên các thông tin về đội ngũ giảng viên, chương trình đào tạo, lớp học của khoa.</p>
         </div>
         <div class="fcol col-6">
             <hr>
