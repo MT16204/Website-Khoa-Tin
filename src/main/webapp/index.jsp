@@ -95,7 +95,7 @@
 
         <div class="content">
             <div class="principle">
-                <h1 id="headerH1">WEBSITE KHOA TIN - TRƯỜNG ĐẠI HỌC SƯ PHẠM ĐÀ NẴNG</h1>
+                <h1 id="headerH1"> KHOA TIN - TRƯỜNG ĐẠI HỌC SƯ PHẠM ĐÀ NẴNG </h1>
                 <p id="headerP" style="font-style: italic">Đây là website giới thiệu về khoa tin Trường Đại học Sư Phạm - Đại học Đà Nẵng, cung cấp cho sinh viên các thông tin về đội ngũ giảng viên, chương trình đào tạo, lớp học của khoa.</p>
 
                 <a href="#about" class="heroBtn"> Tìm hiểu ngay </a>

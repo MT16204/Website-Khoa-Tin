@@ -38,7 +38,7 @@
 
     <!-- Header Section Started -->
 
-    <section class="sub-header facHeader">
+    <section class="sub-header blogPage">
 
         <!-- Navigation Section Started -->
 
@@ -54,7 +54,7 @@
 
             <ul>
                 <li> <a href="index.jsp">Trang chủ</a></li>
-                <li> <a href="#about">Giới thiệu</a></li>
+                <li> <a href="about.jsp">Giới thiệu</a></li>
                 <li>
                     <label for="btn-1" class="show">Chương trình đào tạo <i class="fas fa-caret-down"></i></label>
 

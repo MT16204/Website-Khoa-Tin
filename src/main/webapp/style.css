@@ -21,7 +21,6 @@ p {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    /* padding: 10px; */
 }
 
 .dottedHR {
@@ -31,20 +30,20 @@ p {
     width: 90px;
 }
 
-.header {
+/* .header {
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/homeHeader.jpg);
-    /* background: url(images/homeHeader.jpg); */
     background-position: center;
     background-size: cover;
     position: relative;
-}
+} */
 
 .headingStyle {
     font-family: 'Oswald', sans-serif;
     display: flex;
     justify-content: center;
+    color: #f44336;
 }
 
 
@@ -101,14 +100,14 @@ p {
 
 /* Navigation Section Started */
 nav {
-    position: fixed; /* Cố định vị trí navbar */
+    position: fixed; 
     top: 0;
     left: 0;
-    width: 100%; /* Đảm bảo navbar phủ toàn bộ chiều ngang */
-    z-index: 999; /* Luôn hiển thị trên các phần tử khác */
-    background-color: #fff; /* Đặt màu nền để tránh che khuất nội dung */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng để tách biệt */
-    height: 80px; /* Đặt chiều cao cố định */
+    width: 100%; 
+    z-index: 999; 
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    height: 80px;
 }
 
 nav .fas {
@@ -230,79 +229,79 @@ nav input {
 .header {
     padding-top: 80px;
     background-repeat: no-repeat;
-    /* background-size: 120%; */
     background-position: center;
-    width: 100%;
+	width: 100%;
     height: 100vh;
-    animation: slide 20s infinite;
+    animation: slide 20s infinite;    
 }
 
 .content {
     color: #fff;
     width: 100%;
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-}
+/* 	background-image: rgba(0, 0, 0, 0.5);
+ */}
 
 .principle {
     margin-left: 7.5%;
-    width: 43%;
+    width: 50%;
     margin-top: 17vh;
-    text-shadow: 2p 0px #ccc;
+    
 }
 
 .principle h1 {
     font-size: 50px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #f44336;
+    margin-bottom: 20px; 	   
 }
+
+.principle h1{border-bottom: 2px solid #f44336;}
 
 .principle p {
     font-size: 16px;
     color: #fff;
-	
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+ 
 }
 
 @keyframes slide {
     0% {
-        background-image: url('images/slide1.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide1.jpg');
         background-size: 120%;
     }
     20% {
-        background-image: url('images/slide1.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide1.jpg');
         background-size: 100%;
     }
     20.01% {
-        background-image: url('images/slide2.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide2.jpg');
         background-size: 120%;
     }
     40% {
-        background-image: url('images/slide2.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide2.jpg');
         background-size: 100%;
     }
     40.01% {
-        background-image: url('images/slide3.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide3.jpg');
         background-size: 120%;
     }
     60% {
-        background-image: url('images/slide3.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide3.jpg');
         background-size: 100%;
     }
     60.01% {
-        background-image: url('images/slide4.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide4.jpg');
         background-size: 120%;
     }
     80% {
-        background-image: url('images/slide4.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide4.jpg');
         background-size: 100%;
     }
     80.01% {
-        background-image: url('images/slide5.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide5.jpg');
         background-size: 120%;
     }
     100% {
-        background-image: url('images/slide5.jpg');
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/slide5.jpg');
         background-size: 100%;
     }
 }
@@ -861,6 +860,16 @@ nav input {
 
 
 /* -------Trang Bài Viết------- */
+.blogPage {
+    height:55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/blog-cover.webp);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding-top: 80px;
+}
+
 .blog-container {
    display: flex;
    justify-content: space-between;
@@ -1180,10 +1189,10 @@ textarea {
 /* --------Table Design Ended-------- */
 
 
-/*--------- Result Record Started -----------*/
+/*--------- Trang Đào Tạo - Chuyên ngành -----------*/
 
 .libr {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/resRecords.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/programs.webp);
 }
 
 .container {
@@ -1249,9 +1258,8 @@ textarea {
 
 
 
-
 /* --------Course Design Started--------- */
-
+/* 
 .sub-header p {
     text-align: center;
     color: #fff;
@@ -1288,7 +1296,7 @@ textarea {
     width: 24%;
     margin-right: 1%;
     background: #fff;
-    /* box-shadow: 0 0 5px #ccc; */
+    box-shadow: 0 0 5px #ccc;
 }
 
 .facRow h3 {
@@ -1361,17 +1369,17 @@ textarea {
     font-size: 14px;
     font-weight: 350;
     line-height: 18px;
-    /* border: 1px solid; */
+    border: 1px solid;
 }
 
 .pdfICO {
     width: 13%;
-    /* background: #f79b94; */
+    background: #f79b94;
 }
 
 .crsMat .pdfICO .fas {
     font-size: 38px;
-    /* color: #CA0708; */
+    color: #CA0708;
     color: #f44336;
 }
 
@@ -1397,12 +1405,12 @@ textarea {
     display: table;
     content: '';
     clear: both;
-}
+} */
 
 /* --------Course Design Ended--------- */
 
 
-/* --------Faculty Info Started--------- */
+/* --------Trang Đội Ngũ Giảng Viên--------- */
 
 .facHeader {
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/about3.jpg);
@@ -1457,5 +1465,7 @@ textarea {
 
 
 /* --------Faculty Info Ended--------- */
+
+
 
 

@@ -146,9 +146,9 @@
                 <i class="far fa-envelope"></i>
                 <span>
                     <h5>Thông tin liên hệ</h5>
-                    <p style="font-style: italic">Trưởng Khoa: TS. Nguyễn Trần Quốc Vinh (ntqvinh@ued.udn.vn)</p>
-                    <p style="font-style: italic">Trợ lý sau đại học: TS. Nguyễn Đình Lầu (ndlau@ued.udn.vn)</p>
-                    <p style="font-style: italic">Thư ký khoa: Cô Trần Thuỳ Trang (tttrang@ued.udn.vn)</p>
+                    <p>Trưởng Khoa: TS. Nguyễn Trần Quốc Vinh (ntqvinh@ued.udn.vn)</p>
+                    <p>Trợ lý sau đại học: TS. Nguyễn Đình Lầu (ndlau@ued.udn.vn)</p>
+                    <p>Thư ký khoa: Cô Trần Thuỳ Trang (tttrang@ued.udn.vn)</p>
                 </span>
             </div>
         </div>
