@@ -20,6 +20,6 @@ public class LogoutServlet extends HttpServlet {
             session.invalidate(); // Xóa session hiện tại
         }
         // Chuyển hướng về trang login
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("login.jsp");
     }
 }

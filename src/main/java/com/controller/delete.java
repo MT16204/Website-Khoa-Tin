@@ -43,7 +43,7 @@ public class delete extends HttpServlet {
 		DAO dao = new DAO();
 		dao.delete(pid); 
 		
-		response.sendRedirect("HomeControl")	;	
+		response.sendRedirect("GiaovienControl?idsv=1")	;	
 	}
 
 	/**

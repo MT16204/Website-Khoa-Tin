@@ -189,7 +189,7 @@
     <!-- Đội ngũ giảng viên -->
     <section class="faculty" id="faculty">
     	<h1 class="headingStyle">Đội ngũ giảng viên</h1>
-        <p style="font-style: italic; margin-top: 20px; margin-bottom: 20px; text-align: center;">Tìm hiểu những bài viết mới nhất của khoa</p>
+        <p style="font-style: italic; margin-top: 20px; margin-bottom: 20px; text-align: center;">Tìm hiểu thêm về đội ngũ giảng viên của khoa</p>
       
             <div class="facProfile">
                 <img src="images/vinh.jpg" alt="">

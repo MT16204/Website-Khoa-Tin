@@ -52,10 +52,9 @@ public class HomeControl extends HttpServlet {
 		request.setAttribute("list2", list2);
 		request.setAttribute("list", list1);
 		
-		  List<subject> list5 = dao.subject1(); 
-		  request.setAttribute("list5",list5);
-		 
-			
+		List<subject> list5 = dao.subject1(); 
+		request.setAttribute("list5",list5);
+		
 		request.getRequestDispatcher("qlgiaovien.jsp").forward(request, response);
 		
 	}

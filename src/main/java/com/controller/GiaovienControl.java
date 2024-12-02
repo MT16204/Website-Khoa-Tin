@@ -48,9 +48,12 @@ public class GiaovienControl extends HttpServlet {
 			List<Bomon> listt = dao.getbomonbyid(bomonid);
 			List<chuyennganh> list3 = dao.chuyennganh(); 
 			List<chuyennganh> listtt = dao.getchuyennganhnbyid(chuyennganhid); 
-			List<Student> list4 = dao.getstudentbychuyennganh(chuyennganhid);
+			List<Student> list4 = dao.laysv(chuyennganhid);
 			List<contact> list7 = dao.contactbyid(idsubject);
-			List<subject> list5 = dao.subject1(); 
+			List<subject> list5 = dao.subject1();
+			List<lop> list10 = dao.lop();
+
+			request.setAttribute("list10",list10);
 			request.setAttribute("list5",list5);
 			request.setAttribute("listtt", listtt);
 			request.setAttribute("listt", listt);

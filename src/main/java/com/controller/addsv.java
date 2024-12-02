@@ -42,13 +42,13 @@ public class addsv extends HttpServlet {
 	        response.setCharacterEncoding("UTF-8");
 	        String name = request.getParameter("name");
 	        String tuoi = request.getParameter("tuoi");
+	        String email = request.getParameter("email");
 	        String lop = request.getParameter("lop");
-	        String idchuyennganh = request.getParameter("idchuyennganh");
 
 	        DAO dao = new DAO();
-	        dao.insertSinhVien(name, tuoi, lop, idchuyennganh);
+	        dao.insertSinhVien(name, tuoi, email ,lop );
 	        
-			response.sendRedirect("GiaovienControl?idsv=?"+idchuyennganh)	;	
+			response.sendRedirect("GiaovienControl?idsv=1")	;	
 	}
 
 	/**

@@ -110,7 +110,7 @@ public class DAO {
 	}
 	public List<chuyennganh> chuyennganh(){
 	    List<chuyennganh> list1 = new ArrayList<>();
-	    String query = "SELECT * FROM  ChuyenNganh";
+	    String query = "SELECT * FROM  ChuongTrinhHoc";
 	    try {
 	    	DatabaseConnection dbContext = new DatabaseConnection();
 	        conn = dbContext.getConnection();
@@ -118,6 +118,30 @@ public class DAO {
 	        rs = ps.executeQuery();
 	        while (rs.next()) {
 	        	list1.add(new chuyennganh(rs.getString(1), rs.getString(2)));
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            if (rs != null) rs.close();
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception ex) {
+	            ex.printStackTrace();
+	        }
+	    }
+	    return list1;        
+	}
+	public List<lop> lop(){
+	    List<lop> list1 = new ArrayList<>();
+	    String query = "SELECT * FROM  Lop";
+	    try {
+	    	DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        rs = ps.executeQuery();
+	        while (rs.next()) {
+	        	list1.add(new lop(rs.getString(1), rs.getString(2), rs.getString(3)));
 	        }
 	    } catch (Exception e) {
 	        e.printStackTrace();
@@ -249,30 +273,72 @@ public class DAO {
 		return list;
 		
 	}
-	public List<Student> getstudentbychuyennganh(String id){
-		List<Student> list = new ArrayList<>();
-		String querry = "select * from SinhVien \n"+" where id_chuyen_nganh=?";
-		try {
-			DatabaseConnection dbContext = new DatabaseConnection();
-			conn = dbContext.getConnection() ;
-			ps = conn.prepareStatement(querry);
-			ps.setString(1,id);
-			rs = ps.executeQuery();
-			while (rs.next()) {
-				list.add (new Student(rs.getString(1), 
-						rs.getString(2),
-						rs.getString(3),
-						rs.getString(4),
-						rs.getString(5))
-						);
-			}
-			//
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		return list;
-		
+//	public List<Student> getstudentbychuyennganh(String id){
+//		List<Student> list = new ArrayList<>();
+//		String querry = "select * from SinhVien \n"+" where id_chuyen_nganh=?";
+//		try {
+//			DatabaseConnection dbContext = new DatabaseConnection();
+//			conn = dbContext.getConnection() ;
+//			ps = conn.prepareStatement(querry);
+//			ps.setString(1,id);
+//			rs = ps.executeQuery();
+//			while (rs.next()) {
+//				list.add (new Student(rs.getString(1), 
+//						rs.getString(2),
+//						rs.getString(3),
+//						rs.getString(4),
+//						rs.getString(5))
+//						);
+//			}
+//			//
+//		} catch (Exception e) {
+//			// TODO: handle exception
+//		}
+//		return list;
+//		
+//	}
+	public Student getStudentById(String id) {
+	    String query = """
+	            SELECT 
+	                sv.id AS ma_sinh_vien, 
+	                sv.ten AS ten_sinh_vien, 
+	                sv.tuoi AS ngay_sinh, 
+	                sv.email AS email, 
+	                sv.id_lop AS id_lop,
+	                l.id_chuongtrinh
+	            FROM 
+	                SinhVien sv
+	                    JOIN 
+	            Lop l ON sv.id_lop = l.id
+	    		JOIN 
+	            ChuongTrinhHoc cth ON l.id_chuongtrinh = cth.id
+	            WHERE 
+	                sv.id = ?
+	            """;
+	    Student sv = null;
+	    try {
+	    		        DatabaseConnection dbContext = new DatabaseConnection();
+	    		        conn = dbContext.getConnection();
+	    		        ps = conn.prepareStatement(query);
+	    		        ps.setString(1, id);
+	    		        try (ResultSet rs = ps.executeQuery()) {
+	            if (rs.next()) {
+	                sv = new Student();
+	                sv.setId(rs.getString("ma_sinh_vien")); // Mã sinh viên
+	                sv.setTen(rs.getString("ten_sinh_vien")); // Tên sinh viên
+	                sv.setTuoi(rs.getDate("ngay_sinh").toLocalDate().toString()); // Ngày sinh
+	                sv.setEmail(rs.getString("email")); // Email
+	                sv.setIdlop(rs.getString("id_lop"));
+	                sv.setId_chuongtrinh(rs.getString("id_chuongtrinh"));
+
+	            }
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace(); // Log the exception or handle it appropriately
+	    }
+	    return sv;
 	}
+
 	public teacher laygv(String id) {
 	    String query = "SELECT * FROM GiangVien WHERE id=?";
 	    teacher gv = null;
@@ -334,41 +400,61 @@ public class DAO {
 	}
 
 
-	public Student laysv(String id) {
-	    String query = "SELECT * FROM SinhVien WHERE id=?";
-	    Student sv = null;
+	public List<Student> laysv(String idChuongTrinh) {
+	    String query = """
+	        SELECT 
+	            sv.id AS ma_sinh_vien, 
+	            sv.ten AS ten_sinh_vien, 
+	            sv.tuoi AS ngay_sinh, 
+	            sv.email AS email, 
+	            l.ten_lop AS ten_lop, 
+	            cth.ten_chuong_trinh AS ten_chuong_trinh
+	        FROM 
+	            SinhVien sv
+	        JOIN 
+	            Lop l ON sv.id_lop = l.id
+	        JOIN 
+	            ChuongTrinhHoc cth ON l.id_chuongtrinh = cth.id
+	        WHERE 
+	            cth.id = ?
+	        """;
+
+	    List<Student> studentList = new ArrayList<>();
 
 	    try {
-	    	DatabaseConnection dbContext = new DatabaseConnection();
+	        DatabaseConnection dbContext = new DatabaseConnection();
 	        conn = dbContext.getConnection();
 	        ps = conn.prepareStatement(query);
-	        ps.setString(1, id);
-	        rs = ps.executeQuery();
-
-	        if (rs.next()) {
-	            sv = new Student(
-	                rs.getString("id"),  // MSSV
-	                rs.getString("ten"), // Tên
-	                rs.getString("tuoi"),   // Tuổi
-	                rs.getString("lop"), // Lớp
-	                rs.getString("id_chuyen_nganh") // Mã chuyên ngành
-	            );
+	        ps.setString(1, idChuongTrinh);
+	        try (ResultSet rs = ps.executeQuery()) {
+	            while (rs.next()) {
+	                Student sv = new Student();
+	                sv.setId(rs.getString("ma_sinh_vien")); // Mã sinh viên
+	                sv.setTen(rs.getString("ten_sinh_vien")); // Tên sinh viên
+	                sv.setTuoi(rs.getDate("ngay_sinh").toLocalDate().toString()); // Ngày sinh
+	                sv.setEmail(rs.getString("email")); // Email
+	                sv.setTenLop(rs.getString("ten_lop"));
+	                sv.setTenChuongTrinh(rs.getString("ten_chuong_trinh"));
+	                studentList.add(sv);
+	            }
 	        }
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	    } finally {
 	        try {
-	            if (rs != null) rs.close();
 	            if (ps != null) ps.close();
 	            if (conn != null) conn.close();
 	        } catch (Exception e) {
 	            e.printStackTrace();
 	        }
 	    }
-	    return sv;
+
+	    return studentList;
 	}
+
+
 	public void updateStudent(Student sv) {
-	    String query = "UPDATE SinhVien SET ten = ?, tuoi = ?, lop = ?, id_chuyen_nganh = ? WHERE id = ?";
+	    String query = "UPDATE SinhVien SET ten = ?, tuoi = ?, email = ?,  id_lop= ? WHERE id = ?";
 
 	    try {
 	    	DatabaseConnection dbContext = new DatabaseConnection();
@@ -376,8 +462,8 @@ public class DAO {
 	        ps = conn.prepareStatement(query);
 	        ps.setString(1, sv.getTen());
 	        ps.setString(2, sv.getTuoi());
-	        ps.setString(3, sv.getLop());
-	        ps.setString(4, sv.getId_chuyen_nganh());
+	        ps.setString(3, sv.getEmail());
+	        ps.setString(4, sv.getIdlop());
 	        ps.setString(5, sv.getId());
 	        ps.executeUpdate();
 	    } catch (Exception e) {
@@ -458,19 +544,19 @@ public class DAO {
 		        e.printStackTrace(); // In chi tiết lỗi ra console
 		    }
 	}
-	public void insertSinhVien(String ten, String tuoi, String lop, String id_chuyen_nganh) {
+	public void insertSinhVien(String ten, String tuoi, String email, String idlop) {
 	    if (ten == null || ten.isEmpty()) {
 	        throw new IllegalArgumentException("Tên không được null hoặc rỗng.");
 	    }
-	    String query = "INSERT INTO SinhVien (ten, tuoi, lop, id_chuyen_nganh) VALUES (?, ?, ?, ?)";
+	    String query = "INSERT INTO SinhVien (ten, tuoi, email, id_lop) VALUES (?, ?, ?, ?)";
 	    try {
 	    	DatabaseConnection dbContext = new DatabaseConnection();
 	        conn = dbContext.getConnection();
 	        ps = conn.prepareStatement(query);
 	        ps.setString(1, ten);
 	        ps.setString(2, tuoi);
-	        ps.setString(3, lop);
-	        ps.setString(4, id_chuyen_nganh);
+	        ps.setString(3, email);
+	        ps.setString(4, idlop);
 	        ps.executeUpdate();
 	    } catch (Exception e) {
 	        e.printStackTrace();

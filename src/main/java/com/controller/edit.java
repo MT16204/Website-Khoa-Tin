@@ -1,6 +1,7 @@
 package com.controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -45,10 +46,12 @@ public class edit extends HttpServlet {
 	protected void ProcessRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
-
+	
         String id = request.getParameter("id");
         DAO dao = new DAO();
-        Student sv = dao.laysv(id);
+        Student sv = dao.getStudentById(id);
+    	List<lop> list3 = dao.lop(); 
+		request.setAttribute("list3", list3);
         request.setAttribute("sv", sv);
         request.getRequestDispatcher("edit.jsp").forward(request,response);
         

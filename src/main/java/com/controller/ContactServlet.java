@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.dao.*;
-import com.entity.*;
 /**
  * Servlet implementation class edit
  */

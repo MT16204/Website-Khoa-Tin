@@ -126,7 +126,7 @@
                 <img src="images/tuandoanhnghiep.png" alt="">
                 <div class="post-meta">
                     <span class="author">Khao tin học / 21-10-2024</span>
-                    <span class="category">Thông báo</span>
+                    <span class="category">Sự kiện</span>
                 </div>
                 <h2>Sự kiện tuần doanh nghiệp 2024</h2>
                 <p>THÔNG BÁO: SỰ KIỆN TUẦN DOANH NGHIỆP Đây là cơ hội tốt để các em nắm bắt thông tin, tìm cơ hội thực tập, việc làm...</p>

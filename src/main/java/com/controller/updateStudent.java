@@ -48,12 +48,12 @@ public class updateStudent extends HttpServlet {
 		        String id = request.getParameter("id");
 		        String name = request.getParameter("name");
 		        String tuoi = request.getParameter("tuoi");
-		        String lop = request.getParameter("lop");
-		        String idChuyenNganh = request.getParameter("idchuyennganh");
-
+		        String email = request.getParameter("email");
+		        String idlop = request.getParameter("idlop");
+		        String id_chuongtrinh = request.getParameter("id_chuongtrinh");
 		        DAO dao = new DAO();
-		        dao.updateStudent(new Student(id, name, tuoi, lop, idChuyenNganh));
+		        dao.updateStudent(new Student(id,name, tuoi, email,idlop));
 
-		        response.sendRedirect("GiaovienControl?idsv=" + idChuyenNganh); // Điều hướng về danh sách sinh viên
+		        response.sendRedirect("GiaovienControl?idsv=" + id_chuongtrinh); // Điều hướng về danh sách sinh viên
 		    }
 }

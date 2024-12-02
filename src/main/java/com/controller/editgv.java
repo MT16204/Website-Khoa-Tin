@@ -1,6 +1,7 @@
 package com.controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -46,6 +47,8 @@ public class editgv extends HttpServlet {
         String id = request.getParameter("id");
         DAO dao = new DAO();
         teacher sv = dao.laygv(id);
+		List<Bomon> list1 = dao.bomon(); 
+		request.setAttribute("list", list1);
         request.setAttribute("sv", sv);
         request.getRequestDispatcher("editgv.jsp").forward(request,response);
         
