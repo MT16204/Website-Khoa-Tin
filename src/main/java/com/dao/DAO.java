@@ -328,7 +328,7 @@ public class DAO {
 	                sv.setTen(rs.getString("ten_sinh_vien")); // Tên sinh viên
 	                sv.setTuoi(rs.getDate("ngay_sinh").toLocalDate().toString()); // Ngày sinh
 	                sv.setEmail(rs.getString("email")); // Email
-	                sv.setIdlop(rs.getString("id_lop"));
+	                sv.setId_lop(rs.getString("id_lop"));
 	                sv.setId_chuongtrinh(rs.getString("id_chuongtrinh"));
 
 	            }
@@ -433,8 +433,8 @@ public class DAO {
 	                sv.setTen(rs.getString("ten_sinh_vien")); // Tên sinh viên
 	                sv.setTuoi(rs.getDate("ngay_sinh").toLocalDate().toString()); // Ngày sinh
 	                sv.setEmail(rs.getString("email")); // Email
-	                sv.setTenLop(rs.getString("ten_lop"));
-	                sv.setTenChuongTrinh(rs.getString("ten_chuong_trinh"));
+	                sv.setTen_lop(rs.getString("ten_lop"));
+	                sv.setTen_chuongtrinh(rs.getString("ten_chuong_trinh"));
 	                studentList.add(sv);
 	            }
 	        }
@@ -463,7 +463,7 @@ public class DAO {
 	        ps.setString(1, sv.getTen());
 	        ps.setString(2, sv.getTuoi());
 	        ps.setString(3, sv.getEmail());
-	        ps.setString(4, sv.getIdlop());
+	        ps.setString(4, sv.getId_lop());
 	        ps.setString(5, sv.getId());
 	        ps.executeUpdate();
 	    } catch (Exception e) {

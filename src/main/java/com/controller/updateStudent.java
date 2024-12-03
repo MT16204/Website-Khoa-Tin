@@ -52,7 +52,7 @@ public class updateStudent extends HttpServlet {
 		        String idlop = request.getParameter("idlop");
 		        String id_chuongtrinh = request.getParameter("id_chuongtrinh");
 		        DAO dao = new DAO();
-		        dao.updateStudent(new Student(id,name, tuoi, email,idlop));
+		        dao.updateStudent(new Student(id, name, tuoi, email, idlop, id_chuongtrinh));
 
 		        response.sendRedirect("GiaovienControl?idsv=" + id_chuongtrinh); // Điều hướng về danh sách sinh viên
 		    }
