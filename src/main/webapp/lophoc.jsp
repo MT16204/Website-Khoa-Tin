@@ -1,46 +1,83 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="java.util.List, com.entity.SinhVien" %>
+<%
+    // Nhận danh sách sinh viên từ request (được truyền từ servlet)
+    List<SinhVien> sinhVienList = (List<SinhVien>) request.getAttribute("sinhVienList");
+%>
 <!DOCTYPE html>
-<html lang="vi">
-
+<html>
 <head>
     <meta charset="UTF-8">
+    <title>Danh Sách Sinh Viên - Khoa tin học Trường Đại học Sư phạm</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài viết - Khoa tin học Trường Đại học Sư </title>
+    <title>Công nghệ thông tin - Khoa tin học Trường Đại học Sư phạm</title>
     <link rel="shortcut icon" type="image" href="images/logo.png">
 
     <!-- Links of CSS files -->
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
-    
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 968px)">
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
-
     <!-- Google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+    /* Bảng */
+    table {
+        width: 80%; /* Điều chỉnh chiều rộng bảng */
+        padding: 40px; 
+        margin: 30px auto; /* Khoảng cách trên và dưới bảng */
+        border-collapse: collapse;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Đảm bảo các cột rộng hơn */
+	table td {
+	    word-wrap: break-word; /* Tránh text dài bị tràn */
+	    white-space: nowrap; /* Giữ cho nội dung trong các cột không bị xuống dòng */
+	}
 
+    /* Tiêu đề cột */
+    th {
+        background-color: #f44336;
+        color: white;
+        padding: 12px;
+        text-align: center;
+        font-weight: bold;
+    }
 
-    <!-- JQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    /* Dữ liệu trong bảng */
+    td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
 
-    <!-- OwlCarousel2 CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    /* Dòng chẵn trong bảng */
+    table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
 
+    /* Dòng lẻ trong bảng */
+    tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+
+    /* Hover khi di chuột qua dòng */
+    table tr:hover {
+        background-color: #f1f1f1;
+    }
+</style>
 </head>
-
 <body>
-
-    <!-- Header Section Started -->
-
-    <section class="sub-header blogPage">
+	<section class="sub-header libr">
 
         <!-- Navigation Section Started -->
+
         <nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
@@ -91,65 +128,56 @@
             </ul>
         </nav>
 
-        
-        <h1> BÀI VIẾT </h1>
+        <h1>DANH SÁCH SINH VIÊN CÁC LỚP</h1>
     </section>
 
-    
-    <div class="blog-container">
-        <section class="blog-posts">
-            <article class="post" data-category="TinTuc">
-                <img src="images/thietkelogo.png" alt="">
-                <div class="post-meta">
-                    <span class="author">Khao tin học / 03-11-2024</span>
-                    <span class="category">Tin Tức</span>
-                </div>
-                <h2>Cuộc thi thiết kế logo khoa Tin học nhân dịp kỷ niệm 20 năm ngày thành lập Khoa</h2>
-                <p>Các bạn sinh viên yêu thích sáng tạo đâu rồi?! Bạn có ý tưởng độc đáo? Bạn muốn dấu ấn của mình hiện diện trên logo của Khoa Tin học? Đây là cơ hội dành cho bạn! Khoa Tin học...</p>
-                <a href="post3.jsp" class="read-more">Đọc thêm</a>
-            </article>
-            
-            <article class="post" data-category="TinTuc">
-                <img src="images/chunhatxanh.jpeg" alt="">
-                <div class="post-meta">
-                    <span class="author">Khao tin học / 03-11-2024</span>
-                    <span class="category">Tin Tức</span>
-                </div>
-                <h2>Ngày chủ nhật xanh sinh viên Khoa Tin học</h2>
-                <p>RA QUÂN NGÀY CAO ĐIỂM: “NGÀY CHỦ NHẬT XANH “ ĐỢT IV NĂM 2024 Ngày 22/09/2024 BCH Liên Chi Tin học cùng các bạn sinh viên đã đồng loạt ra quân “Ngày chủ nhật xanh” để dọn sạch bãi biển...</p>
-                <a href="post2.jsp" class="read-more">Đọc thêm</a>
-            </article>
-            
-            <article class="post" data-category="SuKien">
-                <img src="images/tuandoanhnghiep.png" alt="">
-                <div class="post-meta">
-                    <span class="author">Khao tin học / 21-10-2024</span>
-                    <span class="category">Sự kiện</span>
-                </div>
-                <h2>Sự kiện tuần doanh nghiệp 2024</h2>
-                <p>THÔNG BÁO: SỰ KIỆN TUẦN DOANH NGHIỆP Đây là cơ hội tốt để các em nắm bắt thông tin, tìm cơ hội thực tập, việc làm...</p>
-                <a href="post1.jsp" class="read-more">Đọc thêm</a>
-            </article>
-        </section>
-    
-        <aside class="blog-sidebar">
-            <h3>Danh mục</h3>
-            <ul>
-                <li><a href="blog.jsp" onclick="filterPosts('All')">Tất cả</a></li>  
-                <li><a href="#" onclick="filterPosts('SuKien')">Sự kiện</a></li>
-                <li><a href="#" onclick="filterPosts('TinTuc')">Tin tức</a></li>
-            </ul>
-        </aside>
-    </div>
-    
-    <!-- Pagination -->
-    <section class="pagination">
-        <a href="blog.jsp" class="prev"><i class="fas fa-chevron-left"></i></a>
-        <a href="blog.jsp" class="page">1</a>
-        <a href="blog2.jsp" class="page active">2</a>
-    </section>
+    <table>
+        <thead>
+            <tr>
+                <th>Mã Sinh Viên</th>
+                <th>Họ Tên</th>
+                <th>Ngày Sinh</th>
+                <th>Email</th>
+                <th>Mã Lớp</th>
+                <th>Mã Chuyên Ngành</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% 
+                if (sinhVienList != null && !sinhVienList.isEmpty()) {
+                    for (SinhVien sv : sinhVienList) { 
+            %>
+                <tr>
+                    <td><%= sv.getMaSinhVien() %></td>
+                    <td><%= sv.getHoTen() %></td>
+                    <td><%= sv.getNgaySinh() %></td>
+                    <td><%= sv.getEmail() %></td>
+                    <td><%= sv.getMaLop() %></td>
+                    <td><%= sv.getMaChuyenNganh() %></td>
+                </tr>
+            <%  
+                    } 
+                } else { 
+            %>
+                <tr>
+                    <td colspan="6" style="text-align: center;">Không có sinh viên trong lớp này</td>
+                </tr>
+            <% 
+                } 
+            %>
+        </tbody>
+    </table>
+	
+	<!-- Script for form started -->
 
-	<!-- Footer -->
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="formLoad()"></iframe>
+
+    <!-- Script for form Ended -->
+
+    <!-- Footer -->
     <section class="footer">
 
         <div class="fcol col-3 ftrTopEle">
@@ -184,7 +212,10 @@
         </div>
     </section>
     <!-- Footer -->
- <script src="js/blog.js"></script>
+
+    <!-- Linked to javascript file -->
+    <script src="js/index.js"></script>
 
 </body>
+
 </html>

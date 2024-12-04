@@ -41,7 +41,6 @@
     <section class="sub-header blogPage">
 
         <!-- Navigation Section Started -->
-
         <nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
@@ -58,7 +57,7 @@
                 <li>
                     <label for="btn-1" class="show">Chương trình đào tạo <i class="fas fa-caret-down"></i></label>
 
-                    <a href="#course">Chương trình đào tạo  <i class="fas fa-caret-down"></i></a>
+                    <a href="#">Chương trình đào tạo  <i class="fas fa-caret-down"></i></a>
                     <input type="checkbox" id="btn-1">
                     <ul>
                         <li>
@@ -68,7 +67,6 @@
                             <ul>
                                 <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
                                 <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
-                                <!-- <li><a href="History.jsp"> Thạc sĩ Hệ thống thông tin </a></li> -->
                             </ul>
                         </li>
                         <li>
@@ -88,7 +86,7 @@
 
                 <li> <a href="faculty.jsp">Đội ngũ giảng viên</a></li>
                 <li> <a href="blog.jsp">Bài viết</a></li>
-                <li> <a href="ContactServlet">Liên hệ</a></li>
+                <li> <a href="contact.jsp">Liên hệ</a></li>
                 <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>
             </ul>
         </nav>

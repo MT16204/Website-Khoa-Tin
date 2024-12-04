@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DatabaseConnection {
-    public Connection getConnection() {
+    public static Connection getConnection() {
         try {
             // Đảm bảo rằng URL, username và password là chính xác
             String dbUrl = "jdbc:mysql://localhost:3306/ck1"; // Thay đổi theo URL cơ sở dữ liệu của bạn

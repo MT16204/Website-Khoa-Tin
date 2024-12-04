@@ -75,7 +75,7 @@
 
                 <li> <a href="faculty.jsp">Đội ngũ giảng viên</a></li>
                 <li> <a href="blog.jsp">Bài viết</a></li>
-                <li> <a href="ContactServlet">Liên hệ</a></li>
+                <li> <a href="contact.jsp">Liên hệ</a></li>
                 <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>
             </ul>
         </nav>
@@ -97,40 +97,11 @@
                 <h3>SPT</h3><br>
                 <p>Sư Phạm Tin Học</p>
                 <hr><br>
-                <a href="pdf/daotao/bacdaihoc/KeHoach-DaoTao-2024-2025.pdf" target="blank" class="heroBtn"><i
+                <a href="khoaHocLop" class="heroBtn"><i
                         class="fas fa-external-link-alt"></i></a> <br> <br>
             </div>
-
-            <!-- <div class="rcard col-3">
-
-                <h3>4th Semester</h3>
-                <div class="rtxt">
-                    <strong> Starting Time: </strong> January-2021 <br>
-                    <strong> Ending Time: </strong> April-2021 <br>
-                    <strong> Course Completed: </strong> 4 <br>
-                    <strong> Credit Completed: </strong> 10.5 <br>
-                </div>
-                <hr><br>
-                <a href="result_records/Spring_2021.pdf" target="blank" class="heroBtn"> See Result <i
-                        class="fas fa-external-link-alt"></i></a> <br> <br>
-
-            </div>
-            <div class="rcard col-3">
-
-                <h3>5th Semester</h3>
-                <div class="rtxt">
-                    <strong> Starting Time: </strong> May-2021 <br>
-                    <strong> Ending Time: </strong> Running <br>
-                    <strong> Course Completed: </strong> -- <br>
-                    <strong> Credit Completed: </strong> -- <br>
-                </div>
-                <hr><br>
-                <a href="" class="heroBtn"> See Result <i class="fas fa-external-link-alt"></i></a> <br> <br>
-
-            </div> -->
         </div>
     </div>
-    <!-- Result Section Ended -->
 
     <!-- Script for form started -->
 
