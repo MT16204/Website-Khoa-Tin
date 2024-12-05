@@ -37,9 +37,7 @@
 <body>
 
     <!-- Header Section Started -->
-
     <section class="sub-header blogPage">
-
         <!-- Navigation Section Started -->
         <nav>
             <div class="logo" id="top">

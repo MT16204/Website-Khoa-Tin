@@ -15,7 +15,6 @@ import java.io.*;
 import java.sql.*;
 import java.util.*;
 
-@WebServlet("/khoaHocLop") // URL pattern cho servlet
 public class KhoaHocLopServlet extends HttpServlet {
     
     // Kết nối cơ sở dữ liệu sẽ được lấy từ DatabaseConnection

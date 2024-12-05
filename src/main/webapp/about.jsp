@@ -131,7 +131,7 @@
 	            <h2>Đội ngũ Giảng viên và Hợp tác</h2>
 	            <p>
 	                Đội ngũ giảng viên gồm 15 người, trong đó có 9 Tiến sĩ và 5 Nghiên cứu sinh. 
-	                Khoa hợp tác với nhiều doanh nghiệp lớn như FPT, Gameloft, và Axon Active, mang đến môi trường học tập và thực hành chất lượng cho sinh viên.
+	                Ngoài ra Khoa còn hợp tác với nhiều doanh nghiệp lớn như FPT, Gameloft, và Axon Active, mang đến môi trường học tập và thực hành chất lượng cho sinh viên.
 	            </p>
 	        </div>
 	        <div class="sub-aboutCol">

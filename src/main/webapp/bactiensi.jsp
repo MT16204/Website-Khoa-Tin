@@ -25,9 +25,7 @@
 <body>
 
     <!-- Header Section Started -->
-
     <section class="sub-header libr">
-
         <!-- Navigation Section Started -->
         <nav>
             <div class="logo" id="top">
@@ -79,12 +77,7 @@
             </ul>
         </nav>
 
-        <!-- Navigation Section Ended -->
-
-
         <h1>BẬC TIẾN SĨ</h1>
-
-
     </section>
     <!-- Header Section Ended -->
 

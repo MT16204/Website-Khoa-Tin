@@ -26,7 +26,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     
     <style>
-    /* Bảng */
     table {
         width: 80%; /* Điều chỉnh chiều rộng bảng */
         padding: 40px; 
@@ -34,14 +33,12 @@
         border-collapse: collapse;
         box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
     }
-    
-    /* Đảm bảo các cột rộng hơn */
+
 	table td {
 	    word-wrap: break-word; /* Tránh text dài bị tràn */
 	    white-space: nowrap; /* Giữ cho nội dung trong các cột không bị xuống dòng */
 	}
 
-    /* Tiêu đề cột */
     th {
         background-color: #f44336;
         color: white;
@@ -50,34 +47,29 @@
         font-weight: bold;
     }
 
-    /* Dữ liệu trong bảng */
     td {
         padding: 12px;
         text-align: center;
         border: 1px solid #ddd;
     }
 
-    /* Dòng chẵn trong bảng */
     table tr:nth-child(even) {
         background-color: #f9f9f9;
     }
 
-    /* Dòng lẻ trong bảng */
     tr:nth-child(odd) {
         background-color: #ffffff;
     }
 
-    /* Hover khi di chuột qua dòng */
     table tr:hover {
         background-color: #f1f1f1;
     }
 </style>
+
 </head>
 <body>
 	<section class="sub-header libr">
-
         <!-- Navigation Section Started -->
-
         <nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>

@@ -66,7 +66,7 @@
                             <input type="checkbox" id="btn-2">
                             <ul>
                                 <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
-                                <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
+                                <li><a href="spt.jsp"> Cư nhân Sư phạm Tin học </a></li>
                             </ul>
                         </li>
                         <li>
@@ -202,10 +202,6 @@
                         <td><i class="far fa-envelope"></i></td>
                         <td><a href="mailto:ntqvinh@ued.udn.vn">ntqvinh@ued.udn.vn</a></td>
                     </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
                 </table>
             </div>
 
@@ -219,10 +215,6 @@
                     <tr>
                         <td><i class="far fa-envelope"></i></td>
                         <td><a href="mailto:pdthang@ued.udn.vn">pdthang@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
                     </tr>
                 </table>
             </div>
@@ -238,10 +230,6 @@
                         <td><i class="far fa-envelope"></i></td>
                         <td><a href="mailto:paphuong@ued.udn.vn">paphuong@ued.udn.vn</a></td>
                     </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
                 </table>
             </div>
 
@@ -256,10 +244,6 @@
                         <td><i class="far fa-envelope"></i></td>
                         <td><a href="mailto:ndlau@ued.udn.vn">ndlau@ued.udn.vn</a></td>
                     </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
                 </table>
             </div>
             
@@ -269,158 +253,6 @@
        
     </section>
     <!-- Đội ngũ giảng viên -->
-
-
-    <!-- Chương trình đào tạo 
-    <section class="course" id="course">
-        <h1 class="headingStyle">Chương trình đào tạo</h1>
-        <div class="slider owl-carousel">
-            <div class="courseCol">
-
-                <div class="img">
-                    <img class="roundedIMG" src="images/electronics.jpg" alt="edu Icon">
-                </div>
-
-                <h3>Basic Electronics Engineering</h3>
-
-                <div class="cardDesc">
-
-                    <table class="crdTable">
-                        <tr>
-                            <td> Faculty </td>
-                            <td> : </td>
-                            <td> <strong>MD. Rashedul Islam</strong> </td>
-                        </tr>
-                        <tr>
-                            <td> Email </td>
-                            <td> : </td>
-                            <td> <a href="mailto:rashed@metrouni.edu.bd"><strong> rashed@metrouni.edu.bd </strong></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> Mobile </td>
-                            <td> : </td>
-                            <td> <a href="tel:+8801712271451"><strong>+8801712-271451</strong></a> </td>
-                        </tr>
-                    </table>
-                    <hr>
-                    <div>
-                        <a href="Basic_Electronics.jsp" class="heroBtn"> Books & Materials </a> <br>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="courseCol">
-
-                <div class="img">
-                    <img class="roundedIMG" src="images/m_cv_fa.jpg" alt="edu Icon">
-                </div>
-
-                <h3>Matrix, CV & Fourier Analysis</h3>
-
-                <div class="cardDesc">
-
-                    <table class="crdTable">
-                        <tr>
-                            <td> Faculty </td>
-                            <td> : </td>
-                            <td> <strong>Suhel Ahmed</strong> </td>
-                        </tr>
-                        <tr>
-                            <td> Email </td>
-                            <td> : </td>
-                            <td> <a href="mailto:suhel@metrouni.edu.bd"><strong> suhel@metrouni.edu.bd </strong></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> Mobile </td>
-                            <td> : </td>
-                            <td> <a href="tel:+8801723976961"><strong>+8801723-976961</strong></a> </td>
-                        </tr>
-                    </table>
-                    <hr>
-                    <div>
-                        <a href="Matrix_CV_FA.jsp" class="heroBtn"> Books & Materials </a> <br>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="courseCol">
-
-                <div class="img">
-                    <img class="roundedIMG" src="images/disc_math.jpg" alt="edu Icon">
-                </div>
-
-                <h3>Discreate Mathematics</h3>
-
-                <div class="cardDesc">
-
-                    <table class="crdTable">
-                        <tr>
-                            <td> Faculty </td>
-                            <td> : </td>
-                            <td> <strong style="font-size: 15px;">Nazia Sultana Chowdhury</strong> </td>
-                        </tr>
-                        <tr>
-                            <td> Email </td>
-                            <td> : </td>
-                            <td> <a href="mailto:nazia.nishat1971@gmail.com"><strong
-                                        style="font-size: 14px;">nazia.nishat1971@gmail.com</strong></a></td>
-                        </tr>
-                        <tr>
-                            <td> Mobile </td>
-                            <td> : </td>
-                            <td> <a href="tel:+8801627055017"><strong>+8801627-055017</strong></a> </td>
-                        </tr>
-                    </table>
-                    <hr>
-                    <div>
-                        <a href="Discreate_Math.jsp" class="heroBtn"> Books & Materials </a> <br>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="courseCol">
-
-                <div class="img">
-                    <img class="roundedIMG" src="images/project_200.jpg" alt="edu Icon">
-                </div>
-
-                <h3>Project 200</h3>
-
-                <div class="cardDesc">
-
-                    <table class="crdTable">
-                        <tr>
-                            <td> Faculty </td>
-                            <td> : </td>
-                            <td> <strong>Ranith Debnath Akash</strong> </td>
-                        </tr>
-                        <tr>
-                            <td> Email </td>
-                            <td> : </td>
-                            <td> <a href="mailto:ranit@metrouni.edu.bd"><strong> ranit@metrouni.edu.bd </strong></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> Mobile </td>
-                            <td> : </td>
-                            <td> <a href="tel:+8801682047902"><strong>+8801682-047902</strong></a></td>
-                        </tr>
-                    </table>
-                    <hr>
-                    <div>
-                        <a href="Project_200.jsp" class="heroBtn"> Books & Materials </a> <br>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    Chương trình đào tạo --> 
 
 
     <!-- Liên hệ -->
@@ -482,13 +314,12 @@
     <!-- Footer -->
     
     <!-- Nút Liên hệ -->
-    
     <div class="echbay-sms-messenger style-for-position-br">
 		<div class="phonering-alo-alo">
-			<a href="tel:0903123456" rel="nofollow" class="echbay-phonering-alo-event">.</a>
+			<a href="tel:0905121281" rel="nofollow" class="echbay-phonering-alo-event">.</a>
 		</div>
 		<div class="phonering-alo-messenger">
-			<a href="https://www.messenger.com/t/aiken.trung" target="_blank" rel="nofollow" class="echbay-phonering-messenger-event">.</a>
+			<a href="https://www.facebook.com/khoatinhoc" target="_blank" rel="nofollow" class="echbay-phonering-messenger-event">.</a>
 		</div>
 	</div>
 	

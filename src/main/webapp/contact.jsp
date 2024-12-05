@@ -38,17 +38,10 @@
 </head>
 
 <body>
-<c:if test="${param.message == 'success'}">
-        <div class="alert alert-success">Cảm ơn bạn, chúng tôi đã nhận được thông tin!</div>
-    </c:if>
-
 
     <!-- Header Section Started -->
-
     <section class="sub-header contactHeader">
-
         <!-- Navigation Section Started -->
-
         <nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
@@ -138,7 +131,7 @@
             <div>
                 <i class="fa fa-phone"></i>
                 <span>
-                    <h5><a href="tel:+02363841323" style="text-decoration: none; color: inherit;"> +02363.841323 </a></h5>
+                    <h5><a href="tel:0905121281" style="text-decoration: none; color: inherit;"> +090 512 12 81 </a></h5>
                     <p style="font-style: italic">Thứ hai - Chủ nhật | 8:00 - 21:30</p>
                 </span>
             </div>
@@ -155,24 +148,11 @@
 
         <!-- Contact Form -->
         <div class="contactCol msg">
-            <form
-                action="ContactServletadd"
-                method="post" target="msgForm" onsubmit="submitted=true"
-                class="myform" id="contform">
-
+            <form method="post" target="msgForm" onsubmit="submitted=true" class="myform" id="contform">
 					<input type="email" name="emailAddress" placeholder="Email"
 						required> 
 					<input type="text" name="entry.805276147"
 						placeholder="Tên" required> 
-					<label for="subject">Chọn tiêu đề:</label>
-					<select name="subject" id="subject" required>
-    					<option value="" disabled selected>-- Chọn một tiêu đề --</option>
-    					<c:forEach items="${list3}" var="o">
-        				<option value="${o.idsubject}">${o.namesubject}</option>
-    					</c:forEach>
-					</select>
-
-
 					<textarea rows="5" name="entry.740878952" placeholder="Lời nhắn"
 						required></textarea>
 

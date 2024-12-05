@@ -27,9 +27,7 @@
     <!-- Header Section Started -->
 
     <section class="sub-header libr">
-
         <!-- Navigation Section Started -->
-
         <nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
@@ -83,7 +81,7 @@
         <!-- Navigation Section Ended -->
 
 
-        <h1>CỬ NHÂN SƯ PHẠM TIN HỌC</h1>
+        <h1>SƯ PHẠM TIN HỌC</h1>
 
 
     </section>
@@ -97,7 +95,7 @@
                 <h3>SPT</h3><br>
                 <p>Sư Phạm Tin Học</p>
                 <hr><br>
-                <a href="khoaHocLop" class="heroBtn"><i
+                <a href="programSPT.jsp" class="heroBtn"><i
                         class="fas fa-external-link-alt"></i></a> <br> <br>
             </div>
         </div>

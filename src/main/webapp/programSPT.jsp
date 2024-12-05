@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Công nghệ thông tin - Khoa tin học Trường Đại học Sư phạm</title>
+    <title>Chương trình học - Khoa tin học Trường Đại học Sư phạm</title>
     <link rel="shortcut icon" type="image" href="images/logo.png">
 
     <!-- Links of CSS files -->
@@ -80,33 +80,17 @@
         <!-- Navigation Section Ended -->
 
 
-        <h1>CÔNG NGHỆ THÔNG TIN</h1>
+        <h1>CHƯƠNG TRÌNH HỌC</h1>
 
 
     </section>
     <!-- Header Section Ended -->
-
-
-
-    <div class="container">
-        <div class="rows">
-            <div class="rcard col-3">
-                <h3>CNTT</h3><br>
-                <p>Công nghệ thông tin - thường</p>
-                <hr><br>
-                <a href="programCNTT.jsp" class="heroBtn"><i
-                        class="fas fa-external-link-alt"></i></a> <br> <br>
-            </div>
-            <div class="rcard col-3">
-
-                <h3>CNTTC</h3><br>
-                <p>Công nghệ thông tin - chất lượng cao</p>
-                <hr><br>
-                <a href="programCNTTC.jsp" class="heroBtn"><i
-                        class="fas fa-external-link-alt"></i></a> <br> <br>
-            </div>
-        </div>
-    </div>
+	
+	
+	<div class="buttonContainer">
+	        <a href="khoaHocLop" class="sub-heroBtn redBtn">Danh sách khoá học</a>
+	</div>
+   
 
     <!-- Script for form started -->
 

@@ -27,7 +27,6 @@
     <!-- Header Section Started -->
 
     <section class="sub-header facHeader">
-
         <!-- Navigation Section Started -->
         <nav>
             <div class="logo" id="top">

@@ -25,9 +25,7 @@
 <body>
 
     <!-- Header Section Started -->
-
     <section class="sub-header libr">
-
         <!-- Navigation Section Started -->
         <nav>
             <div class="logo" id="top">
@@ -78,13 +76,8 @@
                 <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>
             </ul>
         </nav>
-
-        <!-- Navigation Section Ended -->
-
-
+        
         <h1>BẬC THẠC SĨ</h1>
-
-
     </section>
     <!-- Header Section Ended -->
 
