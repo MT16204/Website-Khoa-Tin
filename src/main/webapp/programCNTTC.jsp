@@ -86,6 +86,17 @@
     </section>
     <!-- Header Section Ended -->
 	
+	<div class="container">
+        <div class="rows">
+            <div class="rcard col-3">
+                <h3>Khoá - 2021</h3>
+              
+                <hr><br>
+                <a href="pdf/chuongtrinh/CNTTC/K21-CNTT-CLC.pdf" target="blank" class="heroBtn"><i
+                        class="fas fa-external-link-alt"></i></a> <br> <br>
+            </div>
+        </div>
+    </div>
 	
 	<div class="buttonContainer">
 	        <a href="khoaHocLop" class="sub-heroBtn redBtn">Danh sách khoá học</a>

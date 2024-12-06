@@ -86,6 +86,41 @@
     </section>
     <!-- Header Section Ended -->
 	
+	<div class="container">
+        <div class="rows">
+            <div class="rcard col-3">
+                <h3>Khoá - 2021</h3>
+              
+                <hr><br>
+                <a href="pdf/chuongtrinh/SPT/K21-SP-Tin-hoc.pdf" target="blank" class="heroBtn"><i
+                        class="fas fa-external-link-alt"></i></a> <br> <br>
+            </div>
+            <div class="rcard col-3">
+
+                <h3>Khoá - 2022</h3>
+              
+                <hr><br>
+                <a href="pdf/chuongtrinh/SPT/K22-SP-Tin.pdf" target="blank" class="heroBtn"><i
+                        class="fas fa-external-link-alt"></i></a> <br> <br>
+            </div>
+            <div class="rcard col-3">
+
+                <h3>Khoá - 2023</h3>
+              
+                <hr><br>
+                <a href="pdf/chuongtrinh/SPT/K23-SPTin.pdf" target="blank" class="heroBtn"><i
+                        class="fas fa-external-link-alt"></i></a> <br> <br>
+            </div>
+            <div class="rcard col-3">
+
+                <h3>Khoá - 2024</h3>
+              
+                <hr><br>
+                <a href="pdf/chuongtrinh/SPT/K24-SPT.pdf" target="blank" class="heroBtn"><i
+                        class="fas fa-external-link-alt"></i></a> <br> <br>
+            </div>
+        </div>
+    </div>
 	
 	<div class="buttonContainer">
 	        <a href="khoaHocLop" class="sub-heroBtn redBtn">Danh sách khoá học</a>

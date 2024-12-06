@@ -55,51 +55,7 @@
 	href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 <script src="assets/vendor/js/helpers.js"></script>
 <script src="assets/js/config.js"></script>
-<style>  
-       .accordion {  
-    max-width: 900px;  
-    margin: 20px 20px; 
-      padding: 20px 20px;   
-    border-radius: 8px;  
-    overflow: hidden;  
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
-    background-color: #ffffff;
-}
 
-.accordion-item {  
-    border-bottom: 1px solid #ddd;  
-    overflow: hidden;  
-    transition: all 0.3s ease-in-out;  
-}
-
-.accordion-header {  
-    padding: 20px 20px;  
-    cursor: pointer;  
-    display: flex;  
-    justify-content: space-between;  
-    align-items: center;  
-    background-color: #f8f9fa;  
-    font-size: 16px;  
-    font-weight: bold;  
-    color: #333;  
-    transition: background-color 0.3s ease, color 0.3s ease;  
-}
-
-.accordion-header.active {  
-    background-color: #e9ecef;  
-    color: #0056b3;  
-}
-
-.accordion-content {  
-    padding: 20px 20px;  
-    display: none;  
-    background-color: #f8f9fa;  
-    font-size: 14px;  
-    color: #555;  
-    line-height: 1.5;  
-}
-
-    </style>  
 </head>
 
 <body>
