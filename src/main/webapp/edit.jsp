@@ -12,7 +12,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-           <div class="modal-dialog">
+<div class="modal-dialog">
     <div class="modal-content">
         <form action="updateStudent" method="post">
             <div class="modal-header">
@@ -20,30 +20,35 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </div>
             <div class="modal-body">
-                <!-- ID Sinh Viên -->
+                <!-- Mã Sinh Viên -->
                 <div class="form-group">
-                    <label for="id">Mã Sinh Viên</label>
-                    <input name="id" type="text" class="form-control" value="${sv.id}" readonly>
+                    <label for="maSinhVien">Mã Sinh Viên</label>
+                    <input name="maSinhVien" type="text" class="form-control" value="${sv.maSinhVien}" readonly>
                 </div>
-                <!-- Tên Sinh Viên -->
+                <!-- Họ và Tên -->
                 <div class="form-group">
-                    <label for="name">Tên</label>
-                    <input name="name" type="text" class="form-control" value="${sv.ten}" placeholder="Nhập tên" required>
+                    <label for="hoTen">Họ và Tên</label>
+                    <input name="hoTen" type="text" class="form-control" value="${sv.hoTen}" placeholder="Nhập họ và tên" required>
                 </div>
-                <!-- Tuổi -->
+                <!-- Ngày Sinh -->
                 <div class="form-group">
-                    <label for="tuoi">Tuổi</label>
-                    <input name="tuoi" type="text" class="form-control" value="${sv.tuoi}" placeholder="Nhập tuổi" required>
+                    <label for="ngaySinh">Ngày Sinh</label>
+                    <input name="ngaySinh" type="date" class="form-control" value="${sv.ngaySinh}" required>
                 </div>
-                <!-- Lớp -->
+                <!-- Email -->
                 <div class="form-group">
-                    <label for="lop">Lớp</label>
-                    <input name="lop" type="text" class="form-control" value="${sv.lop}" placeholder="Nhập lớp" required>
+                    <label for="email">Email</label>
+                    <input name="email" type="email" class="form-control" value="${sv.email}" placeholder="Nhập email" required>
+                </div>
+                <!-- Mã Lớp -->
+                <div class="form-group">
+                    <label for="maLop">Mã Lớp</label>
+                    <input name="maLop" type="text" class="form-control" value="${sv.maLop}" placeholder="Nhập mã lớp" required>
                 </div>
                 <!-- Mã Chuyên Ngành -->
                 <div class="form-group">
-                    <label for="idchuyennganh">Chuyên ngành</label>
-                    <input name="idchuyennganh" type="text" class="form-control" value="${sv.id_chuyen_nganh}" placeholder="Nhập chuyên ngành" required>
+                    <label for="maChuyenNganh">Mã Chuyên Ngành</label>
+                    <input name="maChuyenNganh" type="text" class="form-control" value="${sv.maChuyenNganh}" placeholder="Nhập mã chuyên ngành" required>
                 </div>
             </div>
             <div class="modal-footer">
@@ -53,6 +58,5 @@
         </form>
     </div>
 </div>
-
 </body>
 </html>

@@ -104,7 +104,7 @@
                 </div>
                 <h2>Cuộc thi thiết kế logo khoa Tin học nhân dịp kỷ niệm 20 năm ngày thành lập Khoa</h2>
                 <p>Các bạn sinh viên yêu thích sáng tạo đâu rồi?! Bạn có ý tưởng độc đáo? Bạn muốn dấu ấn của mình hiện diện trên logo của Khoa Tin học? Đây là cơ hội dành cho bạn! Khoa Tin học...</p>
-                <a href="post3.jsp" class="read-more">Đọc thêm</a>
+                <a href="post4.jsp" class="read-more">Đọc thêm</a>
             </article>
             
             <article class="post" data-category="TinTuc">
@@ -115,7 +115,7 @@
                 </div>
                 <h2>Ngày chủ nhật xanh sinh viên Khoa Tin học</h2>
                 <p>RA QUÂN NGÀY CAO ĐIỂM: “NGÀY CHỦ NHẬT XANH “ ĐỢT IV NĂM 2024 Ngày 22/09/2024 BCH Liên Chi Tin học cùng các bạn sinh viên đã đồng loạt ra quân “Ngày chủ nhật xanh” để dọn sạch bãi biển...</p>
-                <a href="post2.jsp" class="read-more">Đọc thêm</a>
+                <a href="post5.jsp" class="read-more">Đọc thêm</a>
             </article>
             
             <article class="post" data-category="SuKien">
@@ -126,7 +126,7 @@
                 </div>
                 <h2>Sự kiện tuần doanh nghiệp 2024</h2>
                 <p>THÔNG BÁO: SỰ KIỆN TUẦN DOANH NGHIỆP Đây là cơ hội tốt để các em nắm bắt thông tin, tìm cơ hội thực tập, việc làm...</p>
-                <a href="post1.jsp" class="read-more">Đọc thêm</a>
+                <a href="post6.jsp" class="read-more">Đọc thêm</a>
             </article>
         </section>
     

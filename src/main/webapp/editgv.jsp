@@ -51,10 +51,10 @@
                         <input name="chucvu" type="text" class="form-control" value="${sv.chuc_vu}" placeholder="Nhập chức vụ" required>
                     </div>
                     <!-- Mã Bộ Môn -->
-                    <div class="form-group">
+                   <%--  <div class="form-group">
                         <label for="idbomon">Mã Bộ Môn</label>
                         <input name="idbomon" type="text" class="form-control" value="${sv.id_to_bo_mon}" placeholder="Nhập mã bộ môn" required>
-                    </div>
+                    </div> --%>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>

@@ -29,9 +29,9 @@
                     <button type="submit" class="login-btn">Đăng Nhập</button>
                 </div>
             </form>
-            <div class="text-small">
+            <!-- <div class="text-small">
                 <p>Chưa có tài khoản? <a href="register.jsp">Đăng ký ngay</a></p>
-            </div>
+            </div> -->
             
             <!-- Hiển thị thông báo lỗi nếu có -->
             <div class="error-message">

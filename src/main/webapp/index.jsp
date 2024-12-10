@@ -101,12 +101,7 @@
                 <a href="#about" class="heroBtn"> Tìm hiểu ngay </a>
             </div>
         </div>
-
-        <!-- Header text Section Ended -->
-
     </section>
-    <!-- Header Section Ended -->
-
 
     <!-- Giới thiệu -->
     <section class="aboutUs" id="about">
@@ -127,7 +122,6 @@
             </div>
         </div>
     </section>
-    <!-- Giới thiệu -->
 
     <!-- Bài viết -->
     <section class="blog" id="blog">
@@ -184,7 +178,6 @@
             </div>
         </div>
     </section>
-    <!-- Bài viết -->
 
     <!-- Đội ngũ giảng viên -->
     <section class="faculty" id="faculty">
@@ -252,7 +245,6 @@
             </div> 
        
     </section>
-    <!-- Đội ngũ giảng viên -->
 
 
     <!-- Liên hệ -->
@@ -391,7 +383,7 @@
         });
     </script>
 
-    <!-- Linked to javascript file -->
+    <!-- Links Javascript -->
     <script src="js/index.js"></script>
     <!-- <script src="assets/js/bootstrap.js"></script> -->
     

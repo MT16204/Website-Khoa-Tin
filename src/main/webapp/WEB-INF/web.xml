@@ -17,19 +17,28 @@
     <servlet-name>LoginServlet</servlet-name>
     <servlet-class>com.controller.LoginServlet</servlet-class>
   </servlet>
+  <!-- <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+	<url-pattern>/login</url-pattern>
+  </servlet-mapping> -->
 
   <servlet>
     <servlet-name>RegisterServlet</servlet-name>
     <servlet-class>com.controller.RegisterServlet</servlet-class>
   </servlet>
 
-    <servlet>
+    <!-- <servlet>
         <servlet-name>KhoaHocLopServlet</servlet-name>
         <servlet-class>com.controller.KhoaHocLopServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>KhoaHocLopServlet</servlet-name>
         <url-pattern>/khoaHocLop</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping> -->
+    
+	<servlet>
+	    <servlet-name>HomeControl</servlet-name>
+	    <servlet-class>com.controller.HomeControl</servlet-class>
+	</servlet>
 
 </web-app>

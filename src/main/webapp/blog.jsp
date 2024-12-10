@@ -104,7 +104,7 @@
                 </div>
                 <h2>Lễ kỷ niệm 20 năm thành lập Khoa Tin học</h2>
                 <p>Một dòng sông không có thác ghềnh, một con kênh không có bậc nước sẽ trở thành dòng sông và con kênh êm đềm, phẳng lặng. Nhưng dòng thời gian mà thiếu đi những mốc son, dấu ấn, điểm nhấn...</p>
-                <a href="html/blog/post6.jsp" class="read-more">Đọc thêm</a>
+                <a href="post1.jsp" class="read-more">Đọc thêm</a>
             </article>
             
             <article class="post" data-category="SuKien">
@@ -115,7 +115,7 @@
                 </div>
                 <h2>Buổi Chào Đón Tân Sinh Viên Khóa 2024 – Khoa Tin Học</h2>
                 <p>Tối 29/10 vừa qua, được sự chỉ đạo của khoa Tin học, liên chi đoàn đã tổ chức buổi chào đón các bạn tân sinh viên K24 đã diễn ra thành công và đầy cảm xúc...</p>
-                <a href="html/blog/post5.jsp" class="read-more">Đọc thêm</a>
+                <a href="post2.jsp" class="read-more">Đọc thêm</a>
             </article>
             
             <article class="post" data-category="TinTuc">
@@ -126,7 +126,7 @@
                 </div>
                 <h2>Ra Mắt Ban Chấp Hành Liên Chi Đoàn Khoa Tin Học Trường Đại Học Sư Phạm – ĐHĐN, Nhiệm Kỳ 2024 – 2025</h2>
                 <p>Vừa qua Hội nghị kiện toàn Ban Chấp hành Liên Chi Đoàn Khoa Tin học đã diễn ra trong không khí trang trọng và phấn khởi...</p>
-                <a href="post4.jsp" class="read-more">Đọc thêm</a>
+                <a href="post3.jsp" class="read-more">Đọc thêm</a>
             </article>
         </section>
     
