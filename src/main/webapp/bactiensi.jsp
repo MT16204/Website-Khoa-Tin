@@ -85,16 +85,10 @@
 
 
     <div class="container">
-        <div class="rows">
+        <div class="rows center-rows">
             <div class="rcard col-3">
 
                 <h3>Kế hoạch đào tạo (2023)</h3>
-                <!-- <div class="rtxt">
-                    <strong> Starting Time: </strong> January-2020 <br>
-                    <strong> Ending Time: </strong> Jun-2020 <br>
-                    <strong> Course Completed: </strong> 3 <br>
-                    <strong> Credit Completed: </strong> 9 <br>
-                </div> -->
                 <hr><br>
                 <a href="pdf/daotao/bactiensi/HTTT-2023.pdf" target="blank" class="heroBtn"><i
                         class="fas fa-external-link-alt"></i></a> <br> <br>

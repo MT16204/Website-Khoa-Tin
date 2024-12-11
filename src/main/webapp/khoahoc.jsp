@@ -1,13 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="java.util.*, com.entity.KhoaHoc" %>
-<%
-    List<KhoaHoc> khoaHocList = (List<KhoaHoc>) request.getAttribute("khoaHocList");
-    if (khoaHocList == null || khoaHocList.isEmpty()) {
-%>
-    <p>Không có dữ liệu khóa học.</p>
-<%
-    } else {
-%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<%@ page import="java.util.*, com.entity.*" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -123,7 +118,7 @@
                     </ul>
                 </li>
 
-                <li> <a href="faculty.jsp">Đội ngũ giảng viên</a></li>
+                <li> <a href="faculty">Đội ngũ giảng viên</a></li>
                 <li> <a href="blog.jsp">Bài viết</a></li>
                 <li> <a href="contact.jsp">Liên hệ</a></li>
                 <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>
@@ -138,32 +133,50 @@
             <th>Tên Khoá</th>
             <th>Mã Lớp</th>
         </tr>
-        <% for (KhoaHoc khoaHoc : khoaHocList) { %>
+      
             <tr>
-                <td><%= khoaHoc.getTenKhoa() %></td>
+        
+                <td>2020</td>
                 <td>
-                    <%
-                        String lopNamesStr = khoaHoc.getLopNames();
-                        if (lopNamesStr != null && !lopNamesStr.isEmpty()) {
-                            String[] lopNames = lopNamesStr.split(", ");
-                            for (String lop : lopNames) {
-                    %>
-                                <a href="khoaHocLop?maLop=<%= lop %>"><%= lop %> </a>&nbsp;
-                    <%
-                            }
-                        } else {
-                    %>
-                            Không có lớp nào
-                    <%
-                        }
-                    %>
+                    <c:forEach items="${list1}" var="o">
+                                <a href="SV?maLop=${o.id}">${o.ten_lop} </a>&nbsp;
+                 </c:forEach>
                 </td>
+               
             </tr>
-        <% } %>
+            <tr>
+        
+                <td>2021</td>
+                <td>
+                    <c:forEach items="${list2}" var="o">
+                                <a href="SV?maLop=${o.id}">${o.ten_lop} </a>&nbsp;
+                 </c:forEach>
+                </td>
+               
+            </tr>
+            <tr>
+        
+                <td>2022</td>
+                <td>
+                    <c:forEach items="${list3}" var="o">
+                                <a href="SV?maLop=${o.id}">${o.ten_lop} </a>&nbsp;
+                 </c:forEach>
+                </td>
+               
+            </tr>
+            <tr>
+        
+                <td>2023</td>
+                <td>
+                    <c:forEach items="${list4}" var="o">
+                                <a href="SV?maLop=${o.id}">${o.ten_lop} </a>&nbsp;
+                 </c:forEach>
+                </td>
+               
+            </tr>
+       
     </table>
-<%
-    }
-%>
+
 
 
 <!-- Script for form started -->

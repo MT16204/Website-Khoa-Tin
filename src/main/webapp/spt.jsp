@@ -89,7 +89,7 @@
 
 
     <div class="container">
-        <div class="rows">
+        <div class="rows center-rows">
             <div class="rcard col-3">
 
                 <h3>SPT</h3><br>

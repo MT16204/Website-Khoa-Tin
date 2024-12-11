@@ -4,6 +4,7 @@ public class lop {
     private String id;
     private String ten_lop;
     private String id_chuongtrinh;
+    
 	public lop() {
 		super();
 		// TODO Auto-generated constructor stub

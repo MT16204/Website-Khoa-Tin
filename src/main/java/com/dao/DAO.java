@@ -16,6 +16,54 @@ public class DAO {
 	PreparedStatement ps = null;
 	ResultSet rs=null;
 	
+	public List<Student> trangchulaysv(String idlop) {
+	    String query = """
+	        SELECT 
+	            sv.id AS ma_sinh_vien, 
+	            sv.ten AS ten_sinh_vien, 
+	            sv.tuoi AS ngay_sinh, 
+	            sv.email AS email, 
+	            l.ten_lop AS ten_lop 
+	        FROM 
+	            SinhVien sv
+	        JOIN 
+	            Lop l ON sv.id_lop = l.id
+	       
+	        WHERE 
+	            sv.id_lop = ?
+	        """;
+
+	    List<Student> studentList = new ArrayList<>();
+
+	    try {
+	        DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        ps.setString(1, idlop);
+	        try (ResultSet rs = ps.executeQuery()) {
+	            while (rs.next()) {
+	                Student sv = new Student();
+	                sv.setId(rs.getString("ma_sinh_vien")); // Mã sinh viên
+	                sv.setTen(rs.getString("ten_sinh_vien")); // Tên sinh viên
+	                sv.setTuoi(rs.getDate("ngay_sinh").toLocalDate().toString()); // Ngày sinh
+	                sv.setEmail(rs.getString("email")); // Email
+	                sv.setTenLop(rs.getString("ten_lop"));
+	                studentList.add(sv);
+	            }
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        }
+	    }
+
+	    return studentList;
+	}
 	public List<teacher> getAllTeacher() {
 	    List<teacher> list = new ArrayList<>();
 	    String query = "SELECT * FROM GiangVien";
@@ -135,6 +183,102 @@ public class DAO {
 	public List<lop> lop(){
 	    List<lop> list1 = new ArrayList<>();
 	    String query = "SELECT * FROM  Lop";
+	    try {
+	    	DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        rs = ps.executeQuery();
+	        while (rs.next()) {
+	        	list1.add(new lop(rs.getString(1), rs.getString(2), rs.getString(3)));
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            if (rs != null) rs.close();
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception ex) {
+	            ex.printStackTrace();
+	        }
+	    }
+	    return list1;        
+	}
+	public List<lop> lop1(){
+	    List<lop> list1 = new ArrayList<>();
+	    String query = "SELECT * FROM  Lop where id_khoahoc=1";
+	    try {
+	    	DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        rs = ps.executeQuery();
+	        while (rs.next()) {
+	        	list1.add(new lop(rs.getString(1), rs.getString(2), rs.getString(3)));
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            if (rs != null) rs.close();
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception ex) {
+	            ex.printStackTrace();
+	        }
+	    }
+	    return list1;        
+	}
+	public List<lop> lop2(){
+	    List<lop> list1 = new ArrayList<>();
+	    String query = "SELECT * FROM  Lop where id_khoahoc=2";
+	    try {
+	    	DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        rs = ps.executeQuery();
+	        while (rs.next()) {
+	        	list1.add(new lop(rs.getString(1), rs.getString(2), rs.getString(3)));
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            if (rs != null) rs.close();
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception ex) {
+	            ex.printStackTrace();
+	        }
+	    }
+	    return list1;        
+	}
+	public List<lop> lop3(){
+	    List<lop> list1 = new ArrayList<>();
+	    String query = "SELECT * FROM  Lop where id_khoahoc=3";
+	    try {
+	    	DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        rs = ps.executeQuery();
+	        while (rs.next()) {
+	        	list1.add(new lop(rs.getString(1), rs.getString(2), rs.getString(3)));
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            if (rs != null) rs.close();
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception ex) {
+	            ex.printStackTrace();
+	        }
+	    }
+	    return list1;        
+	}
+	public List<lop> lop4(){
+	    List<lop> list1 = new ArrayList<>();
+	    String query = "SELECT * FROM  Lop where id_khoahoc=4";
 	    try {
 	    	DatabaseConnection dbContext = new DatabaseConnection();
 	        conn = dbContext.getConnection();

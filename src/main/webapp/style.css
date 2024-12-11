@@ -327,6 +327,13 @@ nav input {
     justify-content: space-between;
 }
 
+.center-rows{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
 /* Chương trình đào tạo */
 
 .course {
