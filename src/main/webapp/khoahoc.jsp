@@ -105,7 +105,7 @@
                             <input type="checkbox" id="btn-2">
                             <ul>
                                 <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
-                                <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
+                                <li><a href="spt.jsp"> Sư phạm Tin học </a></li>
                             </ul>
                         </li>
                         <li>

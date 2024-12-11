@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -22,8 +23,8 @@
 	rel="stylesheet">
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="shortcut icon" type="image" href="images/logo.png">
-
+<link rel="icon" type="image/x-icon"
+	href="assets/img/favicon/favicon.ico" />
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
 	rel="stylesheet">
@@ -55,7 +56,50 @@
 	href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 <script src="assets/vendor/js/helpers.js"></script>
 <script src="assets/js/config.js"></script>
+<style>
+.accordion {
+	max-width: 900px;
+	margin: 20px 20px;
+	padding: 20px 20px;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+}
 
+.accordion-item {
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.accordion-header {
+	padding: 20px 20px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f8f9fa;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-header.active {
+	background-color: #e9ecef;
+	color: #0056b3;
+}
+
+.accordion-content {
+	padding: 20px 20px;
+	display: none;
+	background-color: #f8f9fa;
+	font-size: 14px;
+	color: #555;
+	line-height: 1.5;
+}
+</style>
 </head>
 
 <body>
@@ -68,7 +112,44 @@
 				class="layout-menu menu-vertical menu bg-menu-theme">
 				<div class="app-brand demo">
 					<a href="HomeControl" class="app-brand-link"> <span
-						class="app-brand-logo demo me-1"> 
+						class="app-brand-logo demo me-1"> <span
+							style="color: var(--bs-primary)"> <svg width="30"
+									height="24" viewBox="0 0 250 196" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+										d="M12.3002 1.25469L56.655 28.6432C59.0349 30.1128 60.4839 32.711 60.4839 35.5089V160.63C60.4839 163.468 58.9941 166.097 56.5603 167.553L12.2055 194.107C8.3836 196.395 3.43136 195.15 1.14435 191.327C0.395485 190.075 0 188.643 0 187.184V8.12039C0 3.66447 3.61061 0.0522461 8.06452 0.0522461C9.56056 0.0522461 11.0271 0.468577 12.3002 1.25469Z"
+										fill="currentColor" />
+                    <path opacity="0.077704" fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0 65.2656L60.4839 99.9629V133.979L0 65.2656Z" fill="black" />
+                    <path opacity="0.077704" fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0 65.2656L60.4839 99.0795V119.859L0 65.2656Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+										d="M237.71 1.22393L193.355 28.5207C190.97 29.9889 189.516 32.5905 189.516 35.3927V160.631C189.516 163.469 191.006 166.098 193.44 167.555L237.794 194.108C241.616 196.396 246.569 195.151 248.856 191.328C249.605 190.076 250 188.644 250 187.185V8.09597C250 3.64006 246.389 0.027832 241.935 0.027832C240.444 0.027832 238.981 0.441882 237.71 1.22393Z"
+										fill="currentColor" />
+                    <path opacity="0.077704" fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M250 65.2656L189.516 99.8897V135.006L250 65.2656Z"
+										fill="black" />
+                    <path opacity="0.077704" fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M250 65.2656L189.516 99.0497V120.886L250 65.2656Z"
+										fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+										d="M12.2787 1.18923L125 70.3075V136.87L0 65.2465V8.06814C0 3.61223 3.61061 0 8.06452 0C9.552 0 11.0105 0.411583 12.2787 1.18923Z"
+										fill="currentColor" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+										d="M12.2787 1.18923L125 70.3075V136.87L0 65.2465V8.06814C0 3.61223 3.61061 0 8.06452 0C9.552 0 11.0105 0.411583 12.2787 1.18923Z"
+										fill="white" fill-opacity="0.15" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+										d="M237.721 1.18923L125 70.3075V136.87L250 65.2465V8.06814C250 3.61223 246.389 0 241.935 0C240.448 0 238.99 0.411583 237.721 1.18923Z"
+										fill="currentColor" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+										d="M237.721 1.18923L125 70.3075V136.87L250 65.2465V8.06814C250 3.61223 246.389 0 241.935 0C240.448 0 238.99 0.411583 237.721 1.18923Z"
+										fill="white" fill-opacity="0.3" />
+                  </svg>
+						</span>
 					</span> <span class="app-brand-text demo menu-text fw-semibold ms-2">Admin</span>
 					</a> <a href="javascript:void(0);"
 						class="layout-menu-toggle menu-link text-large ms-auto"> <i
@@ -79,13 +160,17 @@
 				<div class="menu-inner-shadow"></div>
 
 				<ul class="menu-inner py-1">
-					<li class="menu-header mt-7"><span class="menu-header-text">QUẢN LÝ</span>
-					</li>
+					<!-- Dashboards -->
+
+					<li class="menu-header mt-7"><span class="menu-header-text">QUẢN
+							LÝ</span></li>
 					<!-- Layouts -->
 					<li class="menu-item"><a href="javascript:void(0);"
 						class="menu-link menu-toggle"> <i
 							class="menu-icon tf-icons ri-layout-2-line"></i>
-							<div data-i18n="Layouts">Quản lý Giáo viên</div></a>
+							<div data-i18n="Layouts">Quản lý Giáo viên</div>
+					</a>
+
 						<ul class="menu-sub">
 							<c:forEach items="${list}" var="o">
 								<li class="menu-item"><a href="GiaovienControl?id=${o.id}"
@@ -94,14 +179,15 @@
 								</a></li>
 							</c:forEach>
 
-						</ul>
-					</li>
+						</ul></li>
 
 					<!-- Front Pages -->
 					<li class="menu-item"><a href="javascript:void(0);"
 						class="menu-link menu-toggle"> <i
 							class="menu-icon tf-icons ri-file-copy-line"></i>
-							<div data-i18n="Front Pages">Quản lý Sinh viên</div></a>
+							<div data-i18n="Front Pages">Quản lý Sinh viên</div>
+
+					</a>
 						<ul class="menu-sub">
 							<c:forEach items="${list3}" var="o">
 								<li class="menu-item"><a
@@ -110,14 +196,30 @@
 										<div data-i18n="Landing">${o.ten_chuyen_nganh}</div>
 								</a></li>
 							</c:forEach>
-						</ul>
-					</li>
+						</ul></li>
+					<li class="menu-item"><a href="javascript:void(0);"
+						class="menu-link menu-toggle"> <i
+							class="menu-icon tf-icons ri-file-copy-line"></i>
+							<div data-i18n="Front Pages">Quản lý Tương tác</div>
+
+					</a>
+						<ul class="menu-sub">
+							<c:forEach items="${list5}" var="o">
+								<li class="menu-item"><a
+									href="GiaovienControl?idsubject=${o.idsubject}"
+									class="menu-link">
+										<div data-i18n="Landing">${o.namesubject}</div>
+								</a></li>
+							</c:forEach>
+
+						</ul></li>
 			</aside>
 			<!-- / Menu -->
 
 			<!-- Layout container -->
 			<div class="layout-page">
 				<!-- Navbar -->
+
 				<nav
 					class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
 					id="layout-navbar">
@@ -145,7 +247,8 @@
 
 						<ul class="navbar-nav flex-row align-items-center ms-auto">
 							<!-- Place this tag where you want the button to render. -->
-							
+
+
 							<!-- User -->
 							<li class="nav-item navbar-dropdown dropdown-user dropdown">
 								<a class="nav-link dropdown-toggle hide-arrow p-0"
@@ -173,14 +276,14 @@
 									<li>
 										<div class="dropdown-divider"></div>
 									</li>
-									
+
 									<li>
 										<div class="dropdown-divider"></div>
 									</li>
 									<li>
 										<div class="d-grid px-4 pt-2 pb-1">
-											<a class="btn btn-danger d-flex" href="LogoutServlet">
-												<small class="align-middle">Logout</small> <i
+											<a class="btn btn-danger d-flex" href="LogoutServlet"> <small
+												class="align-middle">Logout</small> <i
 												class="ri-logout-box-r-line ms-2 ri-16px"></i>
 											</a>
 										</div>
@@ -294,7 +397,8 @@
 
 								</div>
 								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+									<button type="button" class="btn btn-secondary"
+										data-dismiss="modal">Hủy</button>
 									<button type="submit" class="btn btn-success">Thêm
 										Giảng Viên</button>
 								</div>
@@ -324,21 +428,22 @@
 									</div>
 									<!-- Tuổi -->
 									<div class="form-group">
-										<label for="tuoi">Tuổi</label> <input name="tuoi" type="text"
-											class="form-control" placeholder="Nhập tuổi" required>
+										<label for="tuoi">Ngày Sinh</label> <input name="tuoi"
+											type="date" class="form-control" required>
 									</div>
+
 									<!-- Lớp -->
 									<div class="form-group">
-										<label for="lop">Lớp</label> <input name="lop" type="text"
-											class="form-control" placeholder="Nhập lớp" required>
+										<label for="email">Email</label> <input name="email"
+											type="text" class="form-control" placeholder="Nhập Email"
+											required>
 									</div>
 									<!-- Mã Chuyên Ngành -->
 									<div class="form-group">
-										<label>Chuyên ngành theo học</label> <select
-											name="idchuyennganh" class="form-select"
+										<label>Lớp</label> <select name="lop" class="form-select"
 											aria-label="Default select example">
-											<c:forEach items="${list3}" var="o">
-												<option value="${o.id}">${o.ten_chuyen_nganh}</option>
+											<c:forEach items="${list10}" var="o">
+												<option value="${o.id}">${o.ten_lop}</option>
 											</c:forEach>
 										</select>
 									</div>
@@ -355,30 +460,31 @@
 				</div>
 
 
- 
-
-	<%-- 	<div class="main-content">
-		    <div class="accordion">  
-		        <c:if test="${not empty list7}">
-		            <c:forEach items="${list7}" var="o">
-		                <div class="accordion-item">  
-		                    <div class="accordion-header">
-		                        ${o.name}
-		                        <span style="float: right; cursor: pointer;">▼</span>
-		                    </div>  
-		                    <div class="accordion-content">  
-		                        <p>${o.message}</p>
-		                    </div>  
-		                </div>  
-		            </c:forEach>
-		        </c:if>
-		    </div>
-		</div> --%>
 
 
- 
+				<div class="main-content">
+				<c:if test="${not empty list7}">
+					<div class="accordion">
+			
+							<c:forEach items="${list7}" var="o">
+								<div class="accordion-item">
+									<div class="accordion-header">
+										${o.name} <span style="float: right; cursor: pointer;">▼</span>
+									</div>
+									<div class="accordion-content">
+										<p>${o.message}</p>
+									</div>
+								</div>
+							</c:forEach>
+						
+					</div>
+					</c:if>
+				</div>
 
-    <script>  
+
+
+
+				<script>  
     document.addEventListener("DOMContentLoaded", () => {
         const headers = document.querySelectorAll('.accordion-header');
 
@@ -401,7 +507,7 @@
         });
     });
  
-    </script>  
+    </script>
 
 
 				<div class="content-wrapper">
@@ -409,15 +515,14 @@
 					<c:if test="${not empty list4}">
 
 						<div class="table-responsive text-nowrap sticky-table">
-							<c:forEach items="${listtt}" var="o">
-								<h3 class="card-header">Danh sách Sinh Viên chuyên ngành
-									${o.ten_chuyen_nganh}</h3>
-							</c:forEach>
+							<h3 class="card-header">Danh sách Sinh Viên chuyên ngành
+								${list4[0].tenChuongTrinh}</h3>
 							<table class="table table-bordered table-striped">
 								<thead>
 									<tr>
 										<th>Tên</th>
-										<th>Tuổi</th>
+										<th>Ngày Sinh</th>
+										<th>Email</th>
 										<th>Lớp Sinh Hoạt</th>
 										<th>
 											<div class="col-sm-6">
@@ -434,8 +539,12 @@
 									<c:forEach items="${list4}" var="o">
 										<tr>
 											<td>${o.ten}</td>
-											<td>${o.tuoi}</td>
-											<td>${o.lop}</td>
+											<td><fmt:parseDate value="${o.tuoi}"
+													pattern="yyyy-MM-dd" var="parsedDate" /> <fmt:formatDate
+													value="${parsedDate}" pattern="dd-MM-yyyy" /></td>
+
+											<td>${o.email}</td>
+											<td>${o.tenLop}</td>
 											<td><a href="edit?id=${o.id}" class="edit"
 												data-toggle="modal"><i class="material-icons"
 													data-toggle="tooltip" title="edit">&#xE254;</i></a> <a
@@ -468,8 +577,9 @@
 	<script src="assets/js/dashboards-analytics.js"></script>
 	<script async defer src="https://buttons.github.io/buttons.js"></script>
 	<!-- Bootstrap Bundle JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 	<script>
   function filterList() {
     // Lấy giá trị người dùng nhập

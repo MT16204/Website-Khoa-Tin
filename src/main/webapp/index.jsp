@@ -66,7 +66,7 @@
                             <input type="checkbox" id="btn-2">
                             <ul>
                                 <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
-                                <li><a href="spt.jsp"> Cư nhân Sư phạm Tin học </a></li>
+                                <li><a href="spt.jsp"> Sư phạm Tin học </a></li>
                             </ul>
                         </li>
                         <li>
@@ -241,7 +241,7 @@
             </div>
             
             <div class="d-flex justify-content-center mt-4">
-                <a href="faculty.jsp" class="heroBtn">Xem thêm</a>
+                <a href="faculty" class="heroBtn">Xem thêm</a>
             </div> 
        
     </section>

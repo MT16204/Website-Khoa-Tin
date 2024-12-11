@@ -224,30 +224,30 @@ public class DAO {
 	    
 	    return list1;        
 	}
-//	public List<contact> contactbyid(String id){
-//		List<contact> list = new ArrayList<>();
-//		String querry = "select * from contacts \n"+" where idsubject=?";
-//		try {
-//			DatabaseConnection dbContext = new DatabaseConnection();
-//			conn = dbContext.getConnection() ;
-//			ps = conn.prepareStatement(querry);
-//			ps.setString(1,id);
-//			rs = ps.executeQuery();
-//			while (rs.next()) {
-//				list.add (new contact(rs.getString(1), 
-//						rs.getString(2),
-//						rs.getString(3),
-//						rs.getString(4),
-//						rs.getString(5),
-//						rs.getString(6)));
-//			}
-//			//
-//		} catch (Exception e) {
-//			// TODO: handle exception
-//		}
-//		return list;
-//		
-//	}
+	public List<contact> contactbyid(String id){
+		List<contact> list = new ArrayList<>();
+		String querry = "select * from contacts \n"+" where idsubject=?";
+		try {
+			DatabaseConnection dbContext = new DatabaseConnection();
+			conn = dbContext.getConnection() ;
+			ps = conn.prepareStatement(querry);
+			ps.setString(1,id);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				list.add (new contact(rs.getString(1), 
+						rs.getString(2),
+						rs.getString(3),
+						rs.getString(4),
+						rs.getString(5),
+						rs.getString(6)));
+			}
+			//
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return list;
+		
+	}
 	
 	public List<teacher> getteacherbybomon(String id){
 		List<teacher> list = new ArrayList<>();
@@ -273,30 +273,30 @@ public class DAO {
 		return list;
 		
 	}
-	public List<Student> getstudentbychuyennganh(String id){
-		List<Student> list = new ArrayList<>();
-		String querry = "select * from SinhVien \n"+" where id_chuyen_nganh=?";
-		try {
-			DatabaseConnection dbContext = new DatabaseConnection();
-			conn = dbContext.getConnection() ;
-			ps = conn.prepareStatement(querry);
-			ps.setString(1,id);
-			rs = ps.executeQuery();
-			while (rs.next()) {
-				list.add (new Student(rs.getString(1), 
-						rs.getString(2),
-						rs.getString(3),
-						rs.getString(4),
-						rs.getString(5))
-						);
-			}
-			//
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		return list;
-		
-	}
+//	public List<Student> getstudentbychuyennganh(String id){
+//		List<Student> list = new ArrayList<>();
+//		String querry = "select * from SinhVien \n"+" where id_chuyen_nganh=?";
+//		try {
+//			DatabaseConnection dbContext = new DatabaseConnection();
+//			conn = dbContext.getConnection() ;
+//			ps = conn.prepareStatement(querry);
+//			ps.setString(1,id);
+//			rs = ps.executeQuery();
+//			while (rs.next()) {
+//				list.add (new Student(rs.getString(1), 
+//						rs.getString(2),
+//						rs.getString(3),
+//						rs.getString(4),
+//						rs.getString(5))
+//						);
+//			}
+//			//
+//		} catch (Exception e) {
+//			// TODO: handle exception
+//		}
+//		return list;
+//		
+//	}
 	public Student getStudentById(String id) {
 	    String query = """
 	            SELECT 

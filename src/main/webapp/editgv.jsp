@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -51,10 +53,17 @@
                         <input name="chucvu" type="text" class="form-control" value="${sv.chuc_vu}" placeholder="Nhập chức vụ" required>
                     </div>
                     <!-- Mã Bộ Môn -->
-                   <%--  <div class="form-group">
-                        <label for="idbomon">Mã Bộ Môn</label>
-                        <input name="idbomon" type="text" class="form-control" value="${sv.id_to_bo_mon}" placeholder="Nhập mã bộ môn" required>
-                    </div> --%>
+                    <div class="form-group">
+                        <label for="idlop">Tổ Bộ Môn</label> <select name="idbomon"
+							class="form-select" aria-label="Default select example">
+							<c:forEach items="${list}" var="o">
+								<option value="${o.id}"
+									${o.id == sv.id_to_bo_mon ? 'selected' : ''}>
+									${o.ten_to_bo_mon}</option>
+							</c:forEach>
+						</select>
+                    </div>
+                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>

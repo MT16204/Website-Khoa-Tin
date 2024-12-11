@@ -41,6 +41,7 @@ public class GiaovienControl extends HttpServlet {
 			response.setCharacterEncoding("UTF-8");
 			String bomonid = request.getParameter("id");
 			String chuyennganhid = request.getParameter("idsv");
+			String idsubject = request.getParameter("idsubject");
 			DAO dao = new DAO();
 			List<Bomon> list1 = dao.bomon(); 
 			List<teacher> list2 = dao.getteacherbybomon(bomonid);
@@ -48,6 +49,7 @@ public class GiaovienControl extends HttpServlet {
 			List<chuyennganh> list3 = dao.chuyennganh(); 
 			List<chuyennganh> listtt = dao.getchuyennganhnbyid(chuyennganhid); 
 			List<Student> list4 = dao.laysv(chuyennganhid);
+			List<contact> list7 = dao.contactbyid(idsubject);
 			List<subject> list5 = dao.subject1();
 			List<lop> list10 = dao.lop();
 
@@ -59,7 +61,8 @@ public class GiaovienControl extends HttpServlet {
 			request.setAttribute("list", list1);
 			request.setAttribute("list2", list2);
 			request.setAttribute("list4", list4);
-			request.getRequestDispatcher("HomeControl").forward(request, response);
+			request.setAttribute("list7", list7);
+			request.getRequestDispatcher("qlgiaovien.jsp").forward(request, response);
 
 	}
 }

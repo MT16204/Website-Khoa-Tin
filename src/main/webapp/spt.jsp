@@ -53,7 +53,7 @@
                             <input type="checkbox" id="btn-2">
                             <ul>
                                 <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
-                                <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
+                                <li><a href="spt.jsp"> Sư phạm Tin học </a></li>
                             </ul>
                         </li>
                         <li>
@@ -71,7 +71,7 @@
                     </ul>
                 </li>
 
-                <li> <a href="faculty.jsp">Đội ngũ giảng viên</a></li>
+                <li> <a href="faculty">Đội ngũ giảng viên</a></li>
                 <li> <a href="blog.jsp">Bài viết</a></li>
                 <li> <a href="contact.jsp">Liên hệ</a></li>
                 <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>

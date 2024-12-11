@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -53,7 +54,7 @@
                             <input type="checkbox" id="btn-2">
                             <ul>
                                 <li><a href="cntt.jsp"> Cử nhân Công nghệ thông tin </a></li>
-                                <li><a href="spt.jsp"> Cử nhân Sư phạm Tin học </a></li>
+                                <li><a href="spt.jsp"> Sư phạm Tin học </a></li>
                             </ul>
                         </li>
                         <li>
@@ -83,295 +84,83 @@
 
     <!-- Header Section Ended -->
 
-    <!-- Đội ngũ giảng viên -->
-    <section class="container">
-        <div class="facTray">
-            <div class="facProfile">
-                <img src="images/vinh.jpg" alt="">
+	 <section class="facultyInfo">
+	    <h2>Danh sách giáo viên</h2>
+	        <table>
+	            <thead>
+	                <tr>
+	                    <th>Tên</th>
+	                    <th>Hình ảnh</th>
+	                    <th>Email</th>
+	                    <th>Chức vụ</th>
+	                </tr>
+	            </thead>
+	            <tbody>
+	                <c:forEach items="${list2}" var="o">
+	                    <tr>
+	                        <td>${o.ten}</td>
+	                        <td>
+	                            <c:choose>
+	                                <c:when test="${not empty o.anh}">
+	                                    <img src="${o.anh}" alt="Ảnh giảng viên" style="width: 90px; height: 90px; object-fit: cover;">
+	                                </c:when>
+	                                <c:otherwise>
+	                                    <img src="images/default-avatar.png" alt="Ảnh mặc định" style="width: 90px; height: 90px; object-fit: cover;">
+	                                </c:otherwise>
+	                            </c:choose>
+	                        </td>
+	                        <td>${o.email}</td>
+	                        <td>${o.chuc_vu}</td>
+	                    </tr>
+	                </c:forEach>
+	            </tbody>
+	        </table>
+	</section>
 
-                <h2> TS. NGUYỄN TRẦN QUỐC VINH </h2>
-                <p> Chức vụ: Trưởng Khoa <p>
 
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:ntqvinh@ued.udn.vn">ntqvinh@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
 
-            <div class="facProfile">
-                <img src="images/hang.jpg" alt="">
+<style>
+.facultyInfo {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
 
-                <h2> TS. PHẠM DƯƠNG THU HẰNG </h2>
-                <p> Chức vụ: Phó Trưởng Khoa </p>
+.facultyInfo h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #000;
+}
 
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:pdthang@ued.udn.vn">pdthang@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-            <div class="facProfile">
-                <img src="images/phuong.jpg" alt="">
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
 
-                <h2> TS. PHẠM ANH PHƯƠNG </h2>
-                <p> Chức vụ: Phó Trưởng Khoa </p>
+th {
+    background-color: #f44336;
+    color: #fff;
+}
 
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:paphuong@ued.udn.vn">paphuong@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
+.facultyInfo img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
 
-            <div class="facProfile">
-                <img src="images/lau.jpg" alt="">
-
-                <h2> TS. NGUYỄN ĐÌNH LẦU </h2>
-                <p> Chức vụ: Trưởng bộ môn </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:ndlau@ued.udn.vn">ndlau@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="facProfile">
-                <img src="images/anh.jpg" alt="">
-
-                <h2> TS. NGUYỄN THỊ NGỌC ANH </h2>
-                <p> Chức vụ: Giảng viên </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:ntnanh@ued.udn.vn">ntnanh@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="facProfile">
-                <img src="images/hai.jpg" alt="">
-
-                <h2> TS. NGUYỄN HOÀNG HẢI </h2>
-                <p> Chức vụ: Giảng viên </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:nhhai@ued.udn.vn">nhhai@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="facProfile">
-                <img src="images/binh.jpg" alt="">
-
-                <h2> TS. ĐOÀN DUY BÌNH </h2>
-                <p> Chức vụ: Giảng viên </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:ddbinh@ued.udn.vn">ddbinh@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="facProfile">
-                <img src="images/tra.jpg" alt="">
-
-                <h2> TS. VŨ THỊ TRÀ </h2>
-                <p> Chức vụ: Giảng viên </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:vttra@ued.udn.vn">vttra@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="facProfile">
-                <img src="images/my.png" alt="">
-
-                <h2> Ths. LÊ VĂN MỸ </h2>
-                <p> Chức vụ: Giảng viên </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:lvmy@ued.udn.vn">lvmy@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="facProfile">
-                <img src="images/lttbinh.png" alt="">
-
-                <h2> Ths. LÊ THỊ THANH BÌNH </h2>
-                <p> Chức vụ: Giảng viên </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:lttbinh@ued.udn.vn">lttbinh@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="facProfile">
-                <img src="images/mhthi.jpg" alt="">
-
-                <h2> Ths. MAI HÀ THI </h2>
-                <p> Chức vụ: Giảng viên </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:mhthi@ued.udn.vn">mhthi@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="facProfile">
-                <img src="images/tvhung.jpg" alt="">
-
-                <h2> TS. TRẦN VĂN HƯNG </h2>
-                <p> Chức vụ: Trưởng bộ môn </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:mhthi@ued.udn.vn">mhthi@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
-            
-            <div class="facProfile">
-                <img src="images/lvchung.jpg" alt="">
-
-                <h2> Ths. LÊ VIẾT CHUNG </h2>
-                <p> Chức vụ: Giảng viên </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:lvchung@ued.udn.vn">lvchung@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="facProfile">
-                <img src="images/hntu.jpg" alt="">
-
-                <h2> Ths. HỒ NGỌC TÚ </h2>
-                <p> Chức vụ: Giảng viên </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:hntu@ued.udn.vn">hntu@ued.udn.vn</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-external-link-alt"></i></td>
-                        <td><a href="English-1.jsp">Lớp học</a></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="facProfile">
-                <img src="images/tttrang.jpg" alt="">
-
-                <h2> CN. TRẦN THUỲ TRANG </h2>
-                <p> Chức vụ: Thư ký khoa </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:tttrang@ued.udn.vn">tttrang@ued.udn.vn</a></td>
-                    </tr>
-                </table>
-            </div>
-
-            <!-- <div class="facProfile">
-                <img src="images/Nazia-Sultana-Chowdhury.png" alt="">
-
-                <h2> Nazia Sultana Chowdhury </h2>
-                <p> Lecturer </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:nazia.nishat1971@gmail.com">nazia.nishat1971@gmail.com</a></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa fa-phone"></i></td>
-                        <td><a href="tel:+8801627055017">+880 1627 055 017</a></td>
-                    </tr>
-                </table>
-            </div> -->
-        </div>
-    </section>
-    <!-- Đội ngũ giảng viên -->
+</style>
 
 
     <!-- Script for form started -->

@@ -40,5 +40,15 @@
 	    <servlet-name>HomeControl</servlet-name>
 	    <servlet-class>com.controller.HomeControl</servlet-class>
 	</servlet>
+	
+	<servlet>
+	    <servlet-name>FacultyServlet</servlet-name>
+	    <servlet-class>com.controller.FacultyServlet</servlet-class>
+	</servlet>
+	 <servlet-mapping>
+        <servlet-name>FacultyServlet</servlet-name>
+        <url-pattern>/faculty</url-pattern>
+    </servlet-mapping> 
+
 
 </web-app>
