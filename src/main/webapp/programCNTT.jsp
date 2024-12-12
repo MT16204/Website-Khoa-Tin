@@ -123,7 +123,7 @@
     </div>
 	
 	<div class="buttonContainer">
-	        <a href="khoahoc.jsp" class="sub-heroBtn redBtn">Danh sách khoá học</a>
+	        <a href="khoahoc" class="sub-heroBtn redBtn">Danh sách khoá học</a>
 	</div>
    
 

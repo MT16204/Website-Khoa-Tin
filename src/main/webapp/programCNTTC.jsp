@@ -87,29 +87,27 @@
     <!-- Header Section Ended -->
 	
 	<div class="container">
-        <div class="rows">
+        <div class="rows center-rows">
             <div class="rcard col-3">
                 <h3>Khoá - 2021</h3>
               
                 <hr><br>
-                <a href="pdf/chuongtrinh/CNTTC/K21-CNTT-CLC.pdf" target="blank" class="heroBtn"><i
+                <a href="pdf/chuongtrinh/SPT/K21-CNTT-CLC.pdf" target="blank" class="heroBtn"><i
                         class="fas fa-external-link-alt"></i></a> <br> <br>
             </div>
-        </div>
-        
-        <div class="rows">
             <div class="rcard col-3">
+
                 <h3>Khoá - 2022</h3>
               
                 <hr><br>
-                <a href="pdf/chuongtrinh/CNTTC/K22-CNTT-CLC.pdf" target="blank" class="heroBtn"><i
+                <a href="pdf/chuongtrinh/SPT/K22-CNTT-CLC.pdf" target="blank" class="heroBtn"><i
                         class="fas fa-external-link-alt"></i></a> <br> <br>
             </div>
         </div>
     </div>
 	
 	<div class="buttonContainer">
-	        <a href="khoahoc.jsp" class="sub-heroBtn redBtn">Danh sách khoá học</a>
+	        <a href="khoahoc" class="sub-heroBtn redBtn">Danh sách khoá học</a>
 	</div>
    
 
