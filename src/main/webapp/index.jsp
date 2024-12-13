@@ -209,7 +209,7 @@
                 </table>
             </div>
 
-            <div class="facProfile">
+            <!-- <div class="facProfile">
                 <img src="images/phuong.jpg" alt="">
 
                 <h2> TS. PHẠM ANH PHƯƠNG </h2>
@@ -221,7 +221,7 @@
                         <td><a href="mailto:paphuong@ued.udn.vn">paphuong@ued.udn.vn</a></td>
                     </tr>
                 </table>
-            </div>
+            </div> -->
 
             <div class="facProfile">
                 <img src="images/lau.jpg" alt="">
@@ -233,6 +233,20 @@
                     <tr>
                         <td><i class="far fa-envelope"></i></td>
                         <td><a href="mailto:ndlau@ued.udn.vn">ndlau@ued.udn.vn</a></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="facProfile">
+                <img src="images/anh.jpg" alt="">
+
+                <h2> TS. NGUYỄN THỊ NGỌC ANH </h2>
+                <p> Chức vụ: Giảng Viên </p>
+
+                <table>
+                    <tr>
+                        <td><i class="far fa-envelope"></i></td>
+                        <td><a href="mailto:ndlau@ued.udn.vn">ntnanh@ued.udn.vn</a></td>
                     </tr>
                 </table>
             </div>
