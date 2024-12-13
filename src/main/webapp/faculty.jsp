@@ -25,10 +25,8 @@
 
 <body>
 
-    <!-- Header Section Started -->
-
+    <!-- NavBar -->
     <section class="sub-header facHeader">
-        <!-- Navigation Section Started -->
         <nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
@@ -82,10 +80,8 @@
         <h1> ĐỘI NGŨ GIẢNG VIÊN </h1>
     </section>
 
-    <!-- Header Section Ended -->
-
+    <!-- Đội ngũ giảng viên -->
 	 <section class="facultyInfo">
-	    <h2>Danh sách giáo viên</h2>
 	        <table>
 	            <thead>
 	                <tr>
@@ -163,15 +159,6 @@ th {
 </style>
 
 
-    <!-- Script for form started -->
-
-    <script type="text/javascript">
-        var submitted = false;
-    </script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="formLoad()"></iframe>
-
-    <!-- Script for form Ended -->
-
     <!-- Footer -->
     <section class="footer">
 
@@ -206,9 +193,8 @@ th {
             <p> &copy; 2024 - Khoa tin Trường Đại học Sư phạm</p>
         </div>
     </section>
-    <!-- Footer -->
 
-    <!-- Linked to javascript file -->
+    <!-- Links Javascript -->        
     <script src="js/index.js"></script>
 
 </body>

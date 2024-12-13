@@ -36,9 +36,8 @@
 
 <body>
 
-    <!-- Header Section Started -->
+    <!-- NavBar -->        
     <section class="sub-header blogPage">
-        <!-- Navigation Section Started -->
         <nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
@@ -93,7 +92,7 @@
         <h1> BÀI VIẾT </h1>
     </section>
 
-    
+    <!-- Post#6 -->        
     <div class="blog-container">
         <section class="blog-posts">
             <article class="post" data-category="SuKien">

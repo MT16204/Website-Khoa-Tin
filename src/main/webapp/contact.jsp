@@ -39,9 +39,8 @@
 
 <body>
 
-    <!-- Header Section Started -->
+    <!-- NavBar -->
     <section class="sub-header contactHeader">
-        <!-- Navigation Section Started -->
         <nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
@@ -92,88 +91,63 @@
             </ul>
         </nav>
 
-        <!-- Navigation Section Ended -->
-
-
         <h1> LIÊN HỆ </h1>
-
     </section>
 
-    <!-- Header Section Ended -->
 
-
-    <!-- Script for form started -->
-
-    <script type="text/javascript">
-        var submitted = false;
-    </script>
-    <iframe name="msgForm" id="hidden_iframe" style="display: none" onload="contFormLoad()"></iframe>
-
-    <!-- Script for form Ended -->
-
-
+    <!-- Liên hệ -->
     <section class="location">
 
         <iframe loading="lazy" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.0626524252784!2d108.15732981475502!3d16.06223828888517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219246b64ae89%3A0xc9270347fa1b00cd!2zNDU5IFTDtG4gxJDhu6ljIFRo4bqvbmcsIEhvw6AgS2jDoW5oIE5hbSwgTGnDqm4gQ2hp4buDdSwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1629732635560!5m2!1svi!2s" width="100%" height="450" allowfullscreen="allowfullscreen"></iframe>
 
     </section>
 
-<section class="contactUs">
-    <div class="row">
-        <div class="contactCol">
-            <div>
-                <i class="fa fa-map"></i>
-                <span>
-                    <h5>Khoa Tin Học - Trường Đại Học Sư Phạm - Đại Học Đà Nẵng</h5>
-                    <p style="font-style: italic">459 Tôn Đức Thắng, quận Liên Chiểu, TP. Đà Nẵng</p>
-                </span>
-            </div>
-            <div>
-                <i class="fa fa-phone"></i>
-                <span>
-                    <h5><a href="tel:0905121281" style="text-decoration: none; color: inherit;"> +090 512 12 81 </a></h5>
-                    <p style="font-style: italic">Thứ hai - Chủ nhật | 8:00 - 21:30</p>
-                </span>
-            </div>
-            <div>
-                <i class="far fa-envelope"></i>
-                <span>
-                    <h5>Thông tin liên hệ</h5>
-                    <p>Trưởng Khoa: TS. Nguyễn Trần Quốc Vinh (ntqvinh@ued.udn.vn)</p>
-                    <p>Trợ lý sau đại học: TS. Nguyễn Đình Lầu (ndlau@ued.udn.vn)</p>
-                    <p>Thư ký khoa: Cô Trần Thuỳ Trang (tttrang@ued.udn.vn)</p>
-                </span>
-            </div>
-        </div>
+	<section class="contactUs">
+	    <div class="row">
+	        <div class="contactCol">
+	            <div>
+	                <i class="fa fa-map"></i>
+	                <span>
+	                    <h5>Khoa Tin Học - Trường Đại Học Sư Phạm - Đại Học Đà Nẵng</h5>
+	                    <p style="font-style: italic">459 Tôn Đức Thắng, quận Liên Chiểu, TP. Đà Nẵng</p>
+	                </span>
+	            </div>
+	            <div>
+	                <i class="fa fa-phone"></i>
+	                <span>
+	                    <h5><a href="tel:0905121281" style="text-decoration: none; color: inherit;"> +090 512 12 81 </a></h5>
+	                    <p style="font-style: italic">Thứ hai - Chủ nhật | 8:00 - 21:30</p>
+	                </span>
+	            </div>
+	            <div>
+	                <i class="far fa-envelope"></i>
+	                <span>
+	                    <h5>Thông tin liên hệ</h5>
+	                    <p>Trưởng Khoa: TS. Nguyễn Trần Quốc Vinh (ntqvinh@ued.udn.vn)</p>
+	                    <p>Trợ lý sau đại học: TS. Nguyễn Đình Lầu (ndlau@ued.udn.vn)</p>
+	                    <p>Thư ký khoa: Cô Trần Thuỳ Trang (tttrang@ued.udn.vn)</p>
+	                </span>
+	            </div>
+	        </div>
+	
+	        <!-- Contact Form -->
+	        <div class="contactCol msg">
+	            <form method="post" target="msgForm" onsubmit="submitted=true" class="myform" id="contform">
+						<input type="email" name="emailAddress" placeholder="Email"
+							required> 
+						<input type="text" name="entry.805276147"
+							placeholder="Tên" required> 
+						<textarea rows="5" name="entry.740878952" placeholder="Lời nhắn"
+							required></textarea>
+	
+						<button type="submit" class="heroBtn widthBtn">
+							Gửi<i class="fas fa-paper-plane"></i>
+						</button>
+					</form>
+	        </div>
+	    </div>
+	</section>
 
-        <!-- Contact Form -->
-        <div class="contactCol msg">
-            <form method="post" target="msgForm" onsubmit="submitted=true" class="myform" id="contform">
-					<input type="email" name="emailAddress" placeholder="Email"
-						required> 
-					<input type="text" name="entry.805276147"
-						placeholder="Tên" required> 
-					<textarea rows="5" name="entry.740878952" placeholder="Lời nhắn"
-						required></textarea>
-
-					<button type="submit" class="heroBtn widthBtn">
-						Gửi<i class="fas fa-paper-plane"></i>
-					</button>
-				</form>
-        </div>
-    </div>
-</section>
-
-
-
-    <!-- Script for form started -->
-
-    <script type="text/javascript">
-        var submitted = false;
-    </script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="formLoad()"></iframe>
-
-    <!-- Script for form Ended -->
 
     <!-- Footer -->
     <section class="footer">
@@ -209,9 +183,8 @@
             <p> &copy; 2024 - Khoa tin Trường Đại học Sư phạm</p>
         </div>
     </section>
-    <!-- Footer -->
 
-    <!-- Linked to javascript file -->
+    <!-- Links Javascript -->        
     <script src="js/index.js"></script>
 
 </body>

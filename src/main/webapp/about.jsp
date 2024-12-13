@@ -36,12 +36,8 @@
 
 <body>
 
-    <!-- Header Section Started -->
-
+    <!-- NavBar -->
     <section class="sub-header">
-
-        <!-- Navigation Section Started -->
-  
         <nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
@@ -92,12 +88,10 @@
             </ul>
         </nav>
         
-        <h1>GIỚI THIỆU</h1>
-        <!-- Header text Section Ended -->
-  
+        <h1>GIỚI THIỆU</h1>  
     </section>
 
-    <!-- Section Giới thiệu -->
+    <!-- Giới thiệu -->
 	<section class="sub-aboutUs" id="about">
 	    <div class="row">
 	        <div class="sub-aboutCol">
@@ -138,22 +132,12 @@
 	            <img src="images/about3.jpg" alt="Hợp tác doanh nghiệp" class="aboutImage">
 	        </div>
 	    </div>
-	    
-	    <!-- Đảm bảo phần tử nút được bao bọc trong một div có class là buttonContainer -->
+	   
 	    <div class="buttonContainer">
 	        <a href="faculty" class="sub-heroBtn redBtn">Cơ cấu tổ chức</a>
 	    </div>
 	</section>
 
-
-    <!-- Script for form started -->
-
-    <script type="text/javascript">
-        var submitted = false;
-    </script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="formLoad()"></iframe>
-
-    <!-- Script for form Ended -->
 
     <!-- Footer -->
     <section class="footer">
@@ -189,9 +173,8 @@
             <p> &copy; 2024 - Khoa tin Trường Đại học Sư phạm</p>
         </div>
     </section>
-    <!-- Footer -->
 
-    <!-- Linked to javascript file -->
+    <!-- Links Javascript -->
     <script src="js/index.js"></script>
 
 </body>

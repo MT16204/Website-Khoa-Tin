@@ -38,8 +38,7 @@
 
 <body>
 
-    <!-- Header Section Started -->
-
+    <!-- NavBar -->
     <section class="header">
         <nav>
             <div class="logo" id="top">
@@ -90,8 +89,6 @@
                 <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>
             </ul>
         </nav>
-
-        <!-- Header text Section Started -->
 
         <div class="content">
             <div class="principle">
@@ -255,19 +252,6 @@
         <a href="contact.jsp" class="heroBtn"> Liên hệ </a>
     </section>
 
-    <!-- Liên hệ -->
-
-
-
-    <!-- Script for form started -->
-
-    <script type="text/javascript">
-        var submitted = false;
-    </script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="formLoad()"></iframe>
-
-    <!-- Script for form Ended -->
-
 
     <!-- Footer -->
     <section class="footer">
@@ -303,7 +287,6 @@
             <p> &copy; 2024 - Khoa tin Trường Đại học Sư phạm</p>
         </div>
     </section>
-    <!-- Footer -->
     
     <!-- Nút Liên hệ -->
     <div class="echbay-sms-messenger style-for-position-br">
@@ -385,7 +368,6 @@
 
     <!-- Links Javascript -->
     <script src="js/index.js"></script>
-    <!-- <script src="assets/js/bootstrap.js"></script> -->
     
 </body>
 

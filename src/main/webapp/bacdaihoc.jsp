@@ -24,9 +24,8 @@
 
 <body>
 
-    <!-- Header Section Started -->
+    <!-- NavBar -->
     <section class="sub-header libr">
-        <!-- Navigation Section Started -->
         <nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
@@ -79,90 +78,34 @@
 
         <h1>BẬC ĐẠI HỌC</h1>
     </section>
-    <!-- Header Section Ended -->
 
+	
+	<!-- Đào tạo bậc đại học -->
     <div class="container">
         <div class="rows">
             <div class="rcard col-3">
-
                 <h3>Kế hoạch đào tạo (2024-2025)</h3>
-                <!-- <div class="rtxt">
-                    <strong> Starting Time: </strong> January-2020 <br>
-                    <strong> Ending Time: </strong> Jun-2020 <br>
-                    <strong> Course Completed: </strong> 3 <br>
-                    <strong> Credit Completed: </strong> 9 <br>
-                </div> -->
                 <hr><br>
                 <a href="pdf/daotao/bacdaihoc/KeHoach-DaoTao-2024-2025.pdf" target="blank" class="heroBtn"><i
                         class="fas fa-external-link-alt"></i></a> <br> <br>
             </div>
+            
             <div class="rcard col-3">
-
                 <h3>Kế hoạch đào tạo (2023-2024)</h3>
-                <!-- <div class="rtxt">
-                    <strong> Starting Time: </strong> July-2020 <br>
-                    <strong> Ending Time: </strong> August-2020 <br>
-                    <strong> Course Completed: </strong> 5 <br>
-                    <strong> Credit Completed: </strong> 13.5 <br>
-                </div> -->
                 <hr><br>
                 <a href="pdf/daotao/bacdaihoc/KeHoach-DaoTao-NamHoc-2023-2024.pdf" target="blank" class="heroBtn"><i
                         class="fas fa-external-link-alt"></i></a> <br> <br>
-
             </div>
+            
             <div class="rcard col-3">
-
                 <h3>Kế hoạch đào tạo (2022-2023)</h3>
-                <!-- <div class="rtxt">
-                    <strong> Starting Time: </strong> September-2020 <br>
-                    <strong> Ending Time: </strong> December-2020 <br>
-                    <strong> Course Completed: </strong> 5 <br>
-                    <strong> Credit Completed: </strong> 13.5 <br>
-                </div> -->
                 <hr><br>
                 <a href="pdf/daotao/bacdaihoc/KeHoach_DaoTao_NamHoc_2022-2023.pdf" target="blank" class="heroBtn"><i
                         class="fas fa-external-link-alt"></i></a> <br> <br>
-
             </div>
-            <!-- <div class="rcard col-3">
-
-                <h3>4th Semester</h3>
-                <div class="rtxt">
-                    <strong> Starting Time: </strong> January-2021 <br>
-                    <strong> Ending Time: </strong> April-2021 <br>
-                    <strong> Course Completed: </strong> 4 <br>
-                    <strong> Credit Completed: </strong> 10.5 <br>
-                </div>
-                <hr><br>
-                <a href="result_records/Spring_2021.pdf" target="blank" class="heroBtn"> See Result <i
-                        class="fas fa-external-link-alt"></i></a> <br> <br>
-
-            </div>
-            <div class="rcard col-3">
-
-                <h3>5th Semester</h3>
-                <div class="rtxt">
-                    <strong> Starting Time: </strong> May-2021 <br>
-                    <strong> Ending Time: </strong> Running <br>
-                    <strong> Course Completed: </strong> -- <br>
-                    <strong> Credit Completed: </strong> -- <br>
-                </div>
-                <hr><br>
-                <a href="" class="heroBtn"> See Result <i class="fas fa-external-link-alt"></i></a> <br> <br>
-
-            </div> -->
         </div>
     </div>
-    <!-- Result Section Ended -->
 
-    <!-- Script for form started -->
-
-    <script type="text/javascript">
-        var submitted = false;
-    </script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="formLoad()"></iframe>
-
-    <!-- Script for form Ended -->
 
     <!-- Footer -->
     <section class="footer">
@@ -198,9 +141,8 @@
             <p> &copy; 2024 - Khoa tin Trường Đại học Sư phạm</p>
         </div>
     </section>
-    <!-- Footer -->
 
-    <!-- Linked to javascript file -->
+    <!-- Links Javascript -->
     <script src="js/index.js"></script>
 
 </body>

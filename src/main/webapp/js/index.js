@@ -1,27 +1,3 @@
-// --------------Homepage header text slider Started--------------------
-
-
-var cnt = 0;
-var headerH1 = document.getElementById("headerH1");
-var headerP = document.getElementById("headerP");
-
-setInterval(function() {
-    headerH1.innerHTML = h1[cnt];
-    headerP.innerHTML = hp[cnt];
-    cnt++;
-
-    if (cnt >= h1.length) {
-        cnt = 0;
-    }
-}, 4000);
-
-// --------------Homepage header text slider ended--------------------
-
-
-// -----------------Form handler Started-----------------------
-
-// Feedback form
-
 function formLoad() {
 
     var myForm = document.getElementById("myform");
@@ -72,7 +48,6 @@ function contFormLoad() {
         msgErr.classList.remove("msgErr");
     }, 5000);
 }
-// ---------------------Form handler ended----------------------
 
 
 

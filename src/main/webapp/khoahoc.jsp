@@ -72,9 +72,8 @@
 </head>
 <body>
 
+    <!-- NavBar -->
 	<section class="sub-header libr">
-
-        <!-- Navigation Section Started -->
         <nav>
             <div class="logo" id="top">
                 <a href="index.jsp"> <img src="images/logo.png" alt="Logo"> </a>
@@ -178,16 +177,6 @@
     </table>
 
 
-
-<!-- Script for form started -->
-
-    <script type="text/javascript">
-        var submitted = false;
-    </script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="formLoad()"></iframe>
-
-    <!-- Script for form Ended -->
-
     <!-- Footer -->
     <section class="footer">
 
@@ -222,9 +211,8 @@
             <p> &copy; 2024 - Khoa tin Trường Đại học Sư phạm</p>
         </div>
     </section>
-    <!-- Footer -->
 
-    <!-- Linked to javascript file -->
+    <!-- Links Javascript -->        
     <script src="js/index.js"></script>
 
 </body>
