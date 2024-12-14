@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
 h1 {
     font-size: 28px;
 }
@@ -75,7 +86,6 @@ nav .fa-caret-down {
 }
 
 .show:hover {
-    /* background: #24292E; */
     color:#f44336;
     text-decoration: underline;
 }
@@ -121,8 +131,6 @@ ul {
 .principle {
     color: #fff;
     text-align: center;
-    /* margin-top: 130px;
-    margin-left: 55px; */
     margin: 16vh auto;
     width: 250px;
 }
@@ -194,27 +202,11 @@ ul {
     margin: 10px 5%;
 }
 
-/* Call to action section Started */
 
-.cta {
-    width: 90%;
-    padding: 60px 20px;
-    margin: 30px auto;
-}
-
-.cta h1 {
-    font-size: 24px;
-}
-
-
-/* Call to action section Ended */
-
-
-/* footer section started */
+/* --------Footer--------- */
 
 .footer {
     padding: 30px 5%;
-    /* border-radius: 70px 70px 0 0; */
 }
 
 .footer .fcol {
@@ -246,10 +238,7 @@ ul {
 }
 
 
-/* footer section ended */
-
-
-/* contact page started */
+/* --------Liên hệ--------- */
 
 .sub-header {
     height: 50vh;
@@ -291,8 +280,49 @@ ul {
     font-size: 15px;
 }
 
+.cta {
+    width: 90%;
+    padding: 60px 20px;
+    margin: 30px auto;
+}
 
-/* contact page ended */
+.cta h1 {
+    font-size: 24px;
+}
+
+
+/* --------Giới thiệu--------- */
+
+.aboutCol h2 {
+    text-align: center; 
+    font-size: 1.94rem; 
+    font-weight: bold;
+    color: #333;
+}
+
+.aboutCol p {
+    text-align: justify;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.8;
+	padding: 10px 0;  
+}
+
+.row {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+.aboutCol {
+	flex-basis: 100%;
+	text-align: center;
+	padding: 10px; 
+}
+
+.aboutCol img {
+	max-width: 80%; 
+	margin: 0 auto; 
+}
 
 .sub-aboutUs {
     width: 90%;
@@ -312,93 +342,67 @@ ul {
     width: 100%;
 }
 
-
-/* ----------Onestop page started---------- */
-
-.OneForm {
-    padding: 15px;
+.sub-aboutUs img {
+    display: none; 
 }
 
-.directMail {
-    padding: 30px;
-    border-top: 1px solid #ccc;
+.sub-aboutCol {
+    flex: 1 100%;
+    max-width: 100%;
+    padding: 10px;
 }
 
-.bdR {
-    border-left: none;
-    border-top: 0.5px solid gray;
-}
-
-
-/* ----------Onestop page ended---------- */
-
-
-/* -----------Course pages started------------ */
-
-.container {
-    width: 90%;
-}
-
-.matRow {
-    width: 100%;
-}
-
-.crsRow {
-    border: none;
-    padding: 0 0 30px 0;
-    /* background: #fff; */
-}
-
-.facRow {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 0 10px 30px 10px;
-}
-
-.facultyINFO {
+.sub-aboutCol h2 {
+    padding-top: 0;
+    font-size: 20px; 
+    font-weight: bold;
     text-align: center;
-    width: 100%;
+    color: #333;
 }
 
-.crsCol h2 {
-    margin: 30px 0 10px 0;
-}
-
-.crsMat {
-    width: 46.5%;
-}
-
-.pdfICO {
-    width: 15%;
-}
-
-.crsMat .pdfICO .fas {
-    font-size: 26px;
-}
-
-.crsMat .pdfICO .fa-link {
-    font-size: 22px;
-}
-
-.crsMat a {
-    width: 81%;
+.sub-aboutCol p {
+	font-size: .9rem;
+    padding: 15px 0 25px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #555; 
 }
 
 
-/* -----------Course pages started------------ */
 
-
-/* --------Faculty Info Started--------- */
+/* --------Giảng viên--------- */
 
 .facProfile {
     width: 100%;
     min-height: fit-content;
 }
 
+.facultyInfo {
+	padding: 10px; 
+}
 
-/* --------Faculty Info Ended--------- */
+table {
+	font-size: 14px; 
+	box-shadow: none; 
+}
+
+th, td {
+	padding: 8px; 
+	font-size: 13px; 
+}
+
+th {
+	font-size: 14px; 
+}
+
+.facultyInfo img {
+	width: 60px; 
+	height: 60px;
+	margin: 5px auto; 
+}
+
+
+/* --------Bài viết--------- */
 
 .blog-container {
 	flex-direction: column;
@@ -408,4 +412,10 @@ ul {
 .blog-sidebar{
 	display:none;
 }
-	
+
+
+/* --------Bảng danh sách Sinh Viên--------- */
+.studens table {
+	overflow-x: auto;
+    display: block;
+}

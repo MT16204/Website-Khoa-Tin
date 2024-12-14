@@ -33,7 +33,7 @@
 	rel="stylesheet">
 
 <style>
-table {
+.studens table {
 	width: 80%; /* Điều chỉnh chiều rộng bảng */
 	padding: 40px;
 	margin: 30px auto; /* Khoảng cách trên và dưới bảng */
@@ -41,13 +41,13 @@ table {
 	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
-table td {
+.studens table td {
 	word-wrap: break-word; /* Tránh text dài bị tràn */
 	white-space: nowrap;
 	/* Giữ cho nội dung trong các cột không bị xuống dòng */
 }
 
-th {
+.studens th {
 	background-color: #f44336;
 	color: white;
 	padding: 12px;
@@ -55,21 +55,21 @@ th {
 	font-weight: bold;
 }
 
-td {
+.studens td {
 	padding: 12px;
 	text-align: center;
 	border: 1px solid #ddd;
 }
 
-table tr:nth-child(even) {
+.studens table tr:nth-child(even) {
 	background-color: #f9f9f9;
 }
 
-tr:nth-child(odd) {
+.studens tr:nth-child(odd) {
 	background-color: #ffffff;
 }
 
-table tr:hover {
+.studens table tr:hover {
 	background-color: #f1f1f1;
 }
 </style>
@@ -127,37 +127,38 @@ table tr:hover {
 		<h1>DANH SÁCH SINH VIÊN CÁC LỚP</h1>
 	</section>
 
-	<table>
-		<thead>
-			<tr>
-				<th>Mã Sinh Viên</th>
-				<th>Họ Tên</th>
-				<th>Ngày Sinh</th>
-				<th>Email</th>
-				<th>Mã Lớp</th>
-
-			</tr>
-		</thead>
-		<tbody>
-			<c:forEach items="${list5}" var="o">
-
+	<div class="studens">
+		<table>
+			<thead>
 				<tr>
-					<td>${o.id}</td>
-					<td>${o.ten}</td>
-					<td><fmt:parseDate value="${o.tuoi}" pattern="yyyy-MM-dd"
-							var="parsedDate" /> <fmt:formatDate value="${parsedDate}"
-							pattern="dd-MM-yyyy" />
-					<td>${o.email}</td>
-					<td>${o.tenLop}</td>
-
+					<th>Mã Sinh Viên</th>
+					<th>Họ Tên</th>
+					<th>Ngày Sinh</th>
+					<th>Email</th>
+					<th>Mã Lớp</th>
+	
 				</tr>
-			</c:forEach>
-
-
-
-		</tbody>
-	</table>
-
+			</thead>
+			<tbody>
+				<c:forEach items="${list5}" var="o">
+	
+					<tr>
+						<td>${o.id}</td>
+						<td>${o.ten}</td>
+						<td><fmt:parseDate value="${o.tuoi}" pattern="yyyy-MM-dd"
+								var="parsedDate" /> <fmt:formatDate value="${parsedDate}"
+								pattern="dd-MM-yyyy" />
+						<td>${o.email}</td>
+						<td>${o.tenLop}</td>
+	
+					</tr>
+				</c:forEach>
+	
+	
+	
+			</tbody>
+		</table>
+	</div>
 
 	<!-- Footer -->
 	<section class="footer">
