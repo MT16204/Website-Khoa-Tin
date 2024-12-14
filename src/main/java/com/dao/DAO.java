@@ -156,6 +156,121 @@ public class DAO {
 		return list;
 		
 	}
+	public chuyennganh getchuongtrinh(String id) {
+	    String query = """
+	            SELECT 
+	                sv.id,
+	                sv.ten_chuong_trinh  
+	            FROM 
+	                ChuongTrinhHoc sv
+	            WHERE 
+	                sv.id = ?
+	            """;
+	    chuyennganh sv = null;
+	    try {
+	        DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        ps.setString(1, id);
+	        
+	        try (ResultSet rs = ps.executeQuery()) {
+	            if (rs.next()) {
+	                sv = new chuyennganh();
+	                sv.setId(rs.getString("id")); // Lấy giá trị từ ResultSet
+	                sv.setTen_chuyen_nganh(rs.getString("ten_chuong_trinh")); // Lấy giá trị từ ResultSet
+	            }
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace(); // Log lỗi nếu có
+	    }
+	    return sv;
+	}
+
+	public List<chuyennganh> getChuyenNganhById1() {
+	    List<chuyennganh> list = new ArrayList<>();
+	    String query = "SELECT * FROM ChuongTrinhHoc WHERE id = 1"; // Truy vấn cố định ID = 1
+	    try {
+	        // Kết nối cơ sở dữ liệu
+	        DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        rs = ps.executeQuery();
+
+	        // Thêm dữ liệu vào danh sách
+	        while (rs.next()) {
+	            list.add(new chuyennganh(rs.getString(1), rs.getString(2))); // Giả sử cột 1: name, cột 2: link
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace(); // Ghi log lỗi để debug
+	    } finally {
+	        // Đóng tài nguyên
+	        try {
+	            if (rs != null) rs.close();
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception ex) {
+	            ex.printStackTrace();
+	        }
+	    }
+	    return list; // Trả về danh sách chuyên ngành
+	}
+
+	public List<chuyennganh> getChuyenNganhById2() {
+	    List<chuyennganh> list = new ArrayList<>();
+	    String query = "SELECT * FROM ChuongTrinhHoc WHERE id = 2"; // Truy vấn cố định ID = 1
+	    try {
+	        // Kết nối cơ sở dữ liệu
+	        DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        rs = ps.executeQuery();
+
+	        // Thêm dữ liệu vào danh sách
+	        while (rs.next()) {
+	            list.add(new chuyennganh(rs.getString(1), rs.getString(2))); // Giả sử cột 1: name, cột 2: link
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace(); // Ghi log lỗi để debug
+	    } finally {
+	        // Đóng tài nguyên
+	        try {
+	            if (rs != null) rs.close();
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception ex) {
+	            ex.printStackTrace();
+	        }
+	    }
+	    return list; // Trả về danh sách chuyên ngành
+	}
+	public List<chuyennganh> getChuyenNganhById3() {
+	    List<chuyennganh> list = new ArrayList<>();
+	    String query = "SELECT * FROM ChuongTrinhHoc WHERE id > 2"; // Truy vấn cố định ID = 1
+	    try {
+	        // Kết nối cơ sở dữ liệu
+	        DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        rs = ps.executeQuery();
+
+	        // Thêm dữ liệu vào danh sách
+	        while (rs.next()) {
+	            list.add(new chuyennganh(rs.getString(1), rs.getString(2))); // Giả sử cột 1: name, cột 2: link
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace(); // Ghi log lỗi để debug
+	    } finally {
+	        // Đóng tài nguyên
+	        try {
+	            if (rs != null) rs.close();
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception ex) {
+	            ex.printStackTrace();
+	        }
+	    }
+	    return list; // Trả về danh sách chuyên ngành
+	}
 	public List<chuyennganh> chuyennganh(){
 	    List<chuyennganh> list1 = new ArrayList<>();
 	    String query = "SELECT * FROM  ChuongTrinhHoc";
@@ -316,6 +431,30 @@ public class DAO {
 	        e.printStackTrace(); // In chi tiết lỗi ra console
 	    }
 	}
+	public void insertCC(String name) {
+	    String query = "INSERT INTO ChuongTrinhHoc (ten_chuong_trinh) VALUES (?)";
+	    Connection conn = null;
+	    PreparedStatement ps = null;
+	    try {
+	        DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        ps.setString(1, name);
+	        ps.executeUpdate(); // Thực thi câu lệnh
+
+	    } catch (Exception e) {
+	        e.printStackTrace(); // In chi tiết lỗi ra console
+	    } finally {
+	        // Đảm bảo đóng kết nối và PreparedStatement
+	        try {
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        }
+	    }
+	}
+
 
 	public List<subject> subject(){
 	    List<subject> list1 = new ArrayList<>();
@@ -621,7 +760,28 @@ public class DAO {
 	        }
 	    }
 	}
+	public void updatecc(chuyennganh cn) {
+	    String query = "UPDATE ChuongTrinhHoc SET ten_chuong_trinh = ? WHERE id = ?";
 
+	    try {
+	    	DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        ps.setString(1, cn.getTen_chuyen_nganh());
+	  
+	        ps.setString(2, cn.getId());
+	        ps.executeUpdate();
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        }
+	    }
+	}
 	public void delete(String id) {
 	    String query = "DELETE FROM SinhVien WHERE id=?";
 	    try {
@@ -634,6 +794,30 @@ public class DAO {
 	            System.out.println("Xóa thành công!");
 	        } else {
 	            System.out.println("Không tìm thấy sinh viên với id: " + id);
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace(); // In chi tiết lỗi ra console
+	    } finally {
+	        try {
+	            if (ps != null) ps.close();
+	            if (conn != null) conn.close();
+	        } catch (Exception e) {
+	            e.printStackTrace(); // Xử lý lỗi khi đóng tài nguyên
+	        }
+	    }
+	}
+	public void deletecc(String id) {
+	    String query = "DELETE FROM ChuongTrinhHoc WHERE id=?";
+	    try {
+	    	DatabaseConnection dbContext = new DatabaseConnection();
+	        conn = dbContext.getConnection();
+	        ps = conn.prepareStatement(query);
+	        ps.setString(1, id);
+	        int rowsAffected = ps.executeUpdate(); // Số dòng bị xóa
+	        if (rowsAffected > 0) {
+	            System.out.println("Xóa thành công!");
+	        } else {
+	            System.out.println("Không tìm thấy chương trình với id: " + id);
 	        }
 	    } catch (Exception e) {
 	        e.printStackTrace(); // In chi tiết lỗi ra console

@@ -14,14 +14,14 @@ import com.entity.*;
 /**
  * Servlet implementation class edit
  */
-@WebServlet("/khoahoc")
-public class khoahoc extends HttpServlet {
+@WebServlet("/editcc")
+public class editcc extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public khoahoc() {
+    public editcc() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -46,22 +46,12 @@ public class khoahoc extends HttpServlet {
 	protected void ProcessRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
-
-        String id = request.getParameter("malop");
-		DAO dao = new DAO();
-    	List<lop> list1 = dao.lop1(); 
-    	List<lop> list2 = dao.lop1(); 
-    	List<lop> list3 = dao.lop1(); 
-    	List<lop> list4 = dao.lop1(); 
-    	List<Student> list5= dao.trangchulaysv(id);
-    	request.setAttribute("list1", list1);
-		request.setAttribute("list2", list2);
-		request.setAttribute("list3", list3);
-		request.setAttribute("list4", list4);
-		request.setAttribute("list5", list5);
-        request.getRequestDispatcher("khoahoc.jsp").forward(request,response);
-        request.getRequestDispatcher("lophoc.jsp").forward(request,response);
-
+	
+        String id = request.getParameter("id");
+        DAO dao = new DAO();
+        chuyennganh sv = dao.getchuongtrinh(id);
+        request.setAttribute("sv", sv);
+        request.getRequestDispatcher("editcc.jsp").forward(request,response);
         
 	}
 }

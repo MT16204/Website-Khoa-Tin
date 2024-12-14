@@ -23,8 +23,8 @@
 	rel="stylesheet">
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="shortcut icon" type="image" href="images/logo.png">
-
+<link rel="icon" type="image/x-icon"
+	href="assets/img/favicon/favicon.ico" />
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
 	rel="stylesheet">
@@ -112,7 +112,44 @@
 				class="layout-menu menu-vertical menu bg-menu-theme">
 				<div class="app-brand demo">
 					<a href="HomeControl" class="app-brand-link"> <span
-						class="app-brand-logo demo me-1"> <span style="color: var(--bs-primary)"> </span>
+						class="app-brand-logo demo me-1"> <span
+							style="color: var(--bs-primary)"> <svg width="30"
+									height="24" viewBox="0 0 250 196" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+										d="M12.3002 1.25469L56.655 28.6432C59.0349 30.1128 60.4839 32.711 60.4839 35.5089V160.63C60.4839 163.468 58.9941 166.097 56.5603 167.553L12.2055 194.107C8.3836 196.395 3.43136 195.15 1.14435 191.327C0.395485 190.075 0 188.643 0 187.184V8.12039C0 3.66447 3.61061 0.0522461 8.06452 0.0522461C9.56056 0.0522461 11.0271 0.468577 12.3002 1.25469Z"
+										fill="currentColor" />
+                    <path opacity="0.077704" fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0 65.2656L60.4839 99.9629V133.979L0 65.2656Z" fill="black" />
+                    <path opacity="0.077704" fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0 65.2656L60.4839 99.0795V119.859L0 65.2656Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+										d="M237.71 1.22393L193.355 28.5207C190.97 29.9889 189.516 32.5905 189.516 35.3927V160.631C189.516 163.469 191.006 166.098 193.44 167.555L237.794 194.108C241.616 196.396 246.569 195.151 248.856 191.328C249.605 190.076 250 188.644 250 187.185V8.09597C250 3.64006 246.389 0.027832 241.935 0.027832C240.444 0.027832 238.981 0.441882 237.71 1.22393Z"
+										fill="currentColor" />
+                    <path opacity="0.077704" fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M250 65.2656L189.516 99.8897V135.006L250 65.2656Z"
+										fill="black" />
+                    <path opacity="0.077704" fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M250 65.2656L189.516 99.0497V120.886L250 65.2656Z"
+										fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+										d="M12.2787 1.18923L125 70.3075V136.87L0 65.2465V8.06814C0 3.61223 3.61061 0 8.06452 0C9.552 0 11.0105 0.411583 12.2787 1.18923Z"
+										fill="currentColor" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+										d="M12.2787 1.18923L125 70.3075V136.87L0 65.2465V8.06814C0 3.61223 3.61061 0 8.06452 0C9.552 0 11.0105 0.411583 12.2787 1.18923Z"
+										fill="white" fill-opacity="0.15" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+										d="M237.721 1.18923L125 70.3075V136.87L250 65.2465V8.06814C250 3.61223 246.389 0 241.935 0C240.448 0 238.99 0.411583 237.721 1.18923Z"
+										fill="currentColor" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+										d="M237.721 1.18923L125 70.3075V136.87L250 65.2465V8.06814C250 3.61223 246.389 0 241.935 0C240.448 0 238.99 0.411583 237.721 1.18923Z"
+										fill="white" fill-opacity="0.3" />
+                  </svg>
+						</span>
 					</span> <span class="app-brand-text demo menu-text fw-semibold ms-2">Admin</span>
 					</a> <a href="javascript:void(0);"
 						class="layout-menu-toggle menu-link text-large ms-auto"> <i
@@ -176,13 +213,11 @@
 							</c:forEach>
 
 						</ul></li>
-						
-					<li class="menu-item">
-				    <a href="CCControl" class="menu-link">
-				        <i class="menu-icon tf-icons ri-layout-2-line"></i>
-				        <div data-i18n="Layouts">Quản lý Chương Trình học</div>
-				    </a></li>
-			</aside>
+					<li class="menu-item"><a href="CCControl" class="menu-link">
+							<i class="menu-icon tf-icons ri-layout-2-line"></i>
+							<div data-i18n="Layouts">Quản lý Chương Trình học</div>
+					</a></li>
+			</aside>	
 			<!-- / Menu -->
 
 			<!-- Layout container -->
@@ -201,7 +236,7 @@
 
 					<div class="navbar-nav-right d-flex align-items-center"
 						id="navbar-collapse">
-						<!-- Thanh tìm kiếm -->
+						<!-- Search -->
 						<div class="navbar-nav align-items-center">
 							<div class="nav-item d-flex align-items-center">
 								<i class="ri-search-line ri-22px me-2"></i> <input type="text"
@@ -212,9 +247,13 @@
 							</div>
 						</div>
 
-						<!-- /Thanh tìm kiếm -->
+						<!-- /Search -->
 
 						<ul class="navbar-nav flex-row align-items-center ms-auto">
+							<!-- Place this tag where you want the button to render. -->
+
+
+							<!-- User -->
 							<li class="nav-item navbar-dropdown dropdown-user dropdown">
 								<a class="nav-link dropdown-toggle hide-arrow p-0"
 								href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -255,6 +294,7 @@
 									</li>
 								</ul>
 							</li>
+							<!--/ User -->
 						</ul>
 					</div>
 				</nav>
@@ -264,21 +304,18 @@
 				<!-- Content wrapper -->
 				<div class="content-wrapper">
 
-					<c:if test="${not empty list2}">
+					<c:if test="${not empty list3}">
 
 
 						<div class="table-responsive text-nowrap sticky-table">
-							<c:forEach items="${listt}" var="o">
-								<h3 class="card-header">Danh sách Giảng Viên
-									${o.ten_to_bo_mon}</h3>
-							</c:forEach>
+
+							<h3 class="card-header">Danh sách Chương trình</h3>
+
 							<table class="table table-bordered table-striped">
 								<thead>
 									<tr>
-										<th>Tên</th>
-										<th>Hình ảnh</th>
-										<th>Email</th>
-										<th>Chức vụ</th>
+										<th>Tên chương trình</th>
+
 										<th>
 											<div class="col-sm-6">
 												<a href="#addEmployeeModal" class="btn btn-success"
@@ -290,25 +327,14 @@
 									</tr>
 								</thead>
 								<tbody>
-									<c:forEach items="${list2}" var="o">
+									<c:forEach items="${list3}" var="o">
 										<tr>
-											<td>${o.ten}</td>
-											<td><c:choose>
-													<c:when test="${not empty o.anh}">
-														<img src="${o.anh}" alt="Ảnh giảng viên"
-															style="width: 90px; height: 90px; object-fit: cover;">
-													</c:when>
-													<c:otherwise>
-														<img src="images/default-avatar.png" alt="Ảnh mặc định"
-															style="width: 90px; height: 90px; object-fit: cover;">
-													</c:otherwise>
-												</c:choose></td>
-											<td>${o.email}</td>
-											<td>${o.chuc_vu}</td>
-											<td><a href="editgv?id=${o.id}" class="edit"
+											<td>${o.ten_chuyen_nganh}</td>
+
+											<td><a href="editcc?id=${o.id}" class="edit"
 												data-toggle="modal"><i class="material-icons"
 													data-toggle="tooltip" title="edit">&#xE254;</i></a> <a
-												href="deletegv?id=${o.id}" class="delete"
+												href="deletecc?id=${o.id}" class="delete"
 												data-toggle="modal"><i class="material-icons"
 													data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
 										</tr>
@@ -318,107 +344,29 @@
 						</div>
 					</c:if>
 				</div>
-				
-				<!-- Thêm Giảng viên -->
 				<div id="addEmployeeModal" class="modal fade" tabindex="-1"
 					role="dialog" aria-labelledby="addsvModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
-							<form action="add3" method="post" enctype="multipart/form-data">
+							<form action="addcc" method="post">
 								<div class="modal-header">
-									<h4 class="modal-title" id="addsvModalLabel">Thêm Giảng
-										Viên</h4>
+									<h4 class="modal-title" id="addsvModalLabel">Thêm Chương
+										Trình</h4>
 									<button type="button" class="close" data-dismiss="modal"
 										aria-hidden="true">&times;</button>
 								</div>
 								<div class="modal-body">
-									<!-- Tên Sinh Viên -->
+									<!-- Tên Chương Trình -->
 									<div class="form-group">
-										<label>Tên</label> <input name="name" type="text"
+										<label>Tên Chương Trình</label> <input name="name" type="text"
 											class="form-control" placeholder="Nhập tên" required>
 									</div>
-									<!-- Tuổi -->
-									<div class="form-group">
-										<label>Email</label> <input name="Email" type="text"
-											class="form-control" required>
-									</div>
-									<div class="form-group">
-										<label>Hình ảnh</label> <input type="file" name="image"
-											accept="image/*" class="form-control" required>
-									</div>
-									<!-- Lớp -->
-									<div class="form-group">
-										<label>Chức vụ</label> <input name="chucvu" type="text"
-											class="form-control" required>
-									</div>
-									<!-- Mã Chuyên Ngành -->
-									<div class="form-group">
-										<label>Tổ Bộ Môn</label> <select name="idbomon"
-											class="form-select" aria-label="Default select example">
-											<c:forEach items="${list}" var="o">
-												<option value="${o.id}">${o.ten_to_bo_mon}</option>
-											</c:forEach>
-										</select>
-									</div>
-
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary"
 										data-dismiss="modal">Hủy</button>
 									<button type="submit" class="btn btn-success">Thêm
-										Giảng Viên</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-
-
-				<!-- Thêm Sinh Viên -->
-				<div id="addsv" class="modal fade" tabindex="-1" role="dialog"
-					aria-labelledby="addsvModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<form action="addsvnek" method="post">
-								<div class="modal-header">
-									<h4 class="modal-title" id="addsvModalLabel">Thêm Sinh
-										Viên</h4>
-									<button type="button" class="close" data-dismiss="modal"
-										aria-hidden="true">&times;</button>
-								</div>
-								<div class="modal-body">
-									<!-- Tên Sinh Viên -->
-									<div class="form-group">
-										<label for="name">Tên</label> <input name="name" type="text"
-											class="form-control" placeholder="Nhập tên" required>
-									</div>
-									<!-- Tuổi -->
-									<div class="form-group">
-										<label for="tuoi">Ngày Sinh</label> <input name="tuoi"
-											type="date" class="form-control" required>
-									</div>
-
-									<!-- Lớp -->
-									<div class="form-group">
-										<label for="email">Email</label> <input name="email"
-											type="text" class="form-control" placeholder="Nhập Email"
-											required>
-									</div>
-									<!-- Mã Chuyên Ngành -->
-									<div class="form-group">
-										<label>Lớp</label> <select name="lop" class="form-select"
-											aria-label="Default select example">
-											<c:forEach items="${list10}" var="o">
-												<option value="${o.id}">${o.ten_lop}</option>
-											</c:forEach>
-										</select>
-									</div>
-
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary"
-										data-dismiss="modal">Hủy</button>
-									<button type="submit" class="btn btn-success">Thêm
+										Chương Trình</button>
 								</div>
 							</form>
 						</div>
@@ -427,27 +375,15 @@
 
 
 
-				<!-- Tương tác -->
-				<div class="main-content">
-				<c:if test="${not empty list7}">
-					<div class="accordion">
-							<c:forEach items="${list7}" var="o">
-								<div class="accordion-item">
-									<div class="accordion-header">
-										${o.name} <span style="float: right; cursor: pointer;">▼</span>
-									</div>
-									<div class="accordion-content">
-										<p>${o.message}</p>
-									</div>
-								</div>
-							</c:forEach>						
-					</div>
-					</c:if>
-				</div>
 
 
 
-<script>  
+
+
+
+
+
+				<script>  
     document.addEventListener("DOMContentLoaded", () => {
         const headers = document.querySelectorAll('.accordion-header');
 
@@ -468,63 +404,18 @@
                 }
             });
         });
-    }); 
-</script>
+    });
+ 
+    </script>
 
-				<!-- Danh sách Sinh Viên -->
-				<div class="content-wrapper">
-					<c:if test="${not empty list4}">
 
-						<div class="table-responsive text-nowrap sticky-table">
-							<h3 class="card-header">Danh sách Sinh Viên chuyên ngành
-								${list4[0].tenChuongTrinh}</h3>
-							<table class="table table-bordered table-striped">
-								<thead>
-									<tr>
-										<th>Tên</th>
-										<th>Ngày Sinh</th>
-										<th>Email</th>
-										<th>Lớp Sinh Hoạt</th>
-										<th>
-											<div class="col-sm-6">
-												<a href="#addsv" class="btn btn-success"
-													data-bs-toggle="modal"> <i class="material-icons"></i>
-													<span>Add</span></a>
-											</div>
 
-										</th>
-
-									</tr>
-								</thead>
-								<tbody>
-									<c:forEach items="${list4}" var="o">
-										<tr>
-											<td>${o.ten}</td>
-											<td><fmt:parseDate value="${o.tuoi}"
-													pattern="yyyy-MM-dd" var="parsedDate" /> <fmt:formatDate
-													value="${parsedDate}" pattern="dd-MM-yyyy" /></td>
-
-											<td>${o.email}</td>
-											<td>${o.tenLop}</td>
-											<td><a href="edit?id=${o.id}" class="edit"
-												data-toggle="modal"><i class="material-icons"
-													data-toggle="tooltip" title="edit">&#xE254;</i></a> <a
-												href="delete?id=${o.id}" class="delete" data-toggle="modal"><i
-													class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-											</td>
-										</tr>
-									</c:forEach>
-
-								</tbody>
-							</table>
-						</div>
-					</c:if>
-				</div>
-				<div class="content-backdrop fade"></div>
 			</div>
-			<!-- Content wrapper -->
+			<div class="content-backdrop fade"></div>
 		</div>
-		<!-- / Layout page -->
+		<!-- Content wrapper -->
+	</div>
+	<!-- / Layout page -->
 	</div>
 	<div class="layout-overlay layout-menu-toggle"></div>
 	<script src="assets/vendor/libs/jquery/jquery.js"></script>
