@@ -85,7 +85,7 @@
 
                 <li> <a href="#faculty">Đội ngũ giảng viên</a></li>
                 <li> <a href="#blog">Bài viết</a></li>
-                <li> <a href="contact.jsp">Liên hệ</a></li>
+                <li> <a href="#contact">Liên hệ</a></li>
                 <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>
             </ul>
         </nav>
@@ -209,19 +209,6 @@
                 </table>
             </div>
 
-            <!-- <div class="facProfile">
-                <img src="images/phuong.jpg" alt="">
-
-                <h2> TS. PHẠM ANH PHƯƠNG </h2>
-                <p> Chức vụ: Phó Trưởng Khoa </p>
-
-                <table>
-                    <tr>
-                        <td><i class="far fa-envelope"></i></td>
-                        <td><a href="mailto:paphuong@ued.udn.vn">paphuong@ued.udn.vn</a></td>
-                    </tr>
-                </table>
-            </div> -->
 
             <div class="facProfile">
                 <img src="images/lau.jpg" alt="">
@@ -259,11 +246,11 @@
 
 
     <!-- Liên hệ -->
-    <section class="cta">
+    <section class="cta" id="contact">
         <h1> Quý phụ huynh, học sinh nếu có nhu cầu xin vui lòng liên hệ với chúng tôi </h1>
         <p>Thứ Hai - Chủ Nhật | 8:00 - 21:30</p>
 
-        <a href="contact.jsp" class="heroBtn"> Liên hệ </a>
+        <a href="ContactServlet" class="heroBtn"> Liên hệ </a>
     </section>
 
 

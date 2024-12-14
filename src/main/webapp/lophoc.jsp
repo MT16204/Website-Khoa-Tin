@@ -118,7 +118,7 @@ table tr:hover {
 
 				<li><a href="faculty.jsp">Đội ngũ giảng viên</a></li>
 				<li><a href="blog.jsp">Bài viết</a></li>
-				<li><a href="contact.jsp">Liên hệ</a></li>
+				<li><a href="ContactServlet">Liên hệ</a></li>
 				<li><a href="login.jsp"><i class="fas fa-sign-in-alt">
 					</i> Login</a></li>
 			</ul>

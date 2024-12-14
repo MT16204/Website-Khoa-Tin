@@ -86,7 +86,7 @@
 
                 <li> <a href="faculty">Đội ngũ giảng viên</a></li>
                 <li> <a href="blog.jsp">Bài viết</a></li>
-                <li> <a href="contact.jsp">Liên hệ</a></li>
+                <li> <a href="ContactServlet">Liên hệ</a></li>
                 <li> <a href="login.jsp"><i class="fas fa-sign-in-alt"> </i> Login</a></li>
             </ul>
         </nav>
@@ -132,18 +132,25 @@
 	
 	        <!-- Contact Form -->
 	        <div class="contactCol msg">
-	            <form method="post" target="msgForm" onsubmit="submitted=true" class="myform" id="contform">
+	            <form action="ContactServletadd" method="post" target="msgForm" onsubmit="submitted=true" class="myform" id="contform">
 						<input type="email" name="emailAddress" placeholder="Email"
 							required> 
 						<input type="text" name="entry.805276147"
 							placeholder="Tên" required> 
+						<label for="subject">Chọn tiêu đề:</label>
+						<select name="subject" id="subject" required>
+    						<option value="" disabled selected>-- Chọn một tiêu đề --</option>
+    							<c:forEach items="${list3}" var="o">
+        							<option value="${o.idsubject}">${o.namesubject}</option>
+    							</c:forEach>
+						</select>
 						<textarea rows="5" name="entry.740878952" placeholder="Lời nhắn"
 							required></textarea>
 	
 						<button type="submit" class="heroBtn widthBtn">
 							Gửi<i class="fas fa-paper-plane"></i>
 						</button>
-					</form>
+				</form>
 	        </div>
 	    </div>
 	</section>
