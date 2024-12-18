@@ -330,57 +330,6 @@
             <p> &copy; 2024 - Khoa tin Trường Đại học Sư phạm</p>
         </div>
     </section>
-    
-    <!-- Nút Liên hệ -->
-    <div class="echbay-sms-messenger style-for-position-br">
-		<div class="phonering-alo-alo">
-			<a href="tel:0905121281" rel="nofollow" class="echbay-phonering-alo-event">.</a>
-		</div>
-		<div class="phonering-alo-messenger">
-			<a href="https://www.facebook.com/khoatinhoc" target="_blank" rel="nofollow" class="echbay-phonering-messenger-event">.</a>
-		</div>
-	</div>
-	
-
-	<style>	
-	.echbay-sms-messenger {
-		width:45px
-	}
-	.echbay-sms-messenger a {
-		line-height:45px;
-	        color: transparent;
-	display:block;
-	}
-	.echbay-sms-messenger {
-		display:block
-	}
-	
-	.echbay-sms-messenger div.phonering-alo-alo {
-	    background-image: url(https://codfe.com/wp-content/uploads/2020/08/call.png);
-		background-color:#f44336
-	    
-	}
-	
-	.echbay-sms-messenger div.phonering-alo-messenger {
-	    background-image: url(https://codfe.com/wp-content/uploads/2020/08/messenger.png);
-	    background-color:#f44336
-	    
-	}
-	.echbay-sms-messenger div {
-	    margin: 14px 0;
-	    background: #0084FF center no-repeat;
-	    background-size: 70%;
-	    border-radius: 50%;
-	    box-shadow: 0 3px 10px #888;
-	}
-	.echbay-sms-messenger {
-	    text-align: center;
-	    left:20px;
-	    position: fixed;
-	    bottom: 20px;
-	    z-index: 999;
-	}
-	</style>
 	
 
     <script>

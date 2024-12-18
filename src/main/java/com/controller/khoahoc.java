@@ -50,9 +50,9 @@ public class khoahoc extends HttpServlet {
         String id = request.getParameter("malop");
 		DAO dao = new DAO();
     	List<lop> list1 = dao.lop1(); 
-    	List<lop> list2 = dao.lop1(); 
-    	List<lop> list3 = dao.lop1(); 
-    	List<lop> list4 = dao.lop1(); 
+    	List<lop> list2 = dao.lop2(); 
+    	List<lop> list3 = dao.lop3(); 
+    	List<lop> list4 = dao.lop4(); 
     	List<Student> list5= dao.trangchulaysv(id);
     	request.setAttribute("list1", list1);
 		request.setAttribute("list2", list2);
