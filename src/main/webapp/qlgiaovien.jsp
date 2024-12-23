@@ -472,54 +472,67 @@
 </script>
 
 				<!-- Danh sách Sinh Viên -->
-				<div class="content-wrapper">
-					<c:if test="${not empty list4}">
-
-						<div class="table-responsive text-nowrap sticky-table">
-							<h3 class="card-header">Danh sách Sinh Viên chuyên ngành
-								${list4[0].tenChuongTrinh}</h3>
-							<table class="table table-bordered table-striped">
-								<thead>
-									<tr>
-										<th>Tên</th>
-										<th>Ngày Sinh</th>
-										<th>Email</th>
-										<th>Lớp Sinh Hoạt</th>
-										<th>
-											<div class="col-sm-6">
-												<a href="#addsv" class="btn btn-success"
-													data-bs-toggle="modal"> <i class="material-icons"></i>
-													<span>Add</span></a>
-											</div>
-
-										</th>
-
-									</tr>
-								</thead>
-								<tbody>
+					<div class="content-wrapper">
+						<c:if test="${not empty list4}">
+							<!-- Dropdown to select class -->
+							<div class="col-sm-6" style="padding-bottom: 20px;">
+								<label for="classDropdown">Chọn Lớp Học</label>
+								<select id="classDropdown" class="form-control">
+									<option value="">-- Chọn Lớp Học --</option>
+									<!-- Loop through list of classes (assuming list4 contains the classes) -->
 									<c:forEach items="${list4}" var="o">
-										<tr>
-											<td>${o.ten}</td>
-											<td><fmt:parseDate value="${o.tuoi}"
-													pattern="yyyy-MM-dd" var="parsedDate" /> <fmt:formatDate
-													value="${parsedDate}" pattern="dd-MM-yyyy" /></td>
-
-											<td>${o.email}</td>
-											<td>${o.tenLop}</td>
-											<td><a href="edit?id=${o.id}" class="edit"
-												data-toggle="modal"><i class="material-icons"
-													data-toggle="tooltip" title="edit">&#xE254;</i></a> <a
-												href="delete?id=${o.id}" class="delete" data-toggle="modal"><i
-													class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-											</td>
-										</tr>
+										<option value="${o.tenLop}">${o.tenLop}</option>
 									</c:forEach>
-
-								</tbody>
-							</table>
-						</div>
-					</c:if>
-				</div>
+								</select>
+							</div>
+					
+							<!-- Button for searching -->
+							<div class="col-sm-6" style="padding-bottom: 20px;">
+								<button id="searchButton" class="btn btn-primary">Tìm kiếm</button>
+							</div>
+					
+							<!-- Table displaying student information -->
+							<div class="table-responsive text-nowrap sticky-table">
+								<table class="table table-bordered table-striped" id="studentTable">
+									<thead>
+										<tr>
+											<th>Tên</th>
+											<th>Ngày Sinh</th>
+											<th>Email</th>
+											<th>Lớp Sinh Hoạt</th>
+											<th>
+												<div class="col-sm-6">
+													<a href="#addsv" class="btn btn-success" data-bs-toggle="modal">
+														<i class="material-icons"></i>
+														<span>Add</span>
+													</a>
+												</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<c:forEach items="${list4}" var="o">
+											<tr class="student-row" data-class="${o.tenLop}" data-name="${o.ten}">
+												<td>${o.ten}</td>
+												<td><fmt:parseDate value="${o.tuoi}" pattern="yyyy-MM-dd" var="parsedDate" />
+													<fmt:formatDate value="${parsedDate}" pattern="dd-MM-yyyy" /></td>
+												<td>${o.email}</td>
+												<td>${o.tenLop}</td>
+												<td>
+													<a href="edit?id=${o.id}" class="edit" data-toggle="modal">
+														<i class="material-icons" data-toggle="tooltip" title="edit">&#xE254;</i>
+													</a>
+													<a href="delete?id=${o.id}" class="delete" data-toggle="modal">
+														<i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+													</a>
+												</td>
+											</tr>
+										</c:forEach>
+									</tbody>
+								</table>
+							</div>
+						</c:if>
+					</div>
 				<div class="content-backdrop fade"></div>
 			</div>
 			<!-- Content wrapper -->
@@ -541,7 +554,7 @@
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-	<script>
+<script>
   function filterList() {
     // Lấy giá trị người dùng nhập
     const query = document.getElementById("searchInput").value.toLowerCase();
@@ -562,6 +575,37 @@
       }
     });
   }
+  
 </script>
+
+
+<script>
+	// Get elements
+	const classDropdown = document.getElementById("classDropdown");
+	const searchButton = document.getElementById("searchButton");
+	const studentTable = document.getElementById("studentTable");
+	const rows = studentTable.getElementsByTagName("tr");
+
+	// Function to filter table by selected class
+	function filterTableByClass() {
+		const selectedClass = classDropdown.value.toLowerCase();
+
+		for (let i = 1; i < rows.length; i++) { // Start from 1 to skip the header row
+			const row = rows[i];
+			const classCell = row.getAttribute("data-class").toLowerCase();
+
+			// Show or hide row based on the class filter
+			if (selectedClass === "" || classCell === selectedClass) {
+				row.style.display = "";  // Show row
+			} else {
+				row.style.display = "none";  // Hide row
+			}
+		}
+	}
+
+	// Event listener for search button click
+	searchButton.addEventListener("click", filterTableByClass);
+</script>
+
 </body>
 </html>
