@@ -40,7 +40,7 @@ public class add extends HttpServlet {
         String fileName = filePart.getSubmittedFileName(); // Lấy tên file
 
         // Đường dẫn lưu file
-        String uploadPath = "C:\\Users\\This PC\\eclipse-workspace\\CK\\CK\\src\\main\\webapp\\images";
+        String uploadPath = getServletContext().getRealPath("/") + "images";
         File uploadDir = new File(uploadPath);
         if (!uploadDir.exists()) {
             uploadDir.mkdirs(); // Tạo thư mục nếu chưa tồn tại
