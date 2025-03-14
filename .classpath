@@ -21,5 +21,6 @@
 			<attribute name="javadoc_location" value="https://javaee.github.io/javaee-spec/javadocs/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/macos/Downloads/sqlite-jdbc-3.49.1.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

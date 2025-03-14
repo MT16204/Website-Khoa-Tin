@@ -12,16 +12,16 @@ public class DatabaseConnection {
     public static Connection getConnection() {
         try {
             // Đảm bảo rằng URL, username và password là chính xác
-            String dbUrl = "jdbc:mysql://localhost:3306/ck1"; // Thay đổi theo URL cơ sở dữ liệu của bạn
-            String dbUsername = "root"; // Thay đổi username của bạn
-            String dbPassword = "tuan16204"; // Thay đổi mật khẩu của bạn
+            String dbUrl = "jdbc:mysql://localhost:3306/ck1"; // database 
+            String dbUsername = "root"; // username 
+            String dbPassword = " "; // mật khẩu 
 
             // Tải driver JDBC
             Class.forName("com.mysql.cj.jdbc.Driver");
             return DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
         } catch (Exception e) {
             e.printStackTrace();
-            return null; // Trả về null nếu không thể kết nối
+            return null; 
         }
     }
 
