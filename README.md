@@ -45,6 +45,6 @@ String dbUsername = "username"; // username
 String dbPassword = "password"; // mật khẩu
 ```
     
-4. Chạy dự án trên Apache tomcat:
+3. Chạy dự án trên Apache tomcat:
 - Chạy file `index.jsp`
 - Mở trình duyệt và truy cập vào đường dẫn: `http://localhost:8080/Website-Khoa-Tin`
