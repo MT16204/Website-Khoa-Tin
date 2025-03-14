@@ -35,6 +35,16 @@
 ``` bash
 git clone https://github.com/MT16204/Website-Khoa-Tin.git
 ```
-2. Chạy dự án trên Apache tomcat:
+2. Taọ Database :
+- Mở Mysql/PostgreSQL.
+- Copy các câu lệnh từ ck1.sql trong src/java/main/database, và tạo Database và bảng.
+- Thay các đường dẫn trong `DatabaseConnection.java`:
+``` bash
+String dbUrl = "jdbc:mysql://localhost:3306/mydatabase"; // database
+String dbUsername = "username"; // username
+String dbPassword = "password"; // mật khẩu
+```
+    
+4. Chạy dự án trên Apache tomcat:
 - Chạy file `index.jsp`
 - Mở trình duyệt và truy cập vào đường dẫn: `http://localhost:8080/Website-Khoa-Tin`
